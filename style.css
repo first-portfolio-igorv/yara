@@ -1,0 +1,1647 @@
+@import url("./base.css");
+@import url("./font.css");
+html {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+main {
+  width: 100%;
+  height: 284vw;
+  background-image: url(./images/img11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "KTS-black";
+}
+main .header {
+  height: 63vw;
+}
+main .header .lang-buttons {
+  position: absolute;
+  width: 4.16vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.11vw;
+  top: 0.69vw;
+  right: 1.38vw;
+  cursor: pointer;
+}
+main .header .lang-buttons .en-button:hover {
+  color: rgb(130, 68, 181);
+}
+main .header .lang-buttons .ukr-button:hover {
+  color: rgb(130, 68, 181);
+}
+main .header .lang-buttons .en-button::after {
+  content: "/";
+  font-size: 1.11vw;
+  position: absolute;
+  right: 1.38vw;
+}
+main .header .img {
+  background-image: url(./images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 9.02vw;
+  height: 8.33vw;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+main .header .buttons {
+  height: 80px;
+  width: 56.25%;
+  margin: 2.46% 3% 0px 0px;
+  float: right;
+  padding: 1.9% 0px 0px 0px;
+}
+main .header .buttons span {
+  float: left;
+  margin-right: 12.5%;
+  font-size: 1.45vw;
+  color: black;
+}
+main .header .buttons .button {
+  margin: 0px;
+}
+main .header .title {
+  width: 36.8vw;
+  height: 18.05vw;
+  margin-top: 19.5vw;
+  margin-left: 18%;
+  font-weight: lighter;
+  background-image: url(./images/firstdraft.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+main .main {
+  width: 100%;
+  height: 166vw;
+  padding-top: 11.11vw;
+}
+main .main .main-top {
+  width: 55.5vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+main .main .main-top .about {
+  width: 35.44vw;
+  height: 20.13vw;
+}
+main .main .main-top .about .title {
+  display: block;
+  font-size: 2.5vw;
+  margin-bottom: 4vw;
+}
+main .main .main-top .about .EN {
+  display: none;
+}
+main .main .main-top .about p {
+  margin-bottom: 1.73vw;
+  font-size: 1.3vw;
+  line-height: 1.85vw;
+  position: relative;
+}
+main .main .main-top .about p::after {
+  content: "";
+  position: absolute;
+  width: 0.55vw;
+  height: 0.13vw;
+  background-color: black;
+  left: -1.04vw;
+  top: 1.04vw;
+}
+main .main .main-top .about .last {
+  margin-bottom: 0px;
+}
+main .main .main-top .img img {
+  margin-top: 6.8vw;
+  width: 15.81vw;
+  height: 15vw;
+}
+main .main .main-midle {
+  padding-top: 30px;
+  width: 53.55vw;
+  height: 41.51vw;
+  margin: 18.58vw auto 0px;
+}
+main .main .main-midle .top,
+main .main .main-midle .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+main .main .main-midle span {
+  font-size: 3.08vw;
+  display: block;
+}
+main .main .main-midle .EN {
+  display: none;
+}
+main .main .main-midle .editing {
+  width: 18.9vw;
+  height: 20.75vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/editing.png);
+}
+main .main .main-midle .editing span {
+  margin-top: 12vw;
+  margin-left: -1.84vw;
+}
+main .main .main-midle .gdesign {
+  height: 16.29vw;
+  width: 17.96vw;
+  margin-right: 1.2vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/graphicdesign\ \(2\).png);
+}
+main .main .main-midle .gdesign span {
+  margin-top: 0.6vw;
+  margin-left: -4.94vw;
+  line-height: 3.7vw;
+}
+main .main .main-midle .animation {
+  height: 17.96vw;
+  width: 22.12vw;
+  margin-left: 0.6vw;
+  margin-top: 3.08vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/animation.png);
+}
+main .main .main-midle .animation span {
+  margin-top: 12.37vw;
+  margin-left: 4.94vw;
+}
+main .main .main-midle .illustration {
+  height: 19.5vw;
+  width: 24.78vw;
+  margin-right: 1.97vw;
+  margin-top: 0.6vw;
+  margin: 0.6vw 1.97vw 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/illustration.png);
+}
+main .main .main-midle .illustration span {
+  margin-top: 7.18vw;
+  margin-left: 1.22vw;
+}
+main .main .main-bottom {
+  width: 49.3vw;
+  height: 26.38vw;
+  background-image: url(./images/freelesson.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20.83vw;
+  margin-left: 33vw;
+}
+main .main .main-bottom span {
+  display: block;
+  position: absolute;
+  margin-top: 11.31vw;
+  margin-left: -3.47vw;
+  font-size: 3.1vw;
+}
+main .main .main-bottom .EN {
+  display: none;
+}
+main .footer {
+  width: 100%;
+  height: 54.86vw;
+  padding: 9.93vw 0px 0px 10.76vw;
+}
+main .footer .main-block {
+  display: flex;
+  height: 37.4vw;
+}
+main .footer .main-block .left-block .contacts {
+  width: 21.52vw;
+  height: 4.51vw;
+  background-image: url(./images/contacts.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 1.45vw;
+  padding-left: 2.77vw;
+  margin-bottom: 3.81vw;
+}
+main .footer .main-block .left-block .contacts span {
+  font-size: 2.5vw;
+}
+main .footer .main-block .left-block p {
+  margin-bottom: 2.43vw;
+  margin-left: 2.77vw;
+  font-size: 1.11vw;
+}
+main .footer .main-block .left-block .social {
+  width: 13.88vw;
+  margin-top: 5.2vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.77vw;
+}
+main .footer .main-block .left-block .social .instagram {
+  width: 3.47vw;
+  height: 3.47vw;
+  background-image: url(./images/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .footer .main-block .left-block .social .facebook {
+  width: 3.47vw;
+  height: 3.47vw;
+  background-image: url(./images/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .footer .main-block .left-block .social .tik-tok {
+  width: 3.47vw;
+  height: 3.47vw;
+  background-image: url(./images/tiktok.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .footer .main-block .center-block {
+  width: 31.25vw;
+  margin-left: 2.43vw;
+}
+main .footer .main-block .center-block .reg {
+  margin-top: 3.12vw;
+  margin-left: 12.5vw;
+  width: 18.4vw;
+}
+main .footer .main-block .center-block .reg input {
+  width: 18.4vw;
+  height: 2.77vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1.25vw;
+  font-family: "KTS-black";
+}
+main .footer .main-block .center-block .reg input::-moz-placeholder {
+  color: rgb(107, 107, 107);
+  font-family: "KTS-black";
+  font-size: 0.97vw;
+}
+main .footer .main-block .center-block .reg input::placeholder {
+  color: rgb(107, 107, 107);
+  font-family: "KTS-black";
+  font-size: 0.97vw;
+}
+main .footer .main-block .center-block .send {
+  width: 30.9vw;
+  height: 19.09vw;
+  background-image: url(./images/send.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .footer .main-block .center-block .send span {
+  position: absolute;
+  font-size: 1.5vw;
+  margin-top: 12.5vw;
+  margin-left: 20.13vw;
+}
+main .footer .main-block .center-block .send .EN {
+  display: none;
+}
+main .footer .main-block .right-block {
+  width: 16.31vw;
+  height: 25.69vw;
+  background-image: url(./images/form.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .footer .main-block .right-block span {
+  display: block;
+  font-size: 3.2vw;
+  margin-top: 2.43vw;
+  margin-left: 4.86vw;
+}
+main .footer .main-block .right-block .EN {
+  display: none;
+}
+main .footer .bottom-block {
+  width: 35.83vw;
+  height: 6.94vw;
+  margin-left: 50.29vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3vw;
+}
+main .footer .bottom-block span {
+  color: rgb(223, 223, 223);
+  font-size: 1.6vw;
+}
+main .footer .bottom-block a {
+  text-decoration: none;
+}
+main .EN {
+  display: none;
+}
+
+.editing {
+  width: 100vw;
+  max-height: 711.3vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "KTS-black";
+}
+.editing a {
+  text-decoration: none;
+  color: black;
+}
+.editing .EN {
+  display: none;
+}
+.editing .top-block {
+  width: 100vw;
+  height: 221.5vw;
+  padding-top: 1.73vw;
+  background-image: url(./images/editing/top.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .top-block .lang-buttons {
+  position: absolute;
+  width: 4.16vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.11vw;
+  top: 0.69vw;
+  right: 1.38vw;
+  cursor: pointer;
+}
+.editing .top-block .lang-buttons .en-button:hover {
+  color: rgb(130, 68, 181);
+}
+.editing .top-block .lang-buttons .ukr-button:hover {
+  color: rgb(130, 68, 181);
+}
+.editing .top-block .lang-buttons .en-button::after {
+  content: "/";
+  font-size: 1.11vw;
+  position: absolute;
+  right: 1.38vw;
+}
+.editing .top-block .logo {
+  width: 9.02vw;
+  height: 8.68vw;
+  background-image: url(./images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2.56vw;
+  left: 2.56vw;
+}
+.editing .top-block .menu {
+  width: 64.58vw;
+  height: 6.04vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.38vw;
+  margin-left: auto;
+  margin-right: 2.56vw;
+  padding-top: 1.73vw;
+}
+.editing .top-block .title {
+  display: block;
+  text-align: center;
+  margin-top: 10.76vw;
+  font-size: 3.12vw;
+  line-height: 4.16vw;
+}
+.editing .top-block .EN {
+  display: none;
+}
+.editing .top-block .description {
+  text-align: center;
+  font-size: 1.52vw;
+  font-family: "KTS";
+  margin-top: 5.55vw;
+}
+.editing .top-block .question-block {
+  width: 29.86vw;
+  height: 37.98vw;
+  margin: 18.61vw 0px 0px 36.8vw;
+  padding-top: 5vw;
+}
+.editing .top-block .question-block .title {
+  text-align: left;
+  font-size: 2.22vw;
+  margin: 0px 0px 4.16vw;
+}
+.editing .top-block .question-block span {
+  display: block;
+  font-family: "KTS";
+  margin-bottom: 5.55vw;
+  font-size: 1.59vw;
+  line-height: 2.08vw;
+  position: relative;
+}
+.editing .top-block .question-block span::after {
+  content: "";
+  width: 1.041vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.editing .top-block .foryou-block {
+  width: 68.4vw;
+  height: 33.75vw;
+  margin: 26.04vw 18.19vw 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.editing .top-block .foryou-block .img {
+  width: 21.66vw;
+  height: 33.42vw;
+  background-image: url(./images/editing/illustration3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .top-block .foryou-block .text {
+  width: 35.34vw;
+  height: 30.06vw;
+}
+.editing .top-block .foryou-block .text .title {
+  text-align: left;
+  font-size: 2.29vw;
+  line-height: 2.43vw;
+  margin: 0px 0px 4.16vw;
+}
+.editing .top-block .foryou-block .text span {
+  display: block;
+  font-family: "KTS";
+  margin-bottom: 3.12vw;
+  font-size: 1.59vw;
+  line-height: 2.08vw;
+  position: relative;
+}
+.editing .top-block .foryou-block .text span::after {
+  content: "";
+  width: 1.04vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.editing .top-block .block {
+  width: 32.29vw;
+  height: 37.77vw;
+  margin: 20.27vw 34.23vw 0px;
+  padding-top: 10vw;
+}
+.editing .top-block .block .title {
+  text-align: center;
+  font-size: 2.56vw;
+  margin-bottom: 7.63vw;
+  margin-top: 0px;
+}
+.editing .top-block .block .info {
+  width: 100%;
+}
+.editing .top-block .block .info span {
+  display: block;
+  margin-bottom: 3.47vw;
+  font-size: 1.38vw;
+  margin-left: 1.73vw;
+  position: relative;
+}
+.editing .top-block .block .info span::after {
+  content: "";
+  width: 2.98vw;
+  height: 2.98vw;
+  border-radius: 100%;
+  background: rgb(47, 255, 172);
+  position: absolute;
+  top: 5%;
+  left: -4.16vw;
+}
+.editing .top-block .block .info span::before {
+  content: "";
+  width: 1.87vw;
+  height: 1.87vw;
+  border-radius: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25%;
+  left: -3.61vw;
+  z-index: 2;
+}
+.editing .top-block .block .info .first::after {
+  top: -0.69vw;
+}
+.editing .top-block .block .info .first::before {
+  top: 0px;
+  background-image: url(./images/editing/icon.png);
+}
+.editing .top-block .block .info .second::before {
+  height: 1.18vw;
+  top: 37%;
+  left: -3.81vw;
+  width: 2.43vw;
+  background-image: url(./images/editing/icon2.png);
+}
+.editing .top-block .block .info .last::before {
+  background-image: url(./images/editing/icon3.png);
+}
+
+.middle-block {
+  width: 100vww;
+  max-height: 220vw;
+  background-image: url(./images/editing/middle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 4.86vw;
+}
+.middle-block .course-progress-block {
+  width: 59.93vw;
+  max-height: 220vw;
+  margin: auto;
+}
+.middle-block .course-progress-block .block {
+  padding-left: 1.11vw;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 7.29vw;
+  transition: 0.3s;
+  transition-timing-function: ease-in, ease, linear;
+}
+.middle-block .course-progress-block .block .line {
+  width: 2.43vw;
+  height: 2.43vw;
+  border: 0.277vw solid black;
+  border-radius: 100%;
+  margin-right: 0.69;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  font-size: 1.52vw;
+}
+.middle-block .course-progress-block .block .line::after {
+  content: "";
+  width: 2.08vw;
+  height: 0.34vw;
+  background-color: black;
+  position: absolute;
+  top: 0.9vw;
+  left: -2.08vw;
+}
+.middle-block .course-progress-block .block .progress-line,
+.middle-block .course-progress-block .block .green {
+  width: 0.34vw;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  margin-top: 2.43vw;
+  display: block;
+}
+.middle-block .course-progress-block .block .progress-line::after,
+.middle-block .course-progress-block .block .green::after {
+  content: "1";
+  font-size: 1.52vw;
+  text-align: center;
+  width: 2.08vw;
+  height: 2.08vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 0.277vw solid black;
+  border-radius: 100%;
+  position: absolute;
+  top: -2.43vw;
+  left: -1.11vw;
+}
+.middle-block .course-progress-block .block .info {
+  width: 50vw;
+  margin-top: 0.34vw;
+}
+.middle-block .course-progress-block .block .info .title {
+  font-size: 1.38vw;
+  margin-bottom: 1.38vw;
+  cursor: pointer;
+}
+.middle-block .course-progress-block .block .info .text {
+  width: 36.24vw;
+  margin-left: 4.16vw;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: "KTS";
+  transition-property: max-height;
+  transition-timing-function: ease-in, ease, linear;
+}
+.middle-block .course-progress-block .block .info .text .add-info {
+  position: absolute;
+  width: 63.8vw;
+  height: 6.52vw;
+  background-image: url(./images/editing/dodatkovo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2.08vw;
+  padding-right: 4vw;
+  font-size: 1.11vw;
+}
+.middle-block .course-progress-block .block .info .text span {
+  font-size: 1.111vw;
+}
+.middle-block .course-progress-block .block .info .text .text-line {
+  display: flex;
+  justify-content: space-between;
+}
+.middle-block .course-progress-block .block .info .text .text-line span {
+  display: block;
+  margin-bottom: 1.38vw;
+}
+.middle-block .course-progress-block .block .info .text .text-line .description {
+  width: 34.72vw;
+}
+.middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
+  content: "2";
+}
+.middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
+  content: "3";
+}
+.middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
+  content: "4";
+}
+.middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
+  content: "5";
+}
+.middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
+  content: "7";
+}
+.middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
+  content: "8";
+}
+.middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
+  content: "9";
+}
+.middle-block .course-progress-block .block:nth-child(9) {
+  width: 76.3vw;
+}
+.middle-block .course-progress-block .block:nth-child(9) .info {
+  width: 66.58vw;
+}
+.middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
+  content: "10";
+}
+.middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
+  content: "12";
+}
+.middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
+  content: "13";
+}
+.middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
+  content: "14";
+}
+.middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
+  content: "15";
+}
+.middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
+  content: "16";
+}
+.middle-block .course-progress-block .block:nth-child(15) .progress-line {
+  background-color: transparent;
+}
+.middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
+  content: "17";
+}
+.middle-block .sertificate-text {
+  width: 65.97vw;
+  height: 5.2vw;
+  background-image: url(./images/editing/certificate\ \(1\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+  font-size: 1.45vw;
+  margin: auto;
+  padding-top: 1.38vw;
+}
+.middle-block .sertificate {
+  width: 52.77vw;
+  height: 31.25vw;
+  margin: auto;
+  background-image: url(./images/editing/Group\ 203.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 6.25vw;
+}
+.middle-block .EN {
+  display: none;
+}
+
+.bottom-block1 {
+  width: 100vw;
+  height: 270.5vw;
+  background-image: url(./images/editing/bottom.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 39.58vw;
+  position: relative;
+}
+.bottom-block1 .EN {
+  display: none;
+}
+.bottom-block1 .yara-block {
+  width: 59vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.bottom-block1 .yara-block .info {
+  width: 24.09vw;
+  height: 10.41vw;
+  margin-top: auto;
+  font-family: "KTS";
+  margin-left: 1.38vw;
+  font-size: 1.31vw;
+  line-height: 1.52vw;
+  margin-bottom: 1.38vw;
+}
+.bottom-block1 .yara-block .info span {
+  font-size: 2.08vw;
+}
+.bottom-block1 .yara-block .img {
+  width: 26.04vw;
+  height: 25vw;
+  background-image: url(./images/editing/square.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 1.38vw;
+}
+.bottom-block1 .yara-block .img::after {
+  content: "";
+  width: 34vw;
+  height: 29.16vw;
+  position: absolute;
+  background-image: url(./images/editing/circle\ \(1\).png);
+  background-size: contain;
+  top: -4.16vw;
+  left: -5.2vw;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.bottom-block1 .yara-block .img::before {
+  content: "";
+  width: 27.08vw;
+  height: 25vw;
+  position: absolute;
+  background-image: url(./images/editing/yara.jpeg);
+  background-size: contain;
+  z-index: 1;
+  top: -1.38vw;
+  left: -1.38vw;
+  background-repeat: no-repeat;
+}
+.bottom-block1 .experiense {
+  width: 69.4vw;
+  height: 18.05vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16vw;
+  margin-top: 5.9vw;
+}
+.bottom-block1 .experiense .block {
+  width: 32.08vw;
+}
+.bottom-block1 .experiense .block .title {
+  margin-bottom: 2.43vw;
+  font-size: 1.73vw;
+}
+.bottom-block1 .experiense .block span {
+  display: block;
+  margin-bottom: 1.38vw;
+  font-family: "KTS";
+  font-size: 1.25vw;
+  line-height: 1.52vw;
+}
+.bottom-block1 .experiense .block .mini-title {
+  font-family: "KTS-black";
+}
+.bottom-block1 .experiense .block:nth-child(1) {
+  width: 25vw;
+}
+.bottom-block1 .experiense .block:nth-child(1) span {
+  position: relative;
+}
+.bottom-block1 .experiense .block:nth-child(1) span::after {
+  content: "";
+  width: 1.04vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.bottom-block1 .experiense .block:nth-child(2) {
+  width: 32.08vw;
+}
+.bottom-block1 .works {
+  text-align: center;
+  margin-top: 12.5vw;
+}
+.bottom-block1 .works .title {
+  font-size: 2.22vw;
+  margin-bottom: 2.77vw;
+}
+.bottom-block1 .works .info {
+  width: 52.08vw;
+  font-family: "KTS";
+  font-size: 1.31vw;
+  margin: auto;
+  line-height: 1.52vw;
+}
+.bottom-block1 .comments {
+  width: 50vw;
+  height: 14vw;
+  position: relative;
+  margin: 8.33vw auto 0px;
+}
+.bottom-block1 .comments .comment {
+  background-image: url(./images/editing/bubblereview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 13.19vw;
+  margin: auto;
+  font-family: "KTS";
+  font-size: 1.25vw;
+  text-align: center;
+  line-height: 1.52vw;
+  padding: 2.08vw 5.2vw;
+  position: relative;
+  float: left;
+}
+.bottom-block1 .comments .left,
+.bottom-block1 .comments .right {
+  width: 1.875vw;
+  height: 4.444vw;
+  position: absolute;
+  top: 4.16vw;
+  background-image: url(./images/editing/left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bottom-block1 .comments .left {
+  left: -5.55vw;
+}
+.bottom-block1 .comments .right {
+  right: -5.55vw;
+  background-image: url(./images/editing/right.png);
+}
+.bottom-block1 .videos {
+  width: 45.48vw;
+  height: 30.83vw;
+  background-image: url(./images/editing/element9\ \(1\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 13.88vw auto 0px;
+  padding-top: 4.86vw;
+}
+.bottom-block1 .videos .vid {
+  width: 40.27vw;
+  height: 22.22vw;
+  background-image: url(./images/editing/first.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+}
+.bottom-block1 .videos .vid .left,
+.bottom-block1 .videos .vid .right {
+  width: 1.87vw;
+  height: 4.44vw;
+  position: absolute;
+  top: 8.33vw;
+  background-image: url(./images/editing/left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bottom-block1 .videos .vid .left {
+  left: -9.72vw;
+}
+.bottom-block1 .videos .vid .right {
+  right: -9.72vw;
+  background-image: url(./images/editing/right.png);
+}
+.bottom-block1 .price {
+  margin-top: 14.93vw;
+}
+.bottom-block1 .price .title {
+  font-size: 2.77vw;
+  text-align: center;
+}
+.bottom-block1 .price .price-blocks {
+  width: 76.38vw;
+  height: 34.72vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 9.02vw auto 0px;
+}
+.bottom-block1 .price .price-blocks .price-block {
+  width: 32.63vw;
+  height: 100%;
+  background-image: url(./images/editing/cost1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 3.12vw;
+}
+.bottom-block1 .price .price-blocks .price-block .EN {
+  display: none;
+}
+.bottom-block1 .price .price-blocks .price-block .title {
+  font-size: 3.12vw;
+}
+.bottom-block1 .price .price-blocks .price-block .info {
+  width: 19.09vw;
+  height: 19.09vw;
+  margin-top: 4.86vw;
+  margin-left: 9.37vw;
+}
+.bottom-block1 .price .price-blocks .price-block .info h1 {
+  font-family: "KTS";
+  margin: -1.04vw 0px 1.73vw 0px;
+  font-size: 1.11vw;
+}
+.bottom-block1 .price .price-blocks .price-block .info span {
+  display: block;
+  margin-bottom: 1.73vw;
+  font-size: 1.11vw;
+  position: relative;
+}
+.bottom-block1 .price .price-blocks .price-block .info span::after {
+  content: "";
+  width: 0.8vw;
+  height: 0.15vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2vw;
+}
+.bottom-block1 .price .price-blocks .price-block .price {
+  width: 25.69vw;
+  height: 2.43vw;
+  margin: 2.08vw 0px 0px 4.51vw;
+  text-align: center;
+  padding-top: 0.55vw;
+  font-size: 1.38vw;
+}
+.bottom-block1 .price .price-blocks .price-block:nth-child(2) {
+  background-image: url(./images/editing/cost2.png);
+}
+.bottom-block1 .price .price-blocks .price-block:nth-child(2) .info {
+  margin-left: 6.94vw;
+}
+.bottom-block1 .price .price-blocks .price-block:nth-child(2) .price {
+  margin-left: 2.77vw;
+}
+.bottom-block1 .bottom-menu {
+  width: 69.44vw;
+  height: 6.94vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.43vw;
+  position: absolute;
+  bottom: 0px;
+  right: 7.63vw;
+  font-size: 1.52vw;
+}
+.bottom-block1 .bottom-menu span {
+  color: white;
+}
+
+.illustration {
+  width: 100vw;
+  font-family: "KTS-black";
+}
+.illustration a {
+  text-decoration: none;
+  color: black;
+}
+.illustration .EN {
+  display: none;
+}
+.illustration .top-block {
+  width: 100%;
+  height: 383.68vw;
+  background-image: url(./images/illustration/top.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 1.5vw;
+}
+.illustration .top-block .lang-buttons {
+  position: absolute;
+  width: 4.16vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.11vw;
+  top: 0.69vw;
+  right: 1.38vw;
+  cursor: pointer;
+}
+.illustration .top-block .lang-buttons .en-button:hover {
+  color: rgb(130, 68, 181);
+}
+.illustration .top-block .lang-buttons .ukr-button:hover {
+  color: rgb(130, 68, 181);
+}
+.illustration .top-block .lang-buttons .en-button::after {
+  content: "/";
+  font-size: 1.11vw;
+  position: absolute;
+  right: 1.38vw;
+}
+.illustration .top-block .logo {
+  width: 9.02vw;
+  height: 8.68vw;
+  background-image: url(./images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2.56vw;
+  left: 2.56vw;
+}
+.illustration .top-block .menu {
+  background-image: url(./images/illustration/menu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 71.5vw;
+  height: 6.94vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.38vw;
+  margin-left: auto;
+  padding: 2.5vw 2.77vw 0px 4.51vw;
+}
+.illustration .top-block .main-title .title {
+  background-image: url(./images/illustration/title.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48.95vw;
+  height: 12.15vw;
+  font-size: 3.12vw;
+  text-align: center;
+  margin: 9.37vw auto 0px;
+  padding-top: 5vw;
+}
+.illustration .top-block .main-title .description {
+  margin: auto;
+  width: 42.36vw;
+  text-align: center;
+  font-size: 1.52vw;
+  font-family: "KTS";
+  margin-top: 4.5vw;
+}
+.illustration .top-block .question-block {
+  width: 29.86vw;
+  height: 37.98vw;
+  margin: 18.61vw 0px 0px 36.8vw;
+  padding-top: 3.6vw;
+}
+.illustration .top-block .question-block .title {
+  text-align: left;
+  font-size: 2.22vw;
+  margin: 0px 0px 4.16vw;
+}
+.illustration .top-block .question-block span {
+  display: block;
+  font-family: "KTS";
+  margin-bottom: 5vw;
+  font-size: 1.59vw;
+  line-height: 2.08vw;
+  position: relative;
+}
+.illustration .top-block .question-block span::after {
+  content: "";
+  width: 1.041vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.illustration .top-block .zin {
+  width: 57vw;
+  margin: 25vw auto 0px;
+  text-align: center;
+}
+.illustration .top-block .zin .title {
+  font-size: 3.47vw;
+  margin-bottom: 3.47vw;
+}
+.illustration .top-block .zin .termin {
+  margin-bottom: 2.91vw;
+  font-size: 1.73vw;
+}
+.illustration .top-block .zin .description {
+  font-size: 1.5vw;
+  font-family: "KTS";
+  line-height: 2vw;
+}
+.illustration .top-block .foryou-block {
+  width: 34.72vw;
+  height: 38.88vw;
+  margin: 115.625vw 0px 0px 51.38vw;
+}
+.illustration .top-block .foryou-block .text {
+  width: 35.34vw;
+  height: 30.06vw;
+}
+.illustration .top-block .foryou-block .text .title {
+  text-align: left;
+  font-size: 2.29vw;
+  line-height: 2.43vw;
+  margin: 0px 0px 3.8vw;
+}
+.illustration .top-block .foryou-block .text span {
+  display: block;
+  font-family: "KTS";
+  margin-bottom: 2.7vw;
+  font-size: 1.59vw;
+  line-height: 2.08vw;
+  position: relative;
+}
+.illustration .top-block .foryou-block .text span::after {
+  content: "";
+  width: 1.04vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.illustration .top-block .block {
+  width: 32.29vw;
+  height: 37.77vw;
+  margin: 27.27vw 33vw 0px;
+  padding-top: 10vw;
+}
+.illustration .top-block .block .title {
+  text-align: center;
+  font-size: 2.56vw;
+  margin-bottom: 9.3vw;
+  margin-top: 0px;
+}
+.illustration .top-block .block .info {
+  width: 100%;
+}
+.illustration .top-block .block .info span {
+  display: block;
+  margin-bottom: 3.47vw;
+  font-size: 1.6vw;
+  margin-left: 1.73vw;
+  position: relative;
+}
+.illustration .top-block .block .info span::after {
+  content: "";
+  width: 2.98vw;
+  height: 2.98vw;
+  border-radius: 100%;
+  background: rgb(47, 255, 172);
+  position: absolute;
+  top: 5%;
+  left: -4.16vw;
+}
+.illustration .top-block .block .info span::before {
+  content: "";
+  width: 1.87vw;
+  height: 1.87vw;
+  border-radius: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25%;
+  left: -3.61vw;
+  z-index: 2;
+}
+.illustration .top-block .block .info .first::after {
+  top: -0.69vw;
+}
+.illustration .top-block .block .info .first::before {
+  top: 0px;
+  background-image: url(./images/editing/icon.png);
+}
+.illustration .top-block .block .info .second::before {
+  height: 1.18vw;
+  top: 37%;
+  left: -3.81vw;
+  width: 2.43vw;
+  background-image: url(./images/editing/icon2.png);
+}
+.illustration .top-block .block .info .last::before {
+  background-image: url(./images/editing/icon3.png);
+}
+.illustration .middle-block {
+  width: 100%;
+  max-height: 312.5vw;
+  background-image: url(./images/editing/middle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 6.94vw;
+}
+.illustration .middle-block .course-progress-block {
+  width: 59.93vw;
+  max-height: 250vw;
+  margin: auto;
+}
+.illustration .middle-block .course-progress-block .block {
+  padding-left: 1.11vw;
+  display: flex;
+  height: 7.29vw;
+  position: relative;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: 0.3s;
+  transition-timing-function: ease-in, ease, linear;
+}
+.illustration .middle-block .course-progress-block .block .line {
+  width: 2.43vw;
+  height: 2.43vw;
+  border: 0.277vw solid black;
+  border-radius: 100%;
+  margin-right: 0.69;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  font-size: 1.52vw;
+}
+.illustration .middle-block .course-progress-block .block .line::after {
+  content: "";
+  width: 2.08vw;
+  height: 0.34vw;
+  background-color: black;
+  position: absolute;
+  top: 0.9vw;
+  left: -2.08vw;
+}
+.illustration .middle-block .course-progress-block .block .progress-line,
+.illustration .middle-block .course-progress-block .block .green {
+  width: 0.34vw;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  margin-top: 2.43vw;
+  display: block;
+}
+.illustration .middle-block .course-progress-block .block .progress-line::after,
+.illustration .middle-block .course-progress-block .block .green::after {
+  content: "1";
+  font-size: 1.52vw;
+  text-align: center;
+  width: 2.08vw;
+  height: 2.08vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 0.277vw solid black;
+  border-radius: 100%;
+  position: absolute;
+  top: -2.43vw;
+  left: -1.11vw;
+}
+.illustration .middle-block .course-progress-block .block .info {
+  width: 50vw;
+  margin-top: 0.34vw;
+}
+.illustration .middle-block .course-progress-block .block .info .title {
+  font-size: 1.38vw;
+  margin-bottom: 1.38vw;
+  cursor: pointer;
+}
+.illustration .middle-block .course-progress-block .block .info .text {
+  width: 36.24vw;
+  margin-left: 4.16vw;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: "KTS";
+  transition-property: max-height;
+  transition-timing-function: ease-in, ease, linear;
+}
+.illustration .middle-block .course-progress-block .block .info .text .img {
+  width: 21.18vw;
+  height: 4.16vw;
+  background-image: url(./images/illustration/practical\ part.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "KTS-black";
+  padding: 1.38vw 0px 0px 1.04vw;
+  font-size: 1.38vw;
+  margin-bottom: 0.9vw;
+}
+.illustration .middle-block .course-progress-block .block .info .text .add-info {
+  position: absolute;
+  width: 63.8vw;
+  height: 6.52vw;
+  background-image: url(./images/editing/dodatkovo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2.08vw;
+  padding-right: 4vw;
+  font-size: 1.11vw;
+}
+.illustration .middle-block .course-progress-block .block .info .text span {
+  font-size: 1.111vw;
+}
+.illustration .middle-block .course-progress-block .block .info .text .text-line {
+  display: flex;
+  justify-content: space-between;
+}
+.illustration .middle-block .course-progress-block .block .info .text .text-line span {
+  display: block;
+  margin-bottom: 1.38vw;
+}
+.illustration .middle-block .course-progress-block .block .info .text .text-line .description {
+  width: 34.72vw;
+}
+.illustration .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
+  content: "2";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
+  content: "3";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
+  content: "4";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
+  content: "5";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
+  content: "6";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
+  content: "7";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
+  content: "8";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(9) {
+  width: 76.3vw;
+}
+.illustration .middle-block .course-progress-block .block:nth-child(9) .info {
+  width: 66.58vw;
+}
+.illustration .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
+  content: "9";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
+  content: "10";
+}
+.illustration .middle-block .course-progress-block .block:nth-child(10) .progress-line {
+  background-color: transparent;
+}
+.illustration .middle-block .sertificate-text {
+  width: 65.97vw;
+  height: 5.2vw;
+  background-image: url(./images/editing/certificate\ \(1\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+  font-size: 1.45vw;
+  margin: auto;
+  padding-top: 1.38vw;
+}
+.illustration .middle-block .EN {
+  display: none;
+}
+.illustration .middle-block .sertificate {
+  width: 52.77vw;
+  height: 31.25vw;
+  margin: auto;
+  background-image: url(./images/illustration/Group\ 209.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 6.25vw;
+}
+.illustration .bottom-block {
+  width: 100%;
+  height: 212.5vw;
+  background-image: url(./images/illustration/bottom.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 22.91vw;
+  position: relative;
+}
+.illustration .bottom-block .title {
+  text-align: center;
+  font-size: 2.77vw;
+}
+.illustration .bottom-block .anika-block {
+  width: 64.58vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 4.16vw auto 0px;
+}
+.illustration .bottom-block .anika-block .info {
+  width: 28.47vw;
+  height: 10.41vw;
+  margin-top: auto;
+  font-family: "KTS";
+  margin-left: 6vw;
+  font-size: 1.31vw;
+  line-height: 1.52vw;
+  padding-top: 1.04vw;
+}
+.illustration .bottom-block .anika-block .info span {
+  font-size: 1.78vw;
+}
+.illustration .bottom-block .anika-block .img {
+  width: 24.3vw;
+  height: 32.91vw;
+  background-image: url(./images/illustration/teacher.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.illustration .bottom-block .experiense {
+  width: 72.91vw;
+  height: 18.05vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 13vw;
+  margin-top: 5.9vw;
+}
+.illustration .bottom-block .experiense .block {
+  width: 33.33vw;
+}
+.illustration .bottom-block .experiense .block .title {
+  margin-bottom: 2.43vw;
+  font-size: 1.73vw;
+  text-align: left;
+}
+.illustration .bottom-block .experiense .block span {
+  display: block;
+  margin-bottom: 1.38vw;
+  font-family: "KTS";
+  font-size: 1.25vw;
+  line-height: 1.52vw;
+}
+.illustration .bottom-block .experiense .block .mini-title {
+  font-family: "KTS-black";
+}
+.illustration .bottom-block .experiense .block:nth-child(1) {
+  width: 27.08vw;
+}
+.illustration .bottom-block .experiense .block:nth-child(1) span {
+  position: relative;
+}
+.illustration .bottom-block .experiense .block:nth-child(1) span::after {
+  content: "";
+  width: 1.04vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.illustration .bottom-block .experiense .block:nth-child(1) .title {
+  padding-left: 2.77vw;
+}
+.illustration .bottom-block .experiense .block:nth-child(2) {
+  width: 32.08vw;
+}
+.illustration .bottom-block .experiense .block:nth-child(2) .title {
+  padding-left: 2.08vw;
+}
+.illustration .bottom-block .comments {
+  width: 50vw;
+  height: 14vw;
+  position: relative;
+  margin: 20.5vw auto 0px;
+}
+.illustration .bottom-block .comments .title {
+  text-align: center;
+}
+.illustration .bottom-block .comments .comment {
+  background-image: url(./images/editing/bubblereview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 13.6vw;
+  margin: 4.86vw auto 0px;
+  font-family: "KTS";
+  font-size: 1.25vw;
+  text-align: center;
+  line-height: 1.52vw;
+  padding: 2.08vw 5.2vw;
+  position: relative;
+  float: left;
+}
+.illustration .bottom-block .comments .left,
+.illustration .bottom-block .comments .right {
+  width: 1.875vw;
+  height: 4.444vw;
+  position: absolute;
+  top: 11.16vw;
+  background-image: url(./images/editing/left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.illustration .bottom-block .comments .left {
+  left: -5.55vw;
+}
+.illustration .bottom-block .comments .right {
+  right: -5.55vw;
+  background-image: url(./images/editing/right.png);
+  font-size: 2.22vw;
+}
+.illustration .bottom-block .price {
+  margin-top: 18.93vw;
+}
+.illustration .bottom-block .price .title {
+  font-size: 2.77vw;
+  text-align: center;
+}
+.illustration .bottom-block .price .price-block {
+  width: 45.13vw;
+  height: 36.8vw;
+  background-image: url(./images/illustration/cost.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 3.12vw;
+  margin: 5.55vw auto 0px;
+}
+.illustration .bottom-block .price .price-block .EN {
+  display: none;
+}
+.illustration .bottom-block .price .price-block .title {
+  font-size: 3.12vw;
+}
+.illustration .bottom-block .price .price-block .info {
+  width: 20.13vw;
+  height: 19.09vw;
+  margin-top: 4.86vw;
+  margin-left: 15.37vw;
+}
+.illustration .bottom-block .price .price-block .info h1 {
+  font-family: "KTS";
+  margin: -1.04vw 0px 1.73vw 0px;
+  font-size: 1.11vw;
+}
+.illustration .bottom-block .price .price-block .info span {
+  display: block;
+  margin-bottom: 1.73vw;
+  font-size: 1.11vw;
+  position: relative;
+}
+.illustration .bottom-block .price .price-block .info span::after {
+  content: "";
+  width: 0.8vw;
+  height: 0.15vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2vw;
+}
+.illustration .bottom-block .price .price-block .price {
+  width: 25.69vw;
+  height: 2.43vw;
+  margin: 3.8vw 0px 0px 10.51vw;
+  text-align: center;
+  padding-top: 0.55vw;
+  font-size: 1.58vw;
+}
+.illustration .bottom-block .bottom {
+  width: 100%;
+  height: 6.94vw;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+}
+.illustration .bottom-block .bottom .bottom-menu {
+  width: 69.44vw;
+  height: 6.94vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.43vw;
+  position: absolute;
+  bottom: 0px;
+  right: 7.63vw;
+  font-size: 1.52vw;
+}
+.illustration .bottom-block .bottom .bottom-menu span {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

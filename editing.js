@@ -32,7 +32,7 @@ function open(i){
     }
     for (let i = 0; i < text.length; i++) {
       if (text[i].id == event.target.id) {
-        text[i].style.maxHeight = "500px";
+        text[i].style.maxHeight = "300px";
       }
     }
   } else {

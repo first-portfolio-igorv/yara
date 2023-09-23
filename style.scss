@@ -1125,14 +1125,18 @@ main {
 
         }
     }
-
+    .wtitle{
+        font-size: 2.22vw;
+        text-align: center;
+        margin-top: 7.5vw;
+    }
     .videos {
         width: 45.48vw;
         height: 30.83vw;
         background-image: url(./images/editing/element9\ \(1\).png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 13.88vw auto 0px;
+        margin: 3vw auto 0px;
         padding-top: 4.86vw;
 
         .vid {
@@ -1270,7 +1274,7 @@ main {
     }
 }
 
-.illustration {
+.illustration, .animation {
     width: 100vw;
     font-family: "KTS-black";
 
@@ -2026,6 +2030,164 @@ main {
                 font-size: 1.52vw;
                 span{
                     color: white;
+                }
+            }
+        }
+    }
+}
+.animation{
+
+    .top-block {
+        height: 223.61vw;
+        background-image: url(./images/animation/top.jpg);
+        .main-title{
+            .description{
+                width: 44.36vw;
+            }
+            .title{
+                margin-top: 8.33vw;
+                background: none;
+            }
+        }
+        .question-block{
+            span{
+                margin-bottom: 3.125vw;
+            }
+        }
+        .foryou-block{
+            margin:23.26vw auto 0px;
+            width: 71.25vw;
+            display: flex;
+            justify-content: space-between;
+            .text{
+                width: 34.72vw;
+            }
+            .img{
+                width: 26.52vw;
+                height: 31.73vw;
+                background-image: url(./images/animation/illustration\ \(1\).png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        .block{
+            margin:24.3vw auto ;
+            padding: 1.38vw 0px;
+        }
+    }
+    .middle-block{
+        max-height: 277.77vw;
+        padding-bottom: 0px;
+    }
+    .bottom-block{
+        padding-top: 6.26vw;
+        height: 302.19vw;
+        background-image: url(./images/animation/bottom.jpg);
+        .advice{
+            width: 52.08vw;
+            margin-left: 22.91vw;
+            font-size: 1.22vw;
+            text-align: center;
+            line-height: 1.66vw;
+            font-family: "KTS";
+        }
+        .sertificate-text{
+            width: 60.41vw;
+            font-size: 1.40vw;
+            margin:8.33vw auto;
+        }
+        .sertificate{
+        width: 52.77vw;
+        height: 31.25vw;
+        margin: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 6.25vw;
+        background-image: url(./images/animation/Group\ 216.jpg);
+        }
+        .mainT{
+            margin-top: 35.41vw;
+        }
+        .anika-block{
+            .info{
+                width: 25.69vw;
+                margin-left: 2.08vw;
+                margin-top: 14.93vw;
+            }
+            .img{
+                margin-right: 6.94vw;
+                margin-top: 2.43vw;
+                width: 19.79vw;
+                height: 25.69vw;
+                background-image: url(./images/animation/IMG_20230918_134313_495.jpg);
+            }
+        }
+        .experiense{
+            .block:nth-child(1){
+                padding-left: 2.63vw;
+                .title{
+                   padding-left: 0px; 
+                }
+            }
+        }
+        .works{
+            .title{
+                margin: 18.05vw 0px 3.47vw;
+            }
+            .videos {
+                width: 46.25vw;
+                height: 25.97vw;
+                background-image: url(./images/animation/works.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                padding-top: 4vw;
+        
+                .vid {
+                    width: 38.19vw;
+                    height: 19.44vw;
+                    background-image: url(./images/editing/first.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                    position: relative;
+        
+                    .left,
+                    .right {
+                        width: 1.87vw;
+                        height: 4.44vw;
+                        position: absolute;
+                        top: 7.5vw;
+                        background-image: url(./images/editing/left.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+        
+                    .left {
+                        left: -9.72vw;
+                    }
+        
+                    .right {
+                        right: -9.72vw;
+                        background-image: url(./images/editing/right.png);
+        
+                    }
+                }
+            }
+        }
+        .price{
+            margin-top: 19.58vw;
+            .price-block{
+                width: 41.66vw;
+                height: 36.11vw;
+                margin-top: 8.33vw;
+                background-image: url(./images/animation/cost\ \(1\).png);
+                .info{
+                    width: 17.7vw;
+                    margin-left: 11.8vw;
+                }
+                .price{
+                    margin: 2.77vw 0px 0px 6.59vw;
                 }
             }
         }

@@ -1036,18 +1036,26 @@ main .EN {
   color: white;
 }
 
-.illustration, .animation {
+.illustration,
+.animation,
+.graphic {
   width: 100vw;
   font-family: "KTS-black";
 }
-.illustration a, .animation a {
+.illustration a,
+.animation a,
+.graphic a {
   text-decoration: none;
   color: black;
 }
-.illustration .EN, .animation .EN {
+.illustration .EN,
+.animation .EN,
+.graphic .EN {
   display: none;
 }
-.illustration .top-block, .animation .top-block {
+.illustration .top-block,
+.animation .top-block,
+.graphic .top-block {
   width: 100%;
   height: 383.68vw;
   background-image: url(./images/illustration/top.jpg);
@@ -1055,7 +1063,9 @@ main .EN {
   background-repeat: no-repeat;
   padding-top: 1.5vw;
 }
-.illustration .top-block .lang-buttons, .animation .top-block .lang-buttons {
+.illustration .top-block .lang-buttons,
+.animation .top-block .lang-buttons,
+.graphic .top-block .lang-buttons {
   position: absolute;
   width: 4.16vw;
   display: flex;
@@ -1065,19 +1075,27 @@ main .EN {
   right: 1.38vw;
   cursor: pointer;
 }
-.illustration .top-block .lang-buttons .en-button:hover, .animation .top-block .lang-buttons .en-button:hover {
+.illustration .top-block .lang-buttons .en-button:hover,
+.animation .top-block .lang-buttons .en-button:hover,
+.graphic .top-block .lang-buttons .en-button:hover {
   color: rgb(130, 68, 181);
 }
-.illustration .top-block .lang-buttons .ukr-button:hover, .animation .top-block .lang-buttons .ukr-button:hover {
+.illustration .top-block .lang-buttons .ukr-button:hover,
+.animation .top-block .lang-buttons .ukr-button:hover,
+.graphic .top-block .lang-buttons .ukr-button:hover {
   color: rgb(130, 68, 181);
 }
-.illustration .top-block .lang-buttons .en-button::after, .animation .top-block .lang-buttons .en-button::after {
+.illustration .top-block .lang-buttons .en-button::after,
+.animation .top-block .lang-buttons .en-button::after,
+.graphic .top-block .lang-buttons .en-button::after {
   content: "/";
   font-size: 1.11vw;
   position: absolute;
   right: 1.38vw;
 }
-.illustration .top-block .logo, .animation .top-block .logo {
+.illustration .top-block .logo,
+.animation .top-block .logo,
+.graphic .top-block .logo {
   width: 9.02vw;
   height: 8.68vw;
   background-image: url(./images/logo.png);
@@ -1087,7 +1105,9 @@ main .EN {
   top: 2.56vw;
   left: 2.56vw;
 }
-.illustration .top-block .menu, .animation .top-block .menu {
+.illustration .top-block .menu,
+.animation .top-block .menu,
+.graphic .top-block .menu {
   background-image: url(./images/illustration/menu.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1099,7 +1119,9 @@ main .EN {
   margin-left: auto;
   padding: 2.5vw 2.77vw 0px 4.51vw;
 }
-.illustration .top-block .main-title .title, .animation .top-block .main-title .title {
+.illustration .top-block .main-title .title,
+.animation .top-block .main-title .title,
+.graphic .top-block .main-title .title {
   background-image: url(./images/illustration/title.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1110,7 +1132,9 @@ main .EN {
   margin: 9.37vw auto 0px;
   padding-top: 5vw;
 }
-.illustration .top-block .main-title .description, .animation .top-block .main-title .description {
+.illustration .top-block .main-title .description,
+.animation .top-block .main-title .description,
+.graphic .top-block .main-title .description {
   margin: auto;
   width: 42.36vw;
   text-align: center;
@@ -1118,18 +1142,24 @@ main .EN {
   font-family: "KTS";
   margin-top: 4.5vw;
 }
-.illustration .top-block .question-block, .animation .top-block .question-block {
+.illustration .top-block .question-block,
+.animation .top-block .question-block,
+.graphic .top-block .question-block {
   width: 29.86vw;
   height: 37.98vw;
   margin: 18.61vw 0px 0px 36.8vw;
   padding-top: 3.6vw;
 }
-.illustration .top-block .question-block .title, .animation .top-block .question-block .title {
+.illustration .top-block .question-block .title,
+.animation .top-block .question-block .title,
+.graphic .top-block .question-block .title {
   text-align: left;
   font-size: 2.22vw;
   margin: 0px 0px 4.16vw;
 }
-.illustration .top-block .question-block span, .animation .top-block .question-block span {
+.illustration .top-block .question-block span,
+.animation .top-block .question-block span,
+.graphic .top-block .question-block span {
   display: block;
   font-family: "KTS";
   margin-bottom: 5vw;
@@ -1137,7 +1167,9 @@ main .EN {
   line-height: 2.08vw;
   position: relative;
 }
-.illustration .top-block .question-block span::after, .animation .top-block .question-block span::after {
+.illustration .top-block .question-block span::after,
+.animation .top-block .question-block span::after,
+.graphic .top-block .question-block span::after {
   content: "";
   width: 1.041vw;
   height: 0.277vw;
@@ -1146,40 +1178,56 @@ main .EN {
   top: 50%;
   left: -2.77vw;
 }
-.illustration .top-block .zin, .animation .top-block .zin {
+.illustration .top-block .zin,
+.animation .top-block .zin,
+.graphic .top-block .zin {
   width: 57vw;
   margin: 25vw auto 0px;
   text-align: center;
 }
-.illustration .top-block .zin .title, .animation .top-block .zin .title {
+.illustration .top-block .zin .title,
+.animation .top-block .zin .title,
+.graphic .top-block .zin .title {
   font-size: 3.47vw;
   margin-bottom: 3.47vw;
 }
-.illustration .top-block .zin .termin, .animation .top-block .zin .termin {
+.illustration .top-block .zin .termin,
+.animation .top-block .zin .termin,
+.graphic .top-block .zin .termin {
   margin-bottom: 2.91vw;
   font-size: 1.73vw;
 }
-.illustration .top-block .zin .description, .animation .top-block .zin .description {
+.illustration .top-block .zin .description,
+.animation .top-block .zin .description,
+.graphic .top-block .zin .description {
   font-size: 1.5vw;
   font-family: "KTS";
   line-height: 2vw;
 }
-.illustration .top-block .foryou-block, .animation .top-block .foryou-block {
+.illustration .top-block .foryou-block,
+.animation .top-block .foryou-block,
+.graphic .top-block .foryou-block {
   width: 34.72vw;
   height: 38.88vw;
   margin: 115.625vw 0px 0px 51.38vw;
 }
-.illustration .top-block .foryou-block .text, .animation .top-block .foryou-block .text {
+.illustration .top-block .foryou-block .text,
+.animation .top-block .foryou-block .text,
+.graphic .top-block .foryou-block .text {
   width: 35.34vw;
   height: 30.06vw;
 }
-.illustration .top-block .foryou-block .text .title, .animation .top-block .foryou-block .text .title {
+.illustration .top-block .foryou-block .text .title,
+.animation .top-block .foryou-block .text .title,
+.graphic .top-block .foryou-block .text .title {
   text-align: left;
   font-size: 2.29vw;
   line-height: 2.43vw;
   margin: 0px 0px 3.8vw;
 }
-.illustration .top-block .foryou-block .text span, .animation .top-block .foryou-block .text span {
+.illustration .top-block .foryou-block .text span,
+.animation .top-block .foryou-block .text span,
+.graphic .top-block .foryou-block .text span {
   display: block;
   font-family: "KTS";
   margin-bottom: 2.7vw;
@@ -1187,7 +1235,9 @@ main .EN {
   line-height: 2.08vw;
   position: relative;
 }
-.illustration .top-block .foryou-block .text span::after, .animation .top-block .foryou-block .text span::after {
+.illustration .top-block .foryou-block .text span::after,
+.animation .top-block .foryou-block .text span::after,
+.graphic .top-block .foryou-block .text span::after {
   content: "";
   width: 1.04vw;
   height: 0.277vw;
@@ -1196,29 +1246,39 @@ main .EN {
   top: 50%;
   left: -2.77vw;
 }
-.illustration .top-block .block, .animation .top-block .block {
+.illustration .top-block .block,
+.animation .top-block .block,
+.graphic .top-block .block {
   width: 32.29vw;
   height: 37.77vw;
   margin: 27.27vw 33vw 0px;
   padding-top: 10vw;
 }
-.illustration .top-block .block .title, .animation .top-block .block .title {
+.illustration .top-block .block .title,
+.animation .top-block .block .title,
+.graphic .top-block .block .title {
   text-align: center;
   font-size: 2.56vw;
   margin-bottom: 9.3vw;
   margin-top: 0px;
 }
-.illustration .top-block .block .info, .animation .top-block .block .info {
+.illustration .top-block .block .info,
+.animation .top-block .block .info,
+.graphic .top-block .block .info {
   width: 100%;
 }
-.illustration .top-block .block .info span, .animation .top-block .block .info span {
+.illustration .top-block .block .info span,
+.animation .top-block .block .info span,
+.graphic .top-block .block .info span {
   display: block;
   margin-bottom: 3.47vw;
   font-size: 1.6vw;
   margin-left: 1.73vw;
   position: relative;
 }
-.illustration .top-block .block .info span::after, .animation .top-block .block .info span::after {
+.illustration .top-block .block .info span::after,
+.animation .top-block .block .info span::after,
+.graphic .top-block .block .info span::after {
   content: "";
   width: 2.98vw;
   height: 2.98vw;
@@ -1228,7 +1288,9 @@ main .EN {
   top: 5%;
   left: -4.16vw;
 }
-.illustration .top-block .block .info span::before, .animation .top-block .block .info span::before {
+.illustration .top-block .block .info span::before,
+.animation .top-block .block .info span::before,
+.graphic .top-block .block .info span::before {
   content: "";
   width: 1.87vw;
   height: 1.87vw;
@@ -1240,24 +1302,34 @@ main .EN {
   left: -3.61vw;
   z-index: 2;
 }
-.illustration .top-block .block .info .first::after, .animation .top-block .block .info .first::after {
+.illustration .top-block .block .info .first::after,
+.animation .top-block .block .info .first::after,
+.graphic .top-block .block .info .first::after {
   top: -0.69vw;
 }
-.illustration .top-block .block .info .first::before, .animation .top-block .block .info .first::before {
+.illustration .top-block .block .info .first::before,
+.animation .top-block .block .info .first::before,
+.graphic .top-block .block .info .first::before {
   top: 0px;
   background-image: url(./images/editing/icon.png);
 }
-.illustration .top-block .block .info .second::before, .animation .top-block .block .info .second::before {
+.illustration .top-block .block .info .second::before,
+.animation .top-block .block .info .second::before,
+.graphic .top-block .block .info .second::before {
   height: 1.18vw;
   top: 37%;
   left: -3.81vw;
   width: 2.43vw;
   background-image: url(./images/editing/icon2.png);
 }
-.illustration .top-block .block .info .last::before, .animation .top-block .block .info .last::before {
+.illustration .top-block .block .info .last::before,
+.animation .top-block .block .info .last::before,
+.graphic .top-block .block .info .last::before {
   background-image: url(./images/editing/icon3.png);
 }
-.illustration .middle-block, .animation .middle-block {
+.illustration .middle-block,
+.animation .middle-block,
+.graphic .middle-block {
   width: 100%;
   max-height: 312.5vw;
   background-image: url(./images/editing/middle.jpg);
@@ -1265,12 +1337,16 @@ main .EN {
   background-repeat: no-repeat;
   padding-bottom: 6.94vw;
 }
-.illustration .middle-block .course-progress-block, .animation .middle-block .course-progress-block {
+.illustration .middle-block .course-progress-block,
+.animation .middle-block .course-progress-block,
+.graphic .middle-block .course-progress-block {
   width: 59.93vw;
   max-height: 250vw;
   margin: auto;
 }
-.illustration .middle-block .course-progress-block .block, .animation .middle-block .course-progress-block .block {
+.illustration .middle-block .course-progress-block .block,
+.animation .middle-block .course-progress-block .block,
+.graphic .middle-block .course-progress-block .block {
   padding-left: 1.11vw;
   display: flex;
   height: 7.29vw;
@@ -1280,7 +1356,9 @@ main .EN {
   transition: 0.3s;
   transition-timing-function: ease-in, ease, linear;
 }
-.illustration .middle-block .course-progress-block .block .line, .animation .middle-block .course-progress-block .block .line {
+.illustration .middle-block .course-progress-block .block .line,
+.animation .middle-block .course-progress-block .block .line,
+.graphic .middle-block .course-progress-block .block .line {
   width: 2.43vw;
   height: 2.43vw;
   border: 0.277vw solid black;
@@ -1293,7 +1371,9 @@ main .EN {
   text-align: center;
   font-size: 1.52vw;
 }
-.illustration .middle-block .course-progress-block .block .line::after, .animation .middle-block .course-progress-block .block .line::after {
+.illustration .middle-block .course-progress-block .block .line::after,
+.animation .middle-block .course-progress-block .block .line::after,
+.graphic .middle-block .course-progress-block .block .line::after {
   content: "";
   width: 2.08vw;
   height: 0.34vw;
@@ -1303,8 +1383,11 @@ main .EN {
   left: -2.08vw;
 }
 .illustration .middle-block .course-progress-block .block .progress-line,
-.illustration .middle-block .course-progress-block .block .green, .animation .middle-block .course-progress-block .block .progress-line,
-.animation .middle-block .course-progress-block .block .green {
+.illustration .middle-block .course-progress-block .block .green,
+.animation .middle-block .course-progress-block .block .progress-line,
+.animation .middle-block .course-progress-block .block .green,
+.graphic .middle-block .course-progress-block .block .progress-line,
+.graphic .middle-block .course-progress-block .block .green {
   width: 0.34vw;
   height: 100%;
   background-color: black;
@@ -1313,8 +1396,11 @@ main .EN {
   display: block;
 }
 .illustration .middle-block .course-progress-block .block .progress-line::after,
-.illustration .middle-block .course-progress-block .block .green::after, .animation .middle-block .course-progress-block .block .progress-line::after,
-.animation .middle-block .course-progress-block .block .green::after {
+.illustration .middle-block .course-progress-block .block .green::after,
+.animation .middle-block .course-progress-block .block .progress-line::after,
+.animation .middle-block .course-progress-block .block .green::after,
+.graphic .middle-block .course-progress-block .block .progress-line::after,
+.graphic .middle-block .course-progress-block .block .green::after {
   content: "1";
   font-size: 1.52vw;
   text-align: center;
@@ -1329,16 +1415,22 @@ main .EN {
   top: -2.43vw;
   left: -1.11vw;
 }
-.illustration .middle-block .course-progress-block .block .info, .animation .middle-block .course-progress-block .block .info {
+.illustration .middle-block .course-progress-block .block .info,
+.animation .middle-block .course-progress-block .block .info,
+.graphic .middle-block .course-progress-block .block .info {
   width: 50vw;
   margin-top: 0.34vw;
 }
-.illustration .middle-block .course-progress-block .block .info .title, .animation .middle-block .course-progress-block .block .info .title {
+.illustration .middle-block .course-progress-block .block .info .title,
+.animation .middle-block .course-progress-block .block .info .title,
+.graphic .middle-block .course-progress-block .block .info .title {
   font-size: 1.38vw;
   margin-bottom: 1.38vw;
   cursor: pointer;
 }
-.illustration .middle-block .course-progress-block .block .info .text, .animation .middle-block .course-progress-block .block .info .text {
+.illustration .middle-block .course-progress-block .block .info .text,
+.animation .middle-block .course-progress-block .block .info .text,
+.graphic .middle-block .course-progress-block .block .info .text {
   width: 36.24vw;
   margin-left: 4.16vw;
   max-height: 0px;
@@ -1348,7 +1440,9 @@ main .EN {
   transition-property: max-height;
   transition-timing-function: ease-in, ease, linear;
 }
-.illustration .middle-block .course-progress-block .block .info .text .img, .animation .middle-block .course-progress-block .block .info .text .img {
+.illustration .middle-block .course-progress-block .block .info .text .img,
+.animation .middle-block .course-progress-block .block .info .text .img,
+.graphic .middle-block .course-progress-block .block .info .text .img {
   width: 21.18vw;
   height: 4.16vw;
   background-image: url(./images/illustration/practical\ part.png);
@@ -1359,7 +1453,9 @@ main .EN {
   font-size: 1.38vw;
   margin-bottom: 0.9vw;
 }
-.illustration .middle-block .course-progress-block .block .info .text .add-info, .animation .middle-block .course-progress-block .block .info .text .add-info {
+.illustration .middle-block .course-progress-block .block .info .text .add-info,
+.animation .middle-block .course-progress-block .block .info .text .add-info,
+.graphic .middle-block .course-progress-block .block .info .text .add-info {
   position: absolute;
   width: 63.8vw;
   height: 6.52vw;
@@ -1370,57 +1466,91 @@ main .EN {
   padding-right: 4vw;
   font-size: 1.11vw;
 }
-.illustration .middle-block .course-progress-block .block .info .text span, .animation .middle-block .course-progress-block .block .info .text span {
+.illustration .middle-block .course-progress-block .block .info .text span,
+.animation .middle-block .course-progress-block .block .info .text span,
+.graphic .middle-block .course-progress-block .block .info .text span {
   font-size: 1.111vw;
 }
-.illustration .middle-block .course-progress-block .block .info .text .text-line, .animation .middle-block .course-progress-block .block .info .text .text-line {
+.illustration .middle-block .course-progress-block .block .info .text .text-line,
+.animation .middle-block .course-progress-block .block .info .text .text-line,
+.graphic .middle-block .course-progress-block .block .info .text .text-line {
   display: flex;
   justify-content: space-between;
 }
-.illustration .middle-block .course-progress-block .block .info .text .text-line span, .animation .middle-block .course-progress-block .block .info .text .text-line span {
+.illustration .middle-block .course-progress-block .block .info .text .text-line span,
+.animation .middle-block .course-progress-block .block .info .text .text-line span,
+.graphic .middle-block .course-progress-block .block .info .text .text-line span {
   display: block;
   margin-bottom: 1.38vw;
 }
-.illustration .middle-block .course-progress-block .block .info .text .text-line .description, .animation .middle-block .course-progress-block .block .info .text .text-line .description {
+.illustration .middle-block .course-progress-block .block .info .text .text-line .description,
+.animation .middle-block .course-progress-block .block .info .text .text-line .description,
+.graphic .middle-block .course-progress-block .block .info .text .text-line .description {
   width: 34.72vw;
 }
-.illustration .middle-block .course-progress-block .block:nth-child(2) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(2) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(2) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
   content: "2";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(3) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(3) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(3) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
   content: "3";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(4) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(4) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(4) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
   content: "4";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(5) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(5) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(5) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
   content: "5";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(6) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(6) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(6) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
   content: "6";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(7) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(7) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(7) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
   content: "7";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(8) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(8) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(8) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
   content: "8";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(9), .animation .middle-block .course-progress-block .block:nth-child(9) {
+.illustration .middle-block .course-progress-block .block:nth-child(9),
+.animation .middle-block .course-progress-block .block:nth-child(9),
+.graphic .middle-block .course-progress-block .block:nth-child(9) {
   width: 76.3vw;
 }
-.illustration .middle-block .course-progress-block .block:nth-child(9) .info, .animation .middle-block .course-progress-block .block:nth-child(9) .info {
+.illustration .middle-block .course-progress-block .block:nth-child(9) .info,
+.animation .middle-block .course-progress-block .block:nth-child(9) .info,
+.graphic .middle-block .course-progress-block .block:nth-child(9) .info {
   width: 66.58vw;
 }
-.illustration .middle-block .course-progress-block .block:nth-child(9) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(9) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(9) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
   content: "9";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(10) .progress-line::after, .animation .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
+.illustration .middle-block .course-progress-block .block:nth-child(10) .progress-line::after,
+.animation .middle-block .course-progress-block .block:nth-child(10) .progress-line::after,
+.graphic .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
   content: "10";
 }
-.illustration .middle-block .course-progress-block .block:nth-child(10) .progress-line, .animation .middle-block .course-progress-block .block:nth-child(10) .progress-line {
+.illustration .middle-block .course-progress-block .block:nth-child(10) .progress-line,
+.animation .middle-block .course-progress-block .block:nth-child(10) .progress-line,
+.graphic .middle-block .course-progress-block .block:nth-child(10) .progress-line {
   background-color: transparent;
 }
-.illustration .middle-block .sertificate-text, .animation .middle-block .sertificate-text {
+.illustration .middle-block .sertificate-text,
+.animation .middle-block .sertificate-text,
+.graphic .middle-block .sertificate-text {
   width: 65.97vw;
   height: 5.2vw;
   background-image: url(./images/editing/certificate\ \(1\).png);
@@ -1432,10 +1562,14 @@ main .EN {
   margin: auto;
   padding-top: 1.38vw;
 }
-.illustration .middle-block .EN, .animation .middle-block .EN {
+.illustration .middle-block .EN,
+.animation .middle-block .EN,
+.graphic .middle-block .EN {
   display: none;
 }
-.illustration .middle-block .sertificate, .animation .middle-block .sertificate {
+.illustration .middle-block .sertificate,
+.animation .middle-block .sertificate,
+.graphic .middle-block .sertificate {
   width: 52.77vw;
   height: 31.25vw;
   margin: auto;
@@ -1444,7 +1578,9 @@ main .EN {
   background-repeat: no-repeat;
   margin-top: 6.25vw;
 }
-.illustration .bottom-block, .animation .bottom-block {
+.illustration .bottom-block,
+.animation .bottom-block,
+.graphic .bottom-block {
   width: 100%;
   height: 212.5vw;
   background-image: url(./images/illustration/bottom.jpg);
@@ -1453,17 +1589,23 @@ main .EN {
   padding-top: 22.91vw;
   position: relative;
 }
-.illustration .bottom-block .title, .animation .bottom-block .title {
+.illustration .bottom-block .title,
+.animation .bottom-block .title,
+.graphic .bottom-block .title {
   text-align: center;
   font-size: 2.77vw;
 }
-.illustration .bottom-block .anika-block, .animation .bottom-block .anika-block {
+.illustration .bottom-block .anika-block,
+.animation .bottom-block .anika-block,
+.graphic .bottom-block .anika-block {
   width: 64.58vw;
   display: flex;
   justify-content: space-between;
   margin: 4.16vw auto 0px;
 }
-.illustration .bottom-block .anika-block .info, .animation .bottom-block .anika-block .info {
+.illustration .bottom-block .anika-block .info,
+.animation .bottom-block .anika-block .info,
+.graphic .bottom-block .anika-block .info {
   width: 28.47vw;
   height: 10.41vw;
   margin-top: auto;
@@ -1473,17 +1615,23 @@ main .EN {
   line-height: 1.52vw;
   padding-top: 1.04vw;
 }
-.illustration .bottom-block .anika-block .info span, .animation .bottom-block .anika-block .info span {
+.illustration .bottom-block .anika-block .info span,
+.animation .bottom-block .anika-block .info span,
+.graphic .bottom-block .anika-block .info span {
   font-size: 1.78vw;
 }
-.illustration .bottom-block .anika-block .img, .animation .bottom-block .anika-block .img {
+.illustration .bottom-block .anika-block .img,
+.animation .bottom-block .anika-block .img,
+.graphic .bottom-block .anika-block .img {
   width: 24.3vw;
   height: 32.91vw;
   background-image: url(./images/illustration/teacher.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.illustration .bottom-block .experiense, .animation .bottom-block .experiense {
+.illustration .bottom-block .experiense,
+.animation .bottom-block .experiense,
+.graphic .bottom-block .experiense {
   width: 72.91vw;
   height: 18.05vw;
   display: flex;
@@ -1491,31 +1639,45 @@ main .EN {
   margin-left: 13vw;
   margin-top: 5.9vw;
 }
-.illustration .bottom-block .experiense .block, .animation .bottom-block .experiense .block {
+.illustration .bottom-block .experiense .block,
+.animation .bottom-block .experiense .block,
+.graphic .bottom-block .experiense .block {
   width: 33.33vw;
 }
-.illustration .bottom-block .experiense .block .title, .animation .bottom-block .experiense .block .title {
+.illustration .bottom-block .experiense .block .title,
+.animation .bottom-block .experiense .block .title,
+.graphic .bottom-block .experiense .block .title {
   margin-bottom: 2.43vw;
   font-size: 1.73vw;
   text-align: left;
 }
-.illustration .bottom-block .experiense .block span, .animation .bottom-block .experiense .block span {
+.illustration .bottom-block .experiense .block span,
+.animation .bottom-block .experiense .block span,
+.graphic .bottom-block .experiense .block span {
   display: block;
   margin-bottom: 1.38vw;
   font-family: "KTS";
   font-size: 1.25vw;
   line-height: 1.52vw;
 }
-.illustration .bottom-block .experiense .block .mini-title, .animation .bottom-block .experiense .block .mini-title {
+.illustration .bottom-block .experiense .block .mini-title,
+.animation .bottom-block .experiense .block .mini-title,
+.graphic .bottom-block .experiense .block .mini-title {
   font-family: "KTS-black";
 }
-.illustration .bottom-block .experiense .block:nth-child(1), .animation .bottom-block .experiense .block:nth-child(1) {
+.illustration .bottom-block .experiense .block:nth-child(1),
+.animation .bottom-block .experiense .block:nth-child(1),
+.graphic .bottom-block .experiense .block:nth-child(1) {
   width: 27.08vw;
 }
-.illustration .bottom-block .experiense .block:nth-child(1) span, .animation .bottom-block .experiense .block:nth-child(1) span {
+.illustration .bottom-block .experiense .block:nth-child(1) span,
+.animation .bottom-block .experiense .block:nth-child(1) span,
+.graphic .bottom-block .experiense .block:nth-child(1) span {
   position: relative;
 }
-.illustration .bottom-block .experiense .block:nth-child(1) span::after, .animation .bottom-block .experiense .block:nth-child(1) span::after {
+.illustration .bottom-block .experiense .block:nth-child(1) span::after,
+.animation .bottom-block .experiense .block:nth-child(1) span::after,
+.graphic .bottom-block .experiense .block:nth-child(1) span::after {
   content: "";
   width: 1.04vw;
   height: 0.277vw;
@@ -1524,25 +1686,37 @@ main .EN {
   top: 50%;
   left: -2.77vw;
 }
-.illustration .bottom-block .experiense .block:nth-child(1) .title, .animation .bottom-block .experiense .block:nth-child(1) .title {
+.illustration .bottom-block .experiense .block:nth-child(1) .title,
+.animation .bottom-block .experiense .block:nth-child(1) .title,
+.graphic .bottom-block .experiense .block:nth-child(1) .title {
   padding-left: 2.77vw;
 }
-.illustration .bottom-block .experiense .block:nth-child(2), .animation .bottom-block .experiense .block:nth-child(2) {
+.illustration .bottom-block .experiense .block:nth-child(2),
+.animation .bottom-block .experiense .block:nth-child(2),
+.graphic .bottom-block .experiense .block:nth-child(2) {
   width: 32.08vw;
 }
-.illustration .bottom-block .experiense .block:nth-child(2) .title, .animation .bottom-block .experiense .block:nth-child(2) .title {
+.illustration .bottom-block .experiense .block:nth-child(2) .title,
+.animation .bottom-block .experiense .block:nth-child(2) .title,
+.graphic .bottom-block .experiense .block:nth-child(2) .title {
   padding-left: 2.08vw;
 }
-.illustration .bottom-block .comments, .animation .bottom-block .comments {
+.illustration .bottom-block .comments,
+.animation .bottom-block .comments,
+.graphic .bottom-block .comments {
   width: 50vw;
   height: 14vw;
   position: relative;
   margin: 20.5vw auto 0px;
 }
-.illustration .bottom-block .comments .title, .animation .bottom-block .comments .title {
+.illustration .bottom-block .comments .title,
+.animation .bottom-block .comments .title,
+.graphic .bottom-block .comments .title {
   text-align: center;
 }
-.illustration .bottom-block .comments .comment, .animation .bottom-block .comments .comment {
+.illustration .bottom-block .comments .comment,
+.animation .bottom-block .comments .comment,
+.graphic .bottom-block .comments .comment {
   background-image: url(./images/editing/bubblereview.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1558,8 +1732,11 @@ main .EN {
   float: left;
 }
 .illustration .bottom-block .comments .left,
-.illustration .bottom-block .comments .right, .animation .bottom-block .comments .left,
-.animation .bottom-block .comments .right {
+.illustration .bottom-block .comments .right,
+.animation .bottom-block .comments .left,
+.animation .bottom-block .comments .right,
+.graphic .bottom-block .comments .left,
+.graphic .bottom-block .comments .right {
   width: 1.875vw;
   height: 4.444vw;
   position: absolute;
@@ -1568,22 +1745,32 @@ main .EN {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.illustration .bottom-block .comments .left, .animation .bottom-block .comments .left {
+.illustration .bottom-block .comments .left,
+.animation .bottom-block .comments .left,
+.graphic .bottom-block .comments .left {
   left: -5.55vw;
 }
-.illustration .bottom-block .comments .right, .animation .bottom-block .comments .right {
+.illustration .bottom-block .comments .right,
+.animation .bottom-block .comments .right,
+.graphic .bottom-block .comments .right {
   right: -5.55vw;
   background-image: url(./images/editing/right.png);
   font-size: 2.22vw;
 }
-.illustration .bottom-block .price, .animation .bottom-block .price {
+.illustration .bottom-block .price,
+.animation .bottom-block .price,
+.graphic .bottom-block .price {
   margin-top: 18.93vw;
 }
-.illustration .bottom-block .price .title, .animation .bottom-block .price .title {
+.illustration .bottom-block .price .title,
+.animation .bottom-block .price .title,
+.graphic .bottom-block .price .title {
   font-size: 2.77vw;
   text-align: center;
 }
-.illustration .bottom-block .price .price-block, .animation .bottom-block .price .price-block {
+.illustration .bottom-block .price .price-block,
+.animation .bottom-block .price .price-block,
+.graphic .bottom-block .price .price-block {
   width: 45.13vw;
   height: 36.8vw;
   background-image: url(./images/illustration/cost.png);
@@ -1592,30 +1779,42 @@ main .EN {
   padding-top: 3.12vw;
   margin: 5.55vw auto 0px;
 }
-.illustration .bottom-block .price .price-block .EN, .animation .bottom-block .price .price-block .EN {
+.illustration .bottom-block .price .price-block .EN,
+.animation .bottom-block .price .price-block .EN,
+.graphic .bottom-block .price .price-block .EN {
   display: none;
 }
-.illustration .bottom-block .price .price-block .title, .animation .bottom-block .price .price-block .title {
+.illustration .bottom-block .price .price-block .title,
+.animation .bottom-block .price .price-block .title,
+.graphic .bottom-block .price .price-block .title {
   font-size: 3.12vw;
 }
-.illustration .bottom-block .price .price-block .info, .animation .bottom-block .price .price-block .info {
+.illustration .bottom-block .price .price-block .info,
+.animation .bottom-block .price .price-block .info,
+.graphic .bottom-block .price .price-block .info {
   width: 20.13vw;
   height: 19.09vw;
   margin-top: 4.86vw;
   margin-left: 15.37vw;
 }
-.illustration .bottom-block .price .price-block .info h1, .animation .bottom-block .price .price-block .info h1 {
+.illustration .bottom-block .price .price-block .info h1,
+.animation .bottom-block .price .price-block .info h1,
+.graphic .bottom-block .price .price-block .info h1 {
   font-family: "KTS";
   margin: -1.04vw 0px 1.73vw 0px;
   font-size: 1.11vw;
 }
-.illustration .bottom-block .price .price-block .info span, .animation .bottom-block .price .price-block .info span {
+.illustration .bottom-block .price .price-block .info span,
+.animation .bottom-block .price .price-block .info span,
+.graphic .bottom-block .price .price-block .info span {
   display: block;
   margin-bottom: 1.73vw;
   font-size: 1.11vw;
   position: relative;
 }
-.illustration .bottom-block .price .price-block .info span::after, .animation .bottom-block .price .price-block .info span::after {
+.illustration .bottom-block .price .price-block .info span::after,
+.animation .bottom-block .price .price-block .info span::after,
+.graphic .bottom-block .price .price-block .info span::after {
   content: "";
   width: 0.8vw;
   height: 0.15vw;
@@ -1624,7 +1823,9 @@ main .EN {
   top: 50%;
   left: -2vw;
 }
-.illustration .bottom-block .price .price-block .price, .animation .bottom-block .price .price-block .price {
+.illustration .bottom-block .price .price-block .price,
+.animation .bottom-block .price .price-block .price,
+.graphic .bottom-block .price .price-block .price {
   width: 25.69vw;
   height: 2.43vw;
   margin: 3.8vw 0px 0px 10.51vw;
@@ -1632,14 +1833,18 @@ main .EN {
   padding-top: 0.55vw;
   font-size: 1.58vw;
 }
-.illustration .bottom-block .bottom, .animation .bottom-block .bottom {
+.illustration .bottom-block .bottom,
+.animation .bottom-block .bottom,
+.graphic .bottom-block .bottom {
   width: 100%;
   height: 6.94vw;
   background-color: black;
   position: absolute;
   bottom: 0px;
 }
-.illustration .bottom-block .bottom .bottom-menu, .animation .bottom-block .bottom .bottom-menu {
+.illustration .bottom-block .bottom .bottom-menu,
+.animation .bottom-block .bottom .bottom-menu,
+.graphic .bottom-block .bottom .bottom-menu {
   width: 69.44vw;
   height: 6.94vw;
   display: flex;
@@ -1650,7 +1855,9 @@ main .EN {
   right: 7.63vw;
   font-size: 1.52vw;
 }
-.illustration .bottom-block .bottom .bottom-menu span, .animation .bottom-block .bottom .bottom-menu span {
+.illustration .bottom-block .bottom .bottom-menu span,
+.animation .bottom-block .bottom .bottom-menu span,
+.graphic .bottom-block .bottom .bottom-menu span {
   color: white;
 }
 
@@ -1793,4 +2000,241 @@ main .EN {
 }
 .animation .bottom-block .price .price-block .price {
   margin: 2.77vw 0px 0px 6.59vw;
+}
+
+.graphic .top-block {
+  background-image: url(./images/graphicdesign/top.jpg);
+  height: 2368px;
+}
+.graphic .top-block .main-title {
+  background: none;
+}
+.graphic .top-block .main-title .title {
+  padding-top: 50px;
+}
+.graphic .top-block .main-title .description {
+  margin-top: 40px;
+}
+.graphic .top-block .question-block {
+  margin-top: 230px;
+}
+.graphic .top-block .block {
+  padding-top: 80px;
+}
+.graphic .middle-block .program-count {
+  font-size: 45px;
+  text-align: center;
+  margin: 50px 0px;
+  cursor: pointer;
+}
+.graphic .middle-block .EN {
+  display: none;
+}
+.graphic .middle-block .trans {
+  background-color: transparent;
+}
+.graphic .middle-block .course-progress-block {
+  display: block;
+  overflow: hidden;
+  max-height: 0px;
+  transition-duration: 2s;
+  transition-property: max-height;
+}
+.graphic .middle-block .course-progress-block .block:nth-child(10) .progress-line {
+  background-color: black;
+}
+.graphic .middle-block .course-progress-block .block:nth-child(10) .trans {
+  background-color: transparent;
+}
+.graphic .middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
+  content: "11";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
+  content: "12";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(12) .trans {
+  background-color: transparent;
+}
+.graphic .middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
+  content: "13";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
+  content: "14";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
+  content: "15";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(16) .progress-line::after {
+  content: "16";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(17) .progress-line::after {
+  content: "17";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(18) .progress-line::after {
+  content: "18";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(19) .progress-line::after {
+  content: "19";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(20) .progress-line::after {
+  content: "20";
+}
+.graphic .middle-block .course-progress-block .block:nth-child(20) .progress-line {
+  background-color: transparent;
+}
+.graphic .bottom-block {
+  background-image: url(./images/graphicdesign/bottom.jpg);
+  height: 6360px;
+  padding-top: 100px;
+}
+.graphic .bottom-block .maint {
+  margin-top: 400px;
+}
+.graphic .bottom-block .sertificate-text {
+  width: 65.97vw;
+  height: 5.2vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 1.45vw;
+  margin: auto;
+}
+.graphic .bottom-block .sertificate {
+  width: 52.77vw;
+  height: 31.25vw;
+  margin: auto;
+  background-image: url(./images/graphicdesign/Group\ 217.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 6.25vw;
+}
+.graphic .bottom-block .EN {
+  display: none;
+}
+.graphic .bottom-block .anika-block {
+  width: 916px;
+  margin-left: 190px;
+}
+.graphic .bottom-block .anika-block .info {
+  width: 470px;
+  height: 100px;
+  margin-left: 0px;
+  margin-bottom: 100px;
+}
+.graphic .bottom-block .anika-block .img {
+  width: 278px;
+  height: 377px;
+  background-image: url(./images/graphicdesign/msg565874734-32392.jpg);
+  margin-top: 60px;
+  margin-right: 10px;
+}
+.graphic .bottom-block .experiense {
+  margin-top: 70px;
+}
+.graphic .bottom-block .experiense .block:nth-child(1) {
+  padding-left: 2.63vw;
+}
+.graphic .bottom-block .experiense .block:nth-child(1) .title {
+  padding-left: 0px;
+}
+.graphic .bottom-block .experiense .block .info:nth-child(2) {
+  width: 370px;
+}
+.graphic .bottom-block .experiense .block span {
+  position: relative;
+}
+.graphic .bottom-block .experiense .block span::after {
+  content: "";
+  width: 1.04vw;
+  height: 0.277vw;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -2.77vw;
+}
+.graphic .bottom-block .comments {
+  width: 880px;
+  height: 350px;
+  margin: auto;
+  margin-top: 200px;
+}
+.graphic .bottom-block .comments .left, .graphic .bottom-block .comments .right {
+  top: 190px;
+}
+.graphic .bottom-block .comments .comment {
+  width: 880px;
+  height: 250px;
+}
+.graphic .bottom-block .works {
+  margin-top: 150px;
+}
+.graphic .bottom-block .works .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.graphic .bottom-block .works .videos {
+  width: 46.25vw;
+  height: 25.97vw;
+  margin: auto;
+  padding-top: 4vw;
+}
+.graphic .bottom-block .works .videos .vid {
+  width: 335px;
+  height: 394px;
+  background-image: url(./images/graphicdesign/work.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+}
+.graphic .bottom-block .works .videos .vid .left,
+.graphic .bottom-block .works .videos .vid .right {
+  width: 1.87vw;
+  height: 4.44vw;
+  position: absolute;
+  top: 11.5vw;
+  background-image: url(./images/editing/left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.graphic .bottom-block .works .videos .vid .left {
+  left: -9.72vw;
+}
+.graphic .bottom-block .works .videos .vid .right {
+  right: -9.72vw;
+  background-image: url(./images/editing/right.png);
+}
+.graphic .bottom-block .price {
+  display: block;
+  margin-top: 312px;
+}
+.graphic .bottom-block .price .price-block {
+  width: 633px;
+  height: 651px;
+  background-image: url(./images/graphicdesign/price1.png);
+  margin-top: 110px;
+  padding-top: 100px;
+}
+.graphic .bottom-block .price .price-block .title span {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.graphic .bottom-block .price .price-block .info {
+  width: 515px;
+  margin: 70px auto 0px;
+}
+.graphic .bottom-block .price .price-block .info span {
+  font-size: 20px;
+}
+.graphic .bottom-block .price .price-block .price {
+  margin-top: 65px;
+  margin-left: 130px;
+}
+.graphic .bottom-block .price .second {
+  background-image: url(./images/graphicdesign/price2.png);
+}
+.graphic .bottom-block .price .third {
+  background-image: url(./images/graphicdesign/price3.png);
 }/*# sourceMappingURL=style.css.map */

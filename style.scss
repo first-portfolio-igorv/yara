@@ -1125,11 +1125,13 @@ main {
 
         }
     }
-    .wtitle{
+
+    .wtitle {
         font-size: 2.22vw;
         text-align: center;
         margin-top: 7.5vw;
     }
+
     .videos {
         width: 45.48vw;
         height: 30.83vw;
@@ -1274,7 +1276,9 @@ main {
     }
 }
 
-.illustration, .animation {
+.illustration,
+.animation,
+.graphic {
     width: 100vw;
     font-family: "KTS-black";
 
@@ -1781,6 +1785,7 @@ main {
         background-repeat: no-repeat;
         padding-top: 22.91vw;
         position: relative;
+
         .title {
             text-align: center;
             font-size: 2.77vw;
@@ -1795,7 +1800,6 @@ main {
             .info {
                 width: 28.47vw;
                 height: 10.41vw;
-                ;
                 margin-top: auto;
                 font-family: "KTS";
                 margin-left: 6vw;
@@ -2012,13 +2016,15 @@ main {
             }
 
         }
-        .bottom{
+
+        .bottom {
             width: 100%;
             height: 6.94vw;
             background-color: black;
             position: absolute;
             bottom: 0px;
-            .bottom-menu{
+
+            .bottom-menu {
                 width: 69.44vw;
                 height: 6.94vw;
                 display: flex;
@@ -2028,41 +2034,49 @@ main {
                 bottom: 0px;
                 right: 7.63vw;
                 font-size: 1.52vw;
-                span{
+
+                span {
                     color: white;
                 }
             }
         }
     }
 }
-.animation{
+
+.animation {
 
     .top-block {
         height: 223.61vw;
         background-image: url(./images/animation/top.jpg);
-        .main-title{
-            .description{
+
+        .main-title {
+            .description {
                 width: 44.36vw;
             }
-            .title{
+
+            .title {
                 margin-top: 8.33vw;
                 background: none;
             }
         }
-        .question-block{
-            span{
+
+        .question-block {
+            span {
                 margin-bottom: 3.125vw;
             }
         }
-        .foryou-block{
-            margin:23.26vw auto 0px;
+
+        .foryou-block {
+            margin: 23.26vw auto 0px;
             width: 71.25vw;
             display: flex;
             justify-content: space-between;
-            .text{
+
+            .text {
                 width: 34.72vw;
             }
-            .img{
+
+            .img {
                 width: 26.52vw;
                 height: 31.73vw;
                 background-image: url(./images/animation/illustration\ \(1\).png);
@@ -2070,20 +2084,24 @@ main {
                 background-repeat: no-repeat;
             }
         }
-        .block{
-            margin:24.3vw auto ;
+
+        .block {
+            margin: 24.3vw auto;
             padding: 1.38vw 0px;
         }
     }
-    .middle-block{
+
+    .middle-block {
         max-height: 277.77vw;
         padding-bottom: 0px;
     }
-    .bottom-block{
+
+    .bottom-block {
         padding-top: 6.26vw;
         height: 302.19vw;
         background-image: url(./images/animation/bottom.jpg);
-        .advice{
+
+        .advice {
             width: 52.08vw;
             margin-left: 22.91vw;
             font-size: 1.22vw;
@@ -2091,30 +2109,35 @@ main {
             line-height: 1.66vw;
             font-family: "KTS";
         }
-        .sertificate-text{
+
+        .sertificate-text {
             width: 60.41vw;
             font-size: 1.40vw;
-            margin:8.33vw auto;
+            margin: 8.33vw auto;
         }
-        .sertificate{
-        width: 52.77vw;
-        height: 31.25vw;
-        margin: auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 6.25vw;
-        background-image: url(./images/animation/Group\ 216.jpg);
+
+        .sertificate {
+            width: 52.77vw;
+            height: 31.25vw;
+            margin: auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 6.25vw;
+            background-image: url(./images/animation/Group\ 216.jpg);
         }
-        .mainT{
+
+        .mainT {
             margin-top: 35.41vw;
         }
-        .anika-block{
-            .info{
+
+        .anika-block {
+            .info {
                 width: 25.69vw;
                 margin-left: 2.08vw;
                 margin-top: 14.93vw;
             }
-            .img{
+
+            .img {
                 margin-right: 6.94vw;
                 margin-top: 2.43vw;
                 width: 19.79vw;
@@ -2122,18 +2145,22 @@ main {
                 background-image: url(./images/animation/IMG_20230918_134313_495.jpg);
             }
         }
-        .experiense{
-            .block:nth-child(1){
+
+        .experiense {
+            .block:nth-child(1) {
                 padding-left: 2.63vw;
-                .title{
-                   padding-left: 0px; 
+
+                .title {
+                    padding-left: 0px;
                 }
             }
         }
-        .works{
-            .title{
+
+        .works {
+            .title {
                 margin: 18.05vw 0px 3.47vw;
             }
+
             .videos {
                 width: 46.25vw;
                 height: 25.97vw;
@@ -2142,7 +2169,7 @@ main {
                 background-repeat: no-repeat;
                 margin: auto;
                 padding-top: 4vw;
-        
+
                 .vid {
                     width: 38.19vw;
                     height: 19.44vw;
@@ -2151,7 +2178,7 @@ main {
                     background-repeat: no-repeat;
                     margin: auto;
                     position: relative;
-        
+
                     .left,
                     .right {
                         width: 1.87vw;
@@ -2162,33 +2189,332 @@ main {
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
-        
+
                     .left {
                         left: -9.72vw;
                     }
-        
+
                     .right {
                         right: -9.72vw;
                         background-image: url(./images/editing/right.png);
-        
+
                     }
                 }
             }
         }
-        .price{
+
+        .price {
             margin-top: 19.58vw;
-            .price-block{
+
+            .price-block {
                 width: 41.66vw;
                 height: 36.11vw;
                 margin-top: 8.33vw;
                 background-image: url(./images/animation/cost\ \(1\).png);
-                .info{
+
+                .info {
                     width: 17.7vw;
                     margin-left: 11.8vw;
                 }
-                .price{
+
+                .price {
                     margin: 2.77vw 0px 0px 6.59vw;
                 }
+            }
+        }
+    }
+}
+
+.graphic {
+    .top-block {
+        background-image: url(./images/graphicdesign/top.jpg);
+        height: 2368px;
+
+        .main-title {
+            background: none;
+
+            .title {
+                padding-top: 50px;
+            }
+
+            .description {
+                margin-top: 40px;
+            }
+        }
+
+        .question-block {
+            margin-top: 230px;
+        }
+
+        .block {
+            padding-top: 80px;
+        }
+    }
+
+    .middle-block{
+        .program-count{
+            font-size: 45px;
+            text-align: center;
+            margin: 50px 0px;
+            cursor: pointer;
+        }
+        .EN{
+            display: none;
+        }
+        .trans{
+            background-color: transparent;
+        }
+        .course-progress-block{
+            display: block;
+            overflow: hidden;
+            max-height: 0px;
+            transition-duration: 2s;
+            transition-property: max-height;
+            .block:nth-child(10) {
+                .progress-line{
+                    background-color: black;
+                }
+                .trans{
+                    background-color: transparent;
+                }
+            }
+            .block:nth-child(11) {
+                .progress-line::after {
+                    content: "11";
+                }
+            }
+    
+            .block:nth-child(12) {
+                .progress-line::after {
+                    content: "12";
+                }
+                .trans{
+                    background-color: transparent;
+                }
+            }
+            .block:nth-child(13) {
+                .progress-line::after {
+                    content: "13";
+                }
+            }
+    
+            .block:nth-child(14) {
+                .progress-line::after {
+                    content: "14";
+                }
+            }
+            .block:nth-child(15) {
+                .progress-line::after {
+                    content: "15";
+                }
+            }
+    
+            .block:nth-child(16) {
+                .progress-line::after {
+                    content: "16";
+                }
+            }
+            .block:nth-child(17) {
+                .progress-line::after {
+                    content: "17";
+                }
+            }
+    
+            .block:nth-child(18) {
+                .progress-line::after {
+                    content: "18";
+                }
+            }
+            .block:nth-child(19) {
+                .progress-line::after {
+                    content: "19";
+                }
+            }.block:nth-child(20) {
+                .progress-line::after {
+                    content: "20";
+                }
+                .progress-line{
+                    background-color: transparent;
+                }
+            }
+            
+        }
+    }
+    .bottom-block {
+        background-image: url(./images/graphicdesign/bottom.jpg);
+        height: 6360px;
+        padding-top: 100px;
+        .maint {
+            margin-top: 400px;
+        }
+
+        
+        .sertificate-text {
+            width: 65.97vw;
+            height: 5.2vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-size: 1.45vw;
+            margin: auto;
+        }
+
+        .sertificate {
+            width: 52.77vw;
+            height: 31.25vw;
+            margin: auto;
+            background-image: url(./images/graphicdesign/Group\ 217.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 6.25vw;
+            
+        }
+        .EN {
+            display: none;
+        }
+        .anika-block {
+            width: 916px;
+            margin-left: 190px;
+
+            .info {
+                width: 470px;
+                height: 100px;
+                margin-left: 0px;
+                margin-bottom: 100px;
+            }
+
+            .img {
+                width: 278px;
+                height: 377px;
+                background-image: url(./images/graphicdesign/msg565874734-32392.jpg);
+                margin-top: 60px;
+                margin-right: 10px;
+            }
+        }
+        .experiense {
+            margin-top: 70px;
+            .block:nth-child(1) {
+                padding-left: 2.63vw;
+
+                .title {
+                    padding-left: 0px;
+                }
+            }
+            .block{
+                .info:nth-child(2){
+                    width: 370px;
+                }
+                span {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        width: 1.04vw;
+                        height: 0.277vw;
+                        background-color: black;
+                        position: absolute;
+                        top: 50%;
+                        left: -2.77vw;
+                    }
+                }
+            }
+            
+        }
+        .comments{
+            width: 880px;
+            height: 350px;
+            margin: auto;
+            margin-top: 200px;
+            .left, .right{
+                top: 190px;
+            }
+            .comment{
+                width: 880px;
+                height: 250px;
+            }
+        }
+        .works{
+            margin-top: 150px;
+            .title{
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            .videos {
+                width: 46.25vw;
+                height: 25.97vw;
+                margin: auto;
+                padding-top: 4vw;
+    
+                .vid {
+                    width: 335px;
+                    height: 394px;
+                    background-image: url(./images/graphicdesign/work.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                    position: relative;
+    
+                    .left,
+                    .right {
+                        width: 1.87vw;
+                        height: 4.44vw;
+                        position: absolute;
+                        top: 11.5vw;
+                        background-image: url(./images/editing/left.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+    
+                    .left {
+                        left: -9.72vw;
+                    }
+    
+                    .right {
+                        right: -9.72vw;
+                        background-image: url(./images/editing/right.png);
+    
+                    }
+                }
+            }
+        }
+        
+        .price{
+            display: block;
+            margin-top: 312px;
+
+            .price-block{
+                width: 633px;
+                height: 651px;
+                background-image: url(./images/graphicdesign/price1.png);
+                margin-top: 110px;
+                padding-top: 100px;
+                .title{
+                    span{
+                        display: block;
+                        text-align: center;
+                        font-size: 40px;
+                        margin-top: 10px;
+                    }
+                }
+                .info{
+                    width: 515px;
+                    margin: 70px auto 0px;
+                    
+                    span{
+                        font-size: 20px;
+                    }
+                }
+                .price{
+                    margin-top: 65px;
+                    margin-left: 130px ;
+                }
+            }
+            .second{
+                background-image: url(./images/graphicdesign/price2.png);
+            }
+            .third{
+                background-image: url(./images/graphicdesign/price3.png);
+
             }
         }
     }

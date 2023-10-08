@@ -2228,34 +2228,34 @@ main {
 .graphic {
     .top-block {
         background-image: url(./images/graphicdesign/top.jpg);
-        height: 2368px;
+        height: 164.4vw;
 
         .main-title {
             background: none;
 
             .title {
-                padding-top: 50px;
+                padding-top: 3.47vw;;
             }
 
             .description {
-                margin-top: 40px;
+                margin-top: 2.77vw;
             }
         }
 
         .question-block {
-            margin-top: 230px;
+            margin-top: 15.97vw;
         }
 
         .block {
-            padding-top: 80px;
+            padding-top: 5.55vw;
         }
     }
 
     .middle-block{
         .program-count{
-            font-size: 45px;
+            font-size: 3.12vw;
             text-align: center;
-            margin: 50px 0px;
+            margin: 3.47vw 0px;
             cursor: pointer;
         }
         .EN{
@@ -2342,10 +2342,10 @@ main {
     }
     .bottom-block {
         background-image: url(./images/graphicdesign/bottom.jpg);
-        height: 6360px;
-        padding-top: 100px;
+        height: 441vw;
+        padding-top: 6.94vw;
         .maint {
-            margin-top: 400px;
+            margin-top: 27.77vw;
         }
 
         
@@ -2373,26 +2373,26 @@ main {
             display: none;
         }
         .anika-block {
-            width: 916px;
-            margin-left: 190px;
-
+            width: 63.61vw;
+            margin-left: 13.19vw;
+            
             .info {
-                width: 470px;
-                height: 100px;
+                width: 32.63vw;
+                height: 6.94vw;
                 margin-left: 0px;
-                margin-bottom: 100px;
+                margin-bottom: 6.94vw;
             }
 
             .img {
-                width: 278px;
-                height: 377px;
+                width: 19.3vw;
+                height: 26.18vw;
                 background-image: url(./images/graphicdesign/msg565874734-32392.jpg);
-                margin-top: 60px;
-                margin-right: 10px;
+                margin-top: 4.16vw;
+                margin-right: 0.694vw;
             }
         }
         .experiense {
-            margin-top: 70px;
+            margin-top: 4.86vw;
             .block:nth-child(1) {
                 padding-left: 2.63vw;
 
@@ -2402,7 +2402,7 @@ main {
             }
             .block{
                 .info:nth-child(2){
-                    width: 370px;
+                    width: 25.70vw;
                 }
                 span {
                     position: relative;
@@ -2421,23 +2421,23 @@ main {
             
         }
         .comments{
-            width: 880px;
-            height: 350px;
+            width: 61.11vw;
+            height: 24.3vw;
             margin: auto;
-            margin-top: 200px;
+            margin-top: 13.88vw;
             .left, .right{
-                top: 190px;
+                top: 13.19vw;
             }
             .comment{
-                width: 880px;
-                height: 250px;
+                width: 61.11vw;
+                height: 17.36vw;
             }
         }
         .works{
-            margin-top: 150px;
+            margin-top: 10.41vw;
             .title{
                 text-align: center;
-                margin-bottom: 60px;
+                margin-bottom: 4.16vw;
             }
             .videos {
                 width: 46.25vw;
@@ -2446,8 +2446,8 @@ main {
                 padding-top: 4vw;
     
                 .vid {
-                    width: 335px;
-                    height: 394px;
+                    width: 23.26vw;
+                    height: 27.26vw;
                     background-image: url(./images/graphicdesign/work.png);
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -2480,33 +2480,33 @@ main {
         
         .price{
             display: block;
-            margin-top: 312px;
+            margin-top: 21.66vw;
 
             .price-block{
-                width: 633px;
-                height: 651px;
+                width: 43.95vw;
+                height: 45.2vw;
                 background-image: url(./images/graphicdesign/price1.png);
-                margin-top: 110px;
-                padding-top: 100px;
+                margin-top: 7.63vw;
+                padding-top: 6.94vw;
                 .title{
                     span{
                         display: block;
                         text-align: center;
-                        font-size: 40px;
-                        margin-top: 10px;
+                        font-size: 2.77vw;
+                        margin-top: 0.694vw;
                     }
                 }
                 .info{
-                    width: 515px;
-                    margin: 70px auto 0px;
+                    width: 35.76vw;
+                    margin: 4.86vw auto 0px;
                     
                     span{
-                        font-size: 20px;
+                        font-size: 1.38vw;
                     }
                 }
                 .price{
-                    margin-top: 65px;
-                    margin-left: 130px ;
+                    margin-top: 4.51vw;
+                    margin-left: 9vw ;
                 }
             }
             .second{

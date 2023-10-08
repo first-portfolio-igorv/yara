@@ -2004,27 +2004,27 @@ main .EN {
 
 .graphic .top-block {
   background-image: url(./images/graphicdesign/top.jpg);
-  height: 2368px;
+  height: 164.4vw;
 }
 .graphic .top-block .main-title {
   background: none;
 }
 .graphic .top-block .main-title .title {
-  padding-top: 50px;
+  padding-top: 3.47vw;
 }
 .graphic .top-block .main-title .description {
-  margin-top: 40px;
+  margin-top: 2.77vw;
 }
 .graphic .top-block .question-block {
-  margin-top: 230px;
+  margin-top: 15.97vw;
 }
 .graphic .top-block .block {
-  padding-top: 80px;
+  padding-top: 5.55vw;
 }
 .graphic .middle-block .program-count {
-  font-size: 45px;
+  font-size: 3.12vw;
   text-align: center;
-  margin: 50px 0px;
+  margin: 3.47vw 0px;
   cursor: pointer;
 }
 .graphic .middle-block .EN {
@@ -2084,11 +2084,11 @@ main .EN {
 }
 .graphic .bottom-block {
   background-image: url(./images/graphicdesign/bottom.jpg);
-  height: 6360px;
-  padding-top: 100px;
+  height: 441vw;
+  padding-top: 6.94vw;
 }
 .graphic .bottom-block .maint {
-  margin-top: 400px;
+  margin-top: 27.77vw;
 }
 .graphic .bottom-block .sertificate-text {
   width: 65.97vw;
@@ -2112,24 +2112,24 @@ main .EN {
   display: none;
 }
 .graphic .bottom-block .anika-block {
-  width: 916px;
-  margin-left: 190px;
+  width: 63.61vw;
+  margin-left: 13.19vw;
 }
 .graphic .bottom-block .anika-block .info {
-  width: 470px;
-  height: 100px;
+  width: 32.63vw;
+  height: 6.94vw;
   margin-left: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 6.94vw;
 }
 .graphic .bottom-block .anika-block .img {
-  width: 278px;
-  height: 377px;
+  width: 19.3vw;
+  height: 26.18vw;
   background-image: url(./images/graphicdesign/msg565874734-32392.jpg);
-  margin-top: 60px;
-  margin-right: 10px;
+  margin-top: 4.16vw;
+  margin-right: 0.694vw;
 }
 .graphic .bottom-block .experiense {
-  margin-top: 70px;
+  margin-top: 4.86vw;
 }
 .graphic .bottom-block .experiense .block:nth-child(1) {
   padding-left: 2.63vw;
@@ -2138,7 +2138,7 @@ main .EN {
   padding-left: 0px;
 }
 .graphic .bottom-block .experiense .block .info:nth-child(2) {
-  width: 370px;
+  width: 25.7vw;
 }
 .graphic .bottom-block .experiense .block span {
   position: relative;
@@ -2153,24 +2153,24 @@ main .EN {
   left: -2.77vw;
 }
 .graphic .bottom-block .comments {
-  width: 880px;
-  height: 350px;
+  width: 61.11vw;
+  height: 24.3vw;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 13.88vw;
 }
 .graphic .bottom-block .comments .left, .graphic .bottom-block .comments .right {
-  top: 190px;
+  top: 13.19vw;
 }
 .graphic .bottom-block .comments .comment {
-  width: 880px;
-  height: 250px;
+  width: 61.11vw;
+  height: 17.36vw;
 }
 .graphic .bottom-block .works {
-  margin-top: 150px;
+  margin-top: 10.41vw;
 }
 .graphic .bottom-block .works .title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 4.16vw;
 }
 .graphic .bottom-block .works .videos {
   width: 46.25vw;
@@ -2179,8 +2179,8 @@ main .EN {
   padding-top: 4vw;
 }
 .graphic .bottom-block .works .videos .vid {
-  width: 335px;
-  height: 394px;
+  width: 23.26vw;
+  height: 27.26vw;
   background-image: url(./images/graphicdesign/work.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -2206,31 +2206,31 @@ main .EN {
 }
 .graphic .bottom-block .price {
   display: block;
-  margin-top: 312px;
+  margin-top: 21.66vw;
 }
 .graphic .bottom-block .price .price-block {
-  width: 633px;
-  height: 651px;
+  width: 43.95vw;
+  height: 45.2vw;
   background-image: url(./images/graphicdesign/price1.png);
-  margin-top: 110px;
-  padding-top: 100px;
+  margin-top: 7.63vw;
+  padding-top: 6.94vw;
 }
 .graphic .bottom-block .price .price-block .title span {
   display: block;
   text-align: center;
-  font-size: 40px;
-  margin-top: 10px;
+  font-size: 2.77vw;
+  margin-top: 0.694vw;
 }
 .graphic .bottom-block .price .price-block .info {
-  width: 515px;
-  margin: 70px auto 0px;
+  width: 35.76vw;
+  margin: 4.86vw auto 0px;
 }
 .graphic .bottom-block .price .price-block .info span {
-  font-size: 20px;
+  font-size: 1.38vw;
 }
 .graphic .bottom-block .price .price-block .price {
-  margin-top: 65px;
-  margin-left: 130px;
+  margin-top: 4.51vw;
+  margin-left: 9vw;
 }
 .graphic .bottom-block .price .second {
   background-image: url(./images/graphicdesign/price2.png);

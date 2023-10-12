@@ -438,7 +438,7 @@ main {
         height: 221.5vw;
         padding-top: 1.73vw;
         background-image: url(./images/editing/top.jpg);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
 
         .lang-buttons {
@@ -2515,6 +2515,214 @@ main {
             .third{
                 background-image: url(./images/graphicdesign/price3.png);
 
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .editing {
+    
+        .top-block {
+            height: 326.5vw;
+            padding-top: 1.73vw;
+            background-image: url(./images/editing/top1.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+    
+            .lang-buttons {
+                width: 8.16vw;
+                font-size: 2.11vw;
+                top: 0.19vw;
+                right: 2.38vw;
+    
+                .en-button::after {
+                    font-size: 2.11vw;
+                    right: 2.88vw;
+                }
+            }
+    
+            .menu {
+                width: 75.58vw;
+                height: 6.04vw;
+                font-size: 1.7vw;
+                margin-right: 2vw;
+                padding-top: 3.6vw;
+            }
+    
+            .title {
+                margin-top: 21vw;
+                font-size: 4.12vw;
+                line-height: 5.16vw;
+    
+            }
+    
+            .EN {
+                display: none;
+            }
+    
+            .description {
+                font-size: 2vw;
+                margin-top: 7.55vw;
+                line-height: 2.4vw;
+            }
+    
+            .question-block {
+                width: 37.86vw;
+                height: 67.98vw;
+                margin: 30.61vw 0px 0px 36.8vw;
+                padding-top: 5vw;
+    
+                .title {
+                    text-align: left;
+                    font-size: 3.22vw;
+                    margin: 0px 0px 4.16vw;
+                }
+    
+                span {
+                    display: block;
+                    font-family: "KTS";
+                    margin-bottom: 8.55vw;
+                    font-size: 2.2vw;
+                    line-height: 2.9vw;
+                    position: relative;
+    
+                    &::after {
+                        content: "";
+                        width: 1.041vw;
+                        height: 0.277vw;
+                        background-color: black;
+                        position: absolute;
+                        top: 50%;
+                        left: -2.77vw;
+                    }
+                }
+            }
+    
+            .foryou-block {
+                width: 95vw;
+                height: 45.75vw;
+                margin: 26.04vw 0px 0px;
+                display: flex;
+                justify-content: space-between;
+    
+                .img {
+                    width: 30vw;
+                    height: 46.6vw;
+                    background-image: url(./images/editing/illustration3.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-left: 10vw;
+                }
+    
+                .text {
+                    width: 45.34vw;
+                    height: 30.06vw;
+                    .title {
+                        text-align: left;
+                        font-size: 3.29vw;
+                        line-height: 3.4vw;
+                        margin: 0px 0px 4.16vw;
+                    }
+    
+                    span {
+                        display: block;
+                        font-family: "KTS";
+                        margin-bottom: 3.12vw;
+                        font-size: 2.2vw;
+                        line-height: 2.9vw;
+                        position: relative;
+    
+                        &::after {
+                            content: "";
+                            width: 1.04vw;
+                            height: 0.277vw;
+                            background-color: black;
+                            position: absolute;
+                            top: 50%;
+                            left: -2.77vw;
+                        }
+                    }
+                }
+            }
+    
+            .block {
+                width: 40.29vw;
+                height: 37.77vw;
+                margin: 37.27vw 34.23vw 0px;
+                padding-top: 10vw;
+    
+                .title {
+                    text-align: center;
+                    font-size: 3.56vw;
+                    margin-bottom: 10.63vw;
+                    margin-top: 0px;
+                }
+    
+                .info {
+                    width: 100%;
+    
+                    span {
+                        display: block;
+                        margin-bottom: 4.47vw;
+                        font-size: 2.2vw;
+                        margin-left: 1.73vw;
+                        position: relative;
+                        line-height: 2.8vw;
+    
+                        &::after {
+                            content: "";
+                            width: 3.98vw;
+                            height: 3.98vw;
+                            border-radius: 100%;
+                            background: rgb(47, 255, 172);
+                            position: absolute;
+                            top: 5%;
+                            left: -6.16vw;
+                        }
+    
+                        &::before {
+                            content: "";
+                            width: 2.87vw;
+                            height: 2.87vw;
+                            border-radius: 100%;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            top: 25%;
+                            left: -5.61vw;
+                            z-index: 2;
+                        }
+                    }
+    
+                    .first {
+                        &::after {
+                            top: -0.69vw;
+                        }
+    
+                        &::before {
+                            top: 0px;
+                            background-image: url(./images/editing/icon.png);
+                        }
+                    }
+    
+                    .second {
+                        &::before {
+                            height: 1.7vw;
+                            top: 30%;
+                            left: -5.81vw;
+                            width: 3.5vw;
+    
+                            background-image: url(./images/editing/icon2.png);
+                        }
+                    }
+    
+                    .last {
+                        &::before {
+                            top: 20%;
+                            background-image: url(./images/editing/icon3.png);
+                        }
+                    }
+                }
             }
         }
     }

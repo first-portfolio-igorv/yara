@@ -2601,7 +2601,7 @@ main {
             .foryou-block {
                 width: 95vw;
                 height: 45.75vw;
-                margin: 26.04vw 0px 0px;
+                margin: 23.04vw 0px 0px;
                 display: flex;
                 justify-content: space-between;
     
@@ -2627,9 +2627,9 @@ main {
                     span {
                         display: block;
                         font-family: "KTS";
-                        margin-bottom: 3.12vw;
+                        margin-bottom: 3.8vw;
                         font-size: 2.8vw;
-                        line-height: 3.3vw;
+                        line-height: 3.1vw;
                         position: relative;
     
                         &::after {
@@ -2646,14 +2646,14 @@ main {
             }
     
             .block {
-                width: 40.29vw;
+                width: 50.29vw;
                 height: 37.77vw;
-                margin: 37.27vw 34.23vw 0px;
+                margin: 40.27vw 30.23vw 0px;
                 padding-top: 10vw;
     
                 .title {
                     text-align: center;
-                    font-size: 3.56vw;
+                    font-size: 4vw;
                     margin-bottom: 10.63vw;
                     margin-top: 0px;
                 }
@@ -2664,7 +2664,7 @@ main {
                     span {
                         display: block;
                         margin-bottom: 4.47vw;
-                        font-size: 2.2vw;
+                        font-size: 2.6vw;
                         margin-left: 1.73vw;
                         position: relative;
                         line-height: 2.8vw;
@@ -2723,6 +2723,261 @@ main {
                         }
                     }
                 }
+            }
+        }
+        .middle-block {
+            width: 100vww;
+            max-height: 300vw;
+            background-image: url(./images/editing/middle.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 4.86vw;
+        
+            .course-progress-block {
+                width: 70.93vw;
+                max-height: 300vw;
+                margin: auto;
+        
+                .block {
+                    padding-left: 1.11vw;
+                    display: flex;
+                    position: relative;
+        
+                    justify-content: space-between;
+                    overflow: hidden;
+                    height: 10vw;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in, ease, linear;
+        
+                    .line {
+                        width: 3.73vw;
+                        height: 3.73vw;
+                        border: 0.377vw solid black;
+                        border-radius: 100%;
+                        margin-right: 0.69;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        position: relative;
+                        text-align: center;
+                        font-size: 2vw;
+                        margin-left: 1vw;
+                        &::after {
+                            content: "";
+                            width: 1.08vw;
+                            height: 0.34vw;
+                            background-color: black;
+                            position: absolute;
+                            top: 1.3vw;
+                            left: -1.08vw;
+                        }
+                    }
+        
+                    .progress-line,
+                    .green {
+                        width: 0.5vw;
+                        height: 100%;
+                        background-color: black;
+                        position: relative;
+                        margin-top: 3.5vw;
+                        display: block;
+                        margin-left: 1.1vw;
+                        &::after {
+                            content: "1";
+                            font-size: 2vw;
+                            text-align: center;
+                            width: 3.08vw;
+                            height: 3.08vw;
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            border: 0.377vw solid black;
+                            border-radius: 100%;
+                            position: absolute;
+                            top: -3.5vw;
+                            left: -1.5vw;
+        
+                        }
+                    }
+        
+        
+                    .info {
+                        width: 61vw;
+                        margin-top: 0.34vw;
+        
+                        .title {
+                            font-size: 2.5vw;
+                            line-height: 2.5vw;
+                            margin-bottom: 1.38vw;
+                            cursor: pointer;
+                        }
+        
+                        .text {
+                            width: 50.24vw;
+                            margin-left: 4.16vw;
+                            max-height: 0px;
+                            overflow: hidden;
+                            transition: 0.2s;
+                            font-family: "KTS";
+                            transition-property: max-height;
+                            transition-timing-function: ease-in, ease, linear;
+        
+        
+                            .add-info {
+                                position: absolute;
+                                width: 68.49vw;
+                                height: 7vw;
+                                background-image: url(./images/editing/dodatkovo.png);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                padding: 1.5vw 4vw 0vw 2vw;
+                                padding-right: 4vw;
+                                font-size: 1.5vw;
+                            }
+        
+                            span {
+                                font-size: 2vw;
+                            }
+        
+                            .text-line {
+                                display: flex;
+                                justify-content: space-between;
+        
+                                span {
+                                    display: block;
+                                    margin-bottom: 1.38vw;
+                                }
+        
+                                .description {
+                                    width: 48.72vw;
+                                    line-height: 2.2vw;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .block:nth-child(2) {
+                    .progress-line::after {
+                        content: "2";
+                    }
+                }
+        
+                .block:nth-child(3) {
+                    .progress-line::after {
+                        content: "3";
+                    }
+                }
+        
+                .block:nth-child(4) {
+                    .progress-line::after {
+                        content: "4";
+                    }
+                }
+        
+                .block:nth-child(5) {
+                    .progress-line::after {
+                        content: "5";
+                    }
+                }
+        
+                .block:nth-child(6) {
+                    .progress-line::after {
+                        content: "7";
+                    }
+                }
+        
+                .block:nth-child(7) {
+                    .progress-line::after {
+                        content: "8";
+                    }
+                }
+        
+                .block:nth-child(8) {
+        
+                    .progress-line::after {
+                        content: "9";
+                    }
+                }
+        
+                .block:nth-child(9) {
+                    width: 80.30vw;
+        
+                    .info {
+                        width: 70.58vw;
+                    }
+        
+                    .progress-line::after {
+                        content: "10";
+                    }
+                }
+        
+                .block:nth-child(10) {
+                    .progress-line::after {
+                        content: "12";
+                    }
+                }
+        
+                .block:nth-child(11) {
+                    .progress-line::after {
+                        content: "13";
+                    }
+                }
+        
+                .block:nth-child(12) {
+                    .progress-line::after {
+                        content: "14";
+                    }
+                }
+        
+                .block:nth-child(13) {
+                    .progress-line::after {
+                        content: "15";
+                    }
+                }
+        
+                .block:nth-child(14) {
+                    .progress-line::after {
+                        content: "16";
+                    }
+                }
+        
+                .block:nth-child(15) {
+                    .progress-line {
+                        background-color: transparent;
+                    }
+        
+                    .progress-line::after {
+                        content: "17";
+                    }
+                }
+            }
+        
+            .sertificate-text {
+                width: 76.1vw;
+                height: 6vw;
+                background-image: url(./images/editing/certificate\ \(1\).png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: block;
+                text-align: center;
+                font-size: 1.7vw;
+                margin: auto;
+                padding-top: 1.58vw;
+            }
+        
+            .sertificate {
+                width: 52.77vw;
+                height: 31.25vw;
+                margin: auto;
+                background-image: url(./images/editing/Group\ 203.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-top: 6.25vw;
+            }
+        
+            .EN {
+                display: none;
             }
         }
     }

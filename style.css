@@ -878,13 +878,18 @@ main .EN {
   position: relative;
   margin: 8.33vw auto 0px;
 }
-.bottom-block1 .comments .comment {
+.bottom-block1 .comments .comments-block {
+  width: 50vw;
+  height: 14vw;
+  overflow: hidden;
+  position: relative;
+}
+.bottom-block1 .comments .comments-block .comment {
   background-image: url(./images/editing/bubblereview.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 50vw;
   height: 13.19vw;
-  margin: auto;
   font-family: "KTS";
   font-size: 1.25vw;
   text-align: center;
@@ -893,12 +898,17 @@ main .EN {
   position: relative;
   float: left;
 }
+.bottom-block1 .comments .comments-block .comment .comment-text {
+  transition-property: opacity;
+  transition: 1s;
+}
 .bottom-block1 .comments .left,
 .bottom-block1 .comments .right {
   width: 1.875vw;
   height: 4.444vw;
   position: absolute;
   top: 4.16vw;
+  cursor: pointer;
   background-image: url(./images/editing/left.png);
   background-size: contain;
   background-repeat: no-repeat;

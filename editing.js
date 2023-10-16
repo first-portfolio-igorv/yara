@@ -8,9 +8,9 @@ let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");
 let UA=document.getElementsByClassName("UA");
 let EN=document.getElementsByClassName("EN");
-let line=document.getElementsByClassName("comments-line");
+let comment=document.getElementsByClassName("comment-text");
 let circle=document.getElementsByClassName("progress-line");
-let position=0;
+let commentNum=0;
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+8)
 }
@@ -70,24 +70,85 @@ for (let i = 0; i < block.length; i++) {
     open(i);
   });
 }
-function right(){
-  if(position==-150){
-    position=0;
+for(let i=0;i<comment.length;i++){
+  if(commentNum==i){
+    comment[i].style.opacity="100%";
+    comment[i].style.display="block";
   }
   else{
-    position-=50;
+    comment[i].style.opacity="0%"
+    comment[i].style.display="none";
   }
-  
-  line[0].style.left=position+"vw";
+}
+function right(){
+  commentNum++;
+  if(commentNum==4){
+    commentNum=0;
+  }
+    for(let i=0;i<comment.length;i++){
+      if(commentNum==i){
+        
+        setTimeout(()=>{
+          comment[i].style.display="block";
+          setTimeout(()=>{
+            comment[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+        
+
+      }
+      else{
+        comment[i].style.opacity="0%"
+        setTimeout(()=>{
+          comment[i].style.display="none";
+        },1000)
+        
+      }
+    }
 
 }
 function left(){
-  if(position==0){
-    position=0;
+  commentNum--;
+  if(commentNum==-1){
+    commentNum=3;
   }
-  else{
-    position+=50;
+    for(let i=0;i<comment.length;i++){
+      if(commentNum==i){
+        setTimeout(()=>{
+          comment[i].style.display="block";
+          setTimeout(()=>{
+            comment[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+      }
+      else{
+        comment[i].style.opacity="0%"
+        setTimeout(()=>{
+          comment[i].style.display="none";
+        },1000)
+      }
   }
-
-  line[0].style.left=position+"vw";
 }
+// function right(){
+//   if(position==-150){
+//     position=0;
+//   }
+//   else{
+//     position-=50;
+//   }
+  
+//   line[0].style.left=position+"vw";
+
+// }
+// function left(){
+//   if(position==0){
+//     position=0;
+//   }
+//   else{
+//     position+=50;
+//   }
+
+//   line[0].style.left=position+"vw";
+// }

@@ -1073,35 +1073,31 @@ main {
         position: relative;
         margin: 8.33vw auto 0px;
 
-        // .comments-block{
-        //     width: 50vw;
-        //     height: 14vw;
-        //     overflow: hidden;
-        //     position: relative;
-        //     .comments-line{
-        //     width: 200vw;
-        //     display: flex;
-        //     justify-content: space-around;
-        //     height: 13.2vw;
-        //     position: absolute;
-        //     left: 0px;
-        //     transition: 1s;
-        // }   
-        .comment {
-            background-image: url(./images/editing/bubblereview.png);
-            background-size: contain;
-            background-repeat: no-repeat;
+        .comments-block{
             width: 50vw;
-            height: 13.19vw;
-            margin: auto;
-            font-family: "KTS";
-            font-size: 1.25vw;
-            text-align: center;
-            line-height: 1.52vw;
-            padding: 2.08vw 5.2vw;
+            height: 14vw;
+            overflow: hidden;
             position: relative;
-            float: left;
+            .comment {
+                background-image: url(./images/editing/bubblereview.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 50vw;
+                height: 13.19vw;
+                font-family: "KTS";
+                font-size: 1.25vw;
+                text-align: center;
+                line-height: 1.52vw;
+                padding: 2.08vw 5.2vw;
+                position: relative;
+                float: left;
+                .comment-text{
+                    transition-property: opacity;
+                    transition: 1s;
+                }
+            }   
         }
+        
 
 
         .left,
@@ -1110,6 +1106,7 @@ main {
             height: 4.444vw;
             position: absolute;
             top: 4.16vw;
+            cursor: pointer;
             background-image: url(./images/editing/left.png);
             background-size: contain;
             background-repeat: no-repeat;

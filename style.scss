@@ -487,6 +487,15 @@ main {
             margin-left: auto;
             margin-right: 2.56vw;
             padding-top: 1.73vw;
+            .free:hover{
+                font-size: 1.5vw;
+                transition-duration: 0.5s;
+            }
+            .about:hover{
+                color: rgb(108, 108, 108);
+                transition-duration: 0.5s;
+
+            }
         }
 
         .title {
@@ -1137,36 +1146,45 @@ main {
         background-repeat: no-repeat;
         margin: 3vw auto 0px;
         padding-top: 4.86vw;
+        position: relative;
+        
+        .left,
+        .right {
+            width: 1.87vw;
+            height: 4.44vw;
+            position: absolute;
+            top: 12.33vw;
+            background-image: url(./images/editing/left.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
 
+        .left {
+            left: -9.72vw;
+        }
+
+        .right {
+            right: -9.72vw;
+            background-image: url(./images/editing/right.png);
+
+        }
         .vid {
             width: 40.27vw;
             height: 22.22vw;
-            background-image: url(./images/editing/first.png);
             background-size: contain;
             background-repeat: no-repeat;
             margin: auto;
             position: relative;
-
-            .left,
-            .right {
-                width: 1.87vw;
-                height: 4.44vw;
-                position: absolute;
-                top: 8.33vw;
-                background-image: url(./images/editing/left.png);
-                background-size: contain;
-                background-repeat: no-repeat;
+            transition-property: opacity;
+            transition-duration: 1s;
+            iframe{
+                width: 40.27vw;
+                height: 22.22vw;
+                p{
+                    font-size: 1vw;
+                }
             }
-
-            .left {
-                left: -9.72vw;
-            }
-
-            .right {
-                right: -9.72vw;
-                background-image: url(./images/editing/right.png);
-
-            }
+            
         }
     }
 
@@ -1892,35 +1910,36 @@ main {
                 text-align: center;
             }
 
-            // .comments-block{
-            //     width: 50vw;
-            //     height: 14vw;
-            //     overflow: hidden;
-            //     position: relative;
-            //     .comments-line{
-            //     width: 200vw;
-            //     display: flex;
-            //     justify-content: space-around;
-            //     height: 13.2vw;
-            //     position: absolute;
-            //     left: 0px;
-            //     transition: 1s;
-            // }   
-            .comment {
-                background-image: url(./images/editing/bubblereview.png);
-                background-size: contain;
-                background-repeat: no-repeat;
+            .comments-block{
                 width: 50vw;
-                height: 13.6vw;
-                margin: 4.86vw auto 0px;
-                font-family: "KTS";
-                font-size: 1.25vw;
-                text-align: center;
-                line-height: 1.52vw;
-                padding: 2.08vw 5.2vw;
+                height: 14vw;
+                overflow: hidden;
                 position: relative;
-                float: left;
+                .comments-line{
+                width: 200vw;
+                display: flex;
+                justify-content: space-around;
+                height: 13.2vw;
+                position: absolute;
+                left: 0px;
+                transition: 1s;
+                .comment {
+                    background-image: url(./images/editing/bubblereview.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 50vw;
+                    height: 13.6vw;
+                    margin: 4.86vw auto 0px;
+                    font-family: "KTS";
+                    font-size: 1.25vw;
+                    text-align: center;
+                    line-height: 1.52vw;
+                    padding: 2.08vw 5.2vw;
+                    position: relative;
+                    float: left;
+                }
             }
+            }   
 
 
             .left,
@@ -2166,38 +2185,45 @@ main {
                 background-repeat: no-repeat;
                 margin: auto;
                 padding-top: 4vw;
+                position: relative;
+                .left,
+                .right {
+                    width: 1.87vw;
+                    height: 4.44vw;
+                    position: absolute;
+                    top: 12.5vw;
+                    background-image: url(./images/editing/left.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
 
+                .left {
+                    left: -4.72vw;
+                }
+
+                .right {
+                    right: -4.72vw;
+                    background-image: url(./images/editing/right.png);
+
+                }
+            }
                 .vid {
                     width: 38.19vw;
                     height: 19.44vw;
-                    background-image: url(./images/editing/first.png);
                     background-size: contain;
                     background-repeat: no-repeat;
                     margin: auto;
-                    position: relative;
-
-                    .left,
-                    .right {
-                        width: 1.87vw;
-                        height: 4.44vw;
-                        position: absolute;
-                        top: 7.5vw;
-                        background-image: url(./images/editing/left.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
+                    position: relative; 
+                    transition-property: opacity;
+                    transition-duration: 1s;
+                    iframe{
+                        width: 38.19vw;
+                        height: 19.44vw;
                     }
-
-                    .left {
-                        left: -9.72vw;
-                    }
-
-                    .right {
-                        right: -9.72vw;
-                        background-image: url(./images/editing/right.png);
-
+                    p{
+                        font-size: 1vw;
                     }
                 }
-            }
         }
 
         .price {
@@ -2425,10 +2451,24 @@ main {
             .left, .right{
                 top: 13.19vw;
             }
-            .comment{
+            .comments-block{
                 width: 61.11vw;
-                height: 17.36vw;
+                height: 24.3vw;
+                .comments-line{
+                    width: 61.11vw;
+                    height: 24.3vw;
+                    overflow: visible;
+                    .comment{
+                        width: 61.11vw;
+                        height: 17.36vw;
+                        .comment-text{
+                            transition-property: opacity;
+                            transition: 1s;
+                        }
+                    }
+                }
             }
+            
         }
         .works{
             margin-top: 10.41vw;
@@ -2441,36 +2481,37 @@ main {
                 height: 25.97vw;
                 margin: auto;
                 padding-top: 4vw;
-    
+                position: relative;
+                .left,
+                .right {
+                    width: 1.87vw;
+                    height: 4.44vw;
+                    position: absolute;
+                    top: 15.5vw;
+                    background-image: url(./images/editing/left.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .left {
+                    left: -2.72vw;
+                }
+
+                .right {
+                    right: -2.72vw;
+                    background-image: url(./images/editing/right.png);
+
+                }
                 .vid {
                     width: 23.26vw;
                     height: 27.26vw;
-                    background-image: url(./images/graphicdesign/work.png);
                     background-size: contain;
                     background-repeat: no-repeat;
                     margin: auto;
                     position: relative;
-    
-                    .left,
-                    .right {
-                        width: 1.87vw;
-                        height: 4.44vw;
-                        position: absolute;
-                        top: 11.5vw;
-                        background-image: url(./images/editing/left.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-    
-                    .left {
-                        left: -9.72vw;
-                    }
-    
-                    .right {
-                        right: -9.72vw;
-                        background-image: url(./images/editing/right.png);
-    
-                    }
+                    background-image: url(./images/graphicdesign/work.png);
+                    transition-property: opacity;
+                    transition: 1s;
                 }
             }
         }

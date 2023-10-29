@@ -9,6 +9,8 @@ let UA=document.getElementsByClassName("UA");
 let EN=document.getElementsByClassName("EN");
 let line=document.getElementsByClassName("comments-line");
 let circle=document.getElementsByClassName("progress-line");
+let video=document.getElementsByClassName("vid");
+let videoNum=0;
 let position=0;
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
@@ -54,4 +56,61 @@ for (let i = 0; i < block.length; i++) {
   block[i].addEventListener("click", function () {
     open(i);
   });
+}
+for(let i=0;i<video.length;i++){
+  if(i!=videoNum){
+    video[i].style.display="none";
+    video[i].style.opacity="0%";
+  }
+}
+function rightV(){
+  videoNum++;
+  if(videoNum==3){
+    videoNum=0;
+  }
+    for(let i=0;i<video.length;i++){
+      if(videoNum==i){
+        
+        setTimeout(()=>{
+          video[i].style.display="block";
+          setTimeout(()=>{
+            video[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+        
+
+      }
+      else{
+        video[i].style.opacity="0%"
+        setTimeout(()=>{
+          video[i].style.display="none";
+        },1000)
+        
+      }
+    }
+
+}
+function leftV(){
+  videoNum--;
+  if(videoNum==-1){
+    videoNum=2;
+  }
+    for(let i=0;i<video.length;i++){
+      if(videoNum==i){
+        setTimeout(()=>{
+          video[i].style.display="block";
+          setTimeout(()=>{
+            video[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+      }
+      else{
+        video[i].style.opacity="0%"
+        setTimeout(()=>{
+          video[i].style.display="none";
+        },1000)
+      }
+  }
 }

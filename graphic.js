@@ -12,6 +12,11 @@ let circle=document.getElementsByClassName("progress-line");
 let position=0;
 let program=document.getElementsByClassName("course-progress-block");
 let programCount=document.getElementsByClassName("program-count");
+let comment=document.getElementsByClassName("comment-text");
+let video=document.getElementsByClassName("vid");
+let videoNum=0;
+let commentNum=0;
+
 let checkCount=[false,false,false]
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
@@ -91,4 +96,123 @@ for(let i=0; i<programCount.length;i++){
             checkCount[i]=false;
         }
     })
+}
+for(let i=0;i<comment.length;i++){
+  if(commentNum==i){
+    comment[i].style.opacity="100%";
+    comment[i].style.display="block";
+  }
+  else{
+    comment[i].style.opacity="0%"
+    comment[i].style.display="none";
+  }
+}
+function right(){
+  commentNum++;
+  if(commentNum==3){
+    commentNum=0;
+  }
+    for(let i=0;i<comment.length;i++){
+      if(commentNum==i){
+        
+        setTimeout(()=>{
+          comment[i].style.display="block";
+          setTimeout(()=>{
+            comment[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+        
+
+      }
+      else{
+        comment[i].style.opacity="0%"
+        setTimeout(()=>{
+          comment[i].style.display="none";
+        },1000)
+        
+      }
+    }
+
+}
+function left(){
+  commentNum--;
+  if(commentNum==-1){
+    commentNum=2;
+  }
+    for(let i=0;i<comment.length;i++){
+      if(commentNum==i){
+        setTimeout(()=>{
+          comment[i].style.display="block";
+          setTimeout(()=>{
+            comment[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+      }
+      else{
+        comment[i].style.opacity="0%"
+        setTimeout(()=>{
+          comment[i].style.display="none";
+        },1000)
+      }
+  }
+}
+for(let i=0;i<video.length;i++){
+  video[i].style.backgroundImage=`url(./images/graphicdesign/work${i+1}.png)`;
+  if(i!=videoNum){
+    video[i].style.display="none";
+    video[i].style.opacity="0%";
+  }
+}
+function rightV(){
+  videoNum++;
+  if(videoNum==4){
+    videoNum=0;
+  }
+    for(let i=0;i<video.length;i++){
+      if(videoNum==i){
+        
+        setTimeout(()=>{
+          video[i].style.display="block";
+          setTimeout(()=>{
+            video[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+        
+
+      }
+      else{
+        video[i].style.opacity="0%"
+        setTimeout(()=>{
+          video[i].style.display="none";
+        },1000)
+        
+      }
+    }
+
+}
+function leftV(){
+  videoNum--;
+  if(videoNum==-1){
+    videoNum=3;
+  }
+    for(let i=0;i<video.length;i++){
+      if(videoNum==i){
+        setTimeout(()=>{
+          video[i].style.display="block";
+          setTimeout(()=>{
+            video[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+      }
+      else{
+        video[i].style.opacity="0%"
+        setTimeout(()=>{
+          video[i].style.display="none";
+        },1000)
+      }
+  }
 }

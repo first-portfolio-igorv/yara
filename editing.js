@@ -10,6 +10,8 @@ let UA=document.getElementsByClassName("UA");
 let EN=document.getElementsByClassName("EN");
 let comment=document.getElementsByClassName("comment-text");
 let circle=document.getElementsByClassName("progress-line");
+let video=document.getElementsByClassName("vid");
+let videoNum=0;
 let commentNum=0;
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+8)
@@ -82,7 +84,7 @@ for(let i=0;i<comment.length;i++){
 }
 function right(){
   commentNum++;
-  if(commentNum==4){
+  if(commentNum==2){
     commentNum=0;
   }
     for(let i=0;i<comment.length;i++){
@@ -111,7 +113,7 @@ function right(){
 function left(){
   commentNum--;
   if(commentNum==-1){
-    commentNum=3;
+    commentNum=1;
   }
     for(let i=0;i<comment.length;i++){
       if(commentNum==i){
@@ -131,24 +133,60 @@ function left(){
       }
   }
 }
-// function right(){
-//   if(position==-150){
-//     position=0;
-//   }
-//   else{
-//     position-=50;
-//   }
-  
-//   line[0].style.left=position+"vw";
+for(let i=0;i<video.length;i++){
+  if(i!=videoNum){
+    video[i].style.display="none";
+    video[i].style.opacity="0%";
+  }
+}
+function rightV(){
+  videoNum++;
+  if(videoNum==3){
+    videoNum=0;
+  }
+    for(let i=0;i<video.length;i++){
+      if(videoNum==i){
+        
+        setTimeout(()=>{
+          video[i].style.display="block";
+          setTimeout(()=>{
+            video[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+        
 
-// }
-// function left(){
-//   if(position==0){
-//     position=0;
-//   }
-//   else{
-//     position+=50;
-//   }
+      }
+      else{
+        video[i].style.opacity="0%"
+        setTimeout(()=>{
+          video[i].style.display="none";
+        },1000)
+        
+      }
+    }
 
-//   line[0].style.left=position+"vw";
-// }
+}
+function leftV(){
+  videoNum--;
+  if(videoNum==-1){
+    videoNum=2;
+  }
+    for(let i=0;i<video.length;i++){
+      if(videoNum==i){
+        setTimeout(()=>{
+          video[i].style.display="block";
+          setTimeout(()=>{
+            video[i].style.opacity="100%";
+            
+          },100)
+        },1000)
+      }
+      else{
+        video[i].style.opacity="0%"
+        setTimeout(()=>{
+          video[i].style.display="none";
+        },1000)
+      }
+  }
+}

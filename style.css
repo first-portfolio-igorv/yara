@@ -413,6 +413,14 @@ main .EN {
   margin-right: 2.56vw;
   padding-top: 1.73vw;
 }
+.editing .top-block .menu .free:hover {
+  font-size: 1.5vw;
+  transition-duration: 0.5s;
+}
+.editing .top-block .menu .about:hover {
+  color: rgb(108, 108, 108);
+  transition-duration: 0.5s;
+}
 .editing .top-block .title {
   display: block;
   text-align: center;
@@ -933,32 +941,41 @@ main .EN {
   background-repeat: no-repeat;
   margin: 3vw auto 0px;
   padding-top: 4.86vw;
-}
-.bottom-block1 .videos .vid {
-  width: 40.27vw;
-  height: 22.22vw;
-  background-image: url(./images/editing/first.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: auto;
   position: relative;
 }
-.bottom-block1 .videos .vid .left,
-.bottom-block1 .videos .vid .right {
+.bottom-block1 .videos .left,
+.bottom-block1 .videos .right {
   width: 1.87vw;
   height: 4.44vw;
   position: absolute;
-  top: 8.33vw;
+  top: 12.33vw;
   background-image: url(./images/editing/left.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.bottom-block1 .videos .vid .left {
+.bottom-block1 .videos .left {
   left: -9.72vw;
 }
-.bottom-block1 .videos .vid .right {
+.bottom-block1 .videos .right {
   right: -9.72vw;
   background-image: url(./images/editing/right.png);
+}
+.bottom-block1 .videos .vid {
+  width: 40.27vw;
+  height: 22.22vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.bottom-block1 .videos .vid iframe {
+  width: 40.27vw;
+  height: 22.22vw;
+}
+.bottom-block1 .videos .vid iframe p {
+  font-size: 1vw;
 }
 .bottom-block1 .price {
   margin-top: 14.93vw;
@@ -1724,9 +1741,28 @@ main .EN {
 .graphic .bottom-block .comments .title {
   text-align: center;
 }
-.illustration .bottom-block .comments .comment,
-.animation .bottom-block .comments .comment,
-.graphic .bottom-block .comments .comment {
+.illustration .bottom-block .comments .comments-block,
+.animation .bottom-block .comments .comments-block,
+.graphic .bottom-block .comments .comments-block {
+  width: 50vw;
+  height: 14vw;
+  overflow: hidden;
+  position: relative;
+}
+.illustration .bottom-block .comments .comments-block .comments-line,
+.animation .bottom-block .comments .comments-block .comments-line,
+.graphic .bottom-block .comments .comments-block .comments-line {
+  width: 200vw;
+  display: flex;
+  justify-content: space-around;
+  height: 13.2vw;
+  position: absolute;
+  left: 0px;
+  transition: 1s;
+}
+.illustration .bottom-block .comments .comments-block .comments-line .comment,
+.animation .bottom-block .comments .comments-block .comments-line .comment,
+.graphic .bottom-block .comments .comments-block .comments-line .comment {
   background-image: url(./images/editing/bubblereview.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1968,32 +2004,41 @@ main .EN {
   background-repeat: no-repeat;
   margin: auto;
   padding-top: 4vw;
-}
-.animation .bottom-block .works .videos .vid {
-  width: 38.19vw;
-  height: 19.44vw;
-  background-image: url(./images/editing/first.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: auto;
   position: relative;
 }
-.animation .bottom-block .works .videos .vid .left,
-.animation .bottom-block .works .videos .vid .right {
+.animation .bottom-block .works .videos .left,
+.animation .bottom-block .works .videos .right {
   width: 1.87vw;
   height: 4.44vw;
   position: absolute;
-  top: 7.5vw;
+  top: 12.5vw;
   background-image: url(./images/editing/left.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.animation .bottom-block .works .videos .vid .left {
-  left: -9.72vw;
+.animation .bottom-block .works .videos .left {
+  left: -4.72vw;
 }
-.animation .bottom-block .works .videos .vid .right {
-  right: -9.72vw;
+.animation .bottom-block .works .videos .right {
+  right: -4.72vw;
   background-image: url(./images/editing/right.png);
+}
+.animation .bottom-block .works .vid {
+  width: 38.19vw;
+  height: 19.44vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.animation .bottom-block .works .vid iframe {
+  width: 38.19vw;
+  height: 19.44vw;
+}
+.animation .bottom-block .works .vid p {
+  font-size: 1vw;
 }
 .animation .bottom-block .price {
   margin-top: 19.58vw;
@@ -2171,9 +2216,22 @@ main .EN {
 .graphic .bottom-block .comments .left, .graphic .bottom-block .comments .right {
   top: 13.19vw;
 }
-.graphic .bottom-block .comments .comment {
+.graphic .bottom-block .comments .comments-block {
+  width: 61.11vw;
+  height: 24.3vw;
+}
+.graphic .bottom-block .comments .comments-block .comments-line {
+  width: 61.11vw;
+  height: 24.3vw;
+  overflow: visible;
+}
+.graphic .bottom-block .comments .comments-block .comments-line .comment {
   width: 61.11vw;
   height: 17.36vw;
+}
+.graphic .bottom-block .comments .comments-block .comments-line .comment .comment-text {
+  transition-property: opacity;
+  transition: 1s;
 }
 .graphic .bottom-block .works {
   margin-top: 10.41vw;
@@ -2187,32 +2245,35 @@ main .EN {
   height: 25.97vw;
   margin: auto;
   padding-top: 4vw;
-}
-.graphic .bottom-block .works .videos .vid {
-  width: 23.26vw;
-  height: 27.26vw;
-  background-image: url(./images/graphicdesign/work.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: auto;
   position: relative;
 }
-.graphic .bottom-block .works .videos .vid .left,
-.graphic .bottom-block .works .videos .vid .right {
+.graphic .bottom-block .works .videos .left,
+.graphic .bottom-block .works .videos .right {
   width: 1.87vw;
   height: 4.44vw;
   position: absolute;
-  top: 11.5vw;
+  top: 15.5vw;
   background-image: url(./images/editing/left.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.graphic .bottom-block .works .videos .vid .left {
-  left: -9.72vw;
+.graphic .bottom-block .works .videos .left {
+  left: -2.72vw;
 }
-.graphic .bottom-block .works .videos .vid .right {
-  right: -9.72vw;
+.graphic .bottom-block .works .videos .right {
+  right: -2.72vw;
   background-image: url(./images/editing/right.png);
+}
+.graphic .bottom-block .works .videos .vid {
+  width: 23.26vw;
+  height: 27.26vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+  background-image: url(./images/graphicdesign/work.png);
+  transition-property: opacity;
+  transition: 1s;
 }
 .graphic .bottom-block .price {
   display: block;

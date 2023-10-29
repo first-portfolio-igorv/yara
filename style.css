@@ -413,13 +413,9 @@ main .EN {
   margin-right: 2.56vw;
   padding-top: 1.73vw;
 }
-.editing .top-block .menu .free:hover {
-  font-size: 1.5vw;
-  transition-duration: 0.5s;
-}
-.editing .top-block .menu .about:hover {
-  color: rgb(108, 108, 108);
-  transition-duration: 0.5s;
+.editing .top-block .menu a:hover {
+  color: rgb(130, 68, 181);
+  transition-duration: 0.2s;
 }
 .editing .top-block .title {
   display: block;
@@ -908,7 +904,7 @@ main .EN {
 }
 .bottom-block1 .comments .comments-block .comment .comment-text {
   transition-property: opacity;
-  transition: 1s;
+  transition: 0.2s;
 }
 .bottom-block1 .comments .left,
 .bottom-block1 .comments .right {
@@ -967,8 +963,6 @@ main .EN {
   background-repeat: no-repeat;
   margin: auto;
   position: relative;
-  transition-property: opacity;
-  transition-duration: 1s;
 }
 .bottom-block1 .videos .vid iframe {
   width: 40.27vw;
@@ -2337,34 +2331,34 @@ main .EN {
   }
   .editing .top-block .title {
     margin-top: 21vw;
-    font-size: 4.12vw;
-    line-height: 5.16vw;
+    font-size: 4.3vw;
+    line-height: 5.3vw;
   }
   .editing .top-block .EN {
     display: none;
   }
   .editing .top-block .description {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
     margin-top: 7.55vw;
-    line-height: 2.6vw;
+    line-height: 4vw;
   }
   .editing .top-block .question-block {
-    width: 47.86vw;
+    width: 52.86vw;
     height: 67.98vw;
-    margin: 30.61vw 0px 0px 32.8vw;
+    margin: 23.61vw 0px 0px 27.8vw;
     padding-top: 5vw;
   }
   .editing .top-block .question-block .title {
     text-align: left;
     font-size: 4vw;
-    margin: 0px 0px 4.16vw;
+    margin: 0px 0px 6.16vw;
   }
   .editing .top-block .question-block span {
     display: block;
     font-family: "KTS";
     margin-bottom: 8.55vw;
-    font-size: 2.8vw;
-    line-height: 3.7vw;
+    font-size: 3.2vw;
+    line-height: 4.2vw;
     position: relative;
   }
   .editing .top-block .question-block span::after {
@@ -2405,8 +2399,8 @@ main .EN {
     display: block;
     font-family: "KTS";
     margin-bottom: 3.8vw;
-    font-size: 2.8vw;
-    line-height: 3.1vw;
+    font-size: 3.2vw;
+    line-height: 4vw;
     position: relative;
   }
   .editing .top-block .foryou-block .text span::after {

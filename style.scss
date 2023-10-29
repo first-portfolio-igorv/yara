@@ -487,14 +487,9 @@ main {
             margin-left: auto;
             margin-right: 2.56vw;
             padding-top: 1.73vw;
-            .free:hover{
-                font-size: 1.5vw;
-                transition-duration: 0.5s;
-            }
-            .about:hover{
-                color: rgb(108, 108, 108);
-                transition-duration: 0.5s;
-
+            a:hover{
+                color: rgb(130, 68, 181);
+                transition-duration: 0.2s;
             }
         }
 
@@ -1102,7 +1097,7 @@ main {
                 float: left;
                 .comment-text{
                     transition-property: opacity;
-                    transition: 1s;
+                    transition: 0.2s;
                 }
             }   
         }
@@ -1175,8 +1170,7 @@ main {
             background-repeat: no-repeat;
             margin: auto;
             position: relative;
-            transition-property: opacity;
-            transition-duration: 1s;
+            
             iframe{
                 width: 40.27vw;
                 height: 22.22vw;
@@ -2589,8 +2583,8 @@ main {
     
             .title {
                 margin-top: 21vw;
-                font-size: 4.12vw;
-                line-height: 5.16vw;
+                font-size: 4.3vw;
+                line-height: 5.3vw;
     
             }
     
@@ -2599,29 +2593,29 @@ main {
             }
     
             .description {
-                font-size: 2.8vw;
+                font-size: 3.2vw;
                 margin-top: 7.55vw;
-                line-height: 2.6vw;
+                line-height: 4vw;
             }
     
             .question-block {
-                width:47.86vw;
+                width:52.86vw;
                 height: 67.98vw;
-                margin: 30.61vw 0px 0px 32.8vw;
+                margin: 23.61vw 0px 0px 27.8vw;
                 padding-top: 5vw;
     
                 .title {
                     text-align: left;
                     font-size: 4vw;
-                    margin: 0px 0px 4.16vw;
+                    margin: 0px 0px 6.16vw;
                 }
     
                 span {
                     display: block;
                     font-family: "KTS";
                     margin-bottom: 8.55vw;
-                    font-size: 2.8vw;
-                    line-height: 3.7vw;
+                    font-size: 3.2vw;
+                    line-height: 4.2vw;
                     position: relative;
     
                     &::after {
@@ -2666,8 +2660,8 @@ main {
                         display: block;
                         font-family: "KTS";
                         margin-bottom: 3.8vw;
-                        font-size: 2.8vw;
-                        line-height: 3.1vw;
+                        font-size: 3.2vw;
+                        line-height: 4vw;
                         position: relative;
     
                         &::after {

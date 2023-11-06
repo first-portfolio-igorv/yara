@@ -96,7 +96,7 @@ function right(){
             comment[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
         
 
       }
@@ -104,7 +104,7 @@ function right(){
         comment[i].style.opacity="0%"
         setTimeout(()=>{
           comment[i].style.display="none";
-        },1000)
+        },200)
         
       }
     }
@@ -123,13 +123,13 @@ function left(){
             comment[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
       }
       else{
         comment[i].style.opacity="0%"
         setTimeout(()=>{
           comment[i].style.display="none";
-        },1000)
+        },200)
       }
   }
 }
@@ -147,22 +147,18 @@ function rightV(){
     for(let i=0;i<video.length;i++){
       if(videoNum==i){
         
-        setTimeout(()=>{
+
           video[i].style.display="block";
-          setTimeout(()=>{
             video[i].style.opacity="100%";
             
-          },100)
-        },1000)
+
+
         
 
       }
       else{
         video[i].style.opacity="0%"
-        setTimeout(()=>{
-          video[i].style.display="none";
-        },1000)
-        
+          video[i].style.display="none";        
       }
     }
 
@@ -174,19 +170,13 @@ function leftV(){
   }
     for(let i=0;i<video.length;i++){
       if(videoNum==i){
-        setTimeout(()=>{
           video[i].style.display="block";
-          setTimeout(()=>{
             video[i].style.opacity="100%";
             
-          },100)
-        },1000)
       }
       else{
         video[i].style.opacity="0%"
-        setTimeout(()=>{
           video[i].style.display="none";
-        },1000)
       }
   }
 }

@@ -3,7 +3,9 @@ let ua=document.getElementsByClassName("ukr-button");
 
 let UA=document.getElementsByClassName("UA");
 let EN=document.getElementsByClassName("EN");
-
+let check=false;
+let line=document.getElementsByClassName("toggle");
+let menu=document.getElementsByClassName("menu-mobile")
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="none";
@@ -16,6 +18,20 @@ ua[0].addEventListener("click", function(){
         EN[i].style.display="none";
     }
 })
+function toggle(){
+    check=!check;
+    if(check){
+        line[0].classList.add("line1");
+        line[0].classList.remove("line");
+        menu[0].style.width="60vw";
+    }
+    else{
+        line[0].classList.remove("line1");
+        line[0].classList.add("line");
+        menu[0].style.width="0vw";
+
+    }
+}
 // $(document).ready(function() {
 
 // 	//E-mail Ajax Send

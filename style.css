@@ -18,6 +18,16 @@ main {
   background-size: cover;
   font-family: "KTS-black";
 }
+main .imgg {
+  background-image: url(./images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 9.02vw;
+  height: 8.33vw;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+}
 main .header {
   height: 63vw;
 }
@@ -42,16 +52,6 @@ main .header .lang-buttons .en-button::after {
   font-size: 1.11vw;
   position: absolute;
   right: 1.38vw;
-}
-main .header .img {
-  background-image: url(./images/logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 9.02vw;
-  height: 8.33vw;
-  position: absolute;
-  top: 40px;
-  left: 40px;
 }
 main .header .buttons {
   height: 80px;
@@ -1739,17 +1739,17 @@ main .EN {
 .animation .bottom-block .comments .comments-block,
 .graphic .bottom-block .comments .comments-block {
   width: 50vw;
-  height: 14vw;
+  height: 19vw;
   overflow: hidden;
   position: relative;
 }
 .illustration .bottom-block .comments .comments-block .comments-line,
 .animation .bottom-block .comments .comments-block .comments-line,
 .graphic .bottom-block .comments .comments-block .comments-line {
-  width: 200vw;
+  width: 50vw;
   display: flex;
   justify-content: space-around;
-  height: 13.2vw;
+  height: 16vw;
   position: absolute;
   left: 0px;
   transition: 1s;
@@ -2331,16 +2331,16 @@ main .EN {
   }
   .editing .top-block .title {
     margin-top: 21vw;
-    font-size: 4.3vw;
-    line-height: 5.3vw;
+    font-size: 5vw;
+    line-height: 6vw;
   }
   .editing .top-block .EN {
     display: none;
   }
   .editing .top-block .description {
-    font-size: 3.2vw;
+    font-size: 4.5vw;
     margin-top: 7.55vw;
-    line-height: 4vw;
+    line-height: 5.2vw;
   }
   .editing .top-block .question-block {
     width: 52.86vw;
@@ -2666,6 +2666,355 @@ main .EN {
     margin-top: 6.25vw;
   }
   .editing .middle-block .EN {
+    display: none;
+  }
+  main {
+    width: 100%;
+    height: 700vw;
+    background-image: url(./images/img12.jpg);
+  }
+  main .imgg {
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16.24vw;
+    height: 15vw;
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+  }
+  main .menu {
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+    z-index: 3;
+  }
+  main .menu .line, main .menu .line1 {
+    margin: 12px auto;
+    border-radius: 5px;
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+  }
+  main .menu .line::before, main .menu .line::after, main .menu .line1::before, main .menu .line1::after {
+    content: "";
+    width: 22px;
+    height: 3.5px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    transition: all 500ms ease;
+  }
+  main .menu .line::after, main .menu .line1::after {
+    top: 7px;
+    left: 0px;
+  }
+  main .menu .line::before, main .menu .line1::before {
+    top: 15px;
+    left: 0px;
+  }
+  main .menu .line1 {
+    background-color: transparent;
+  }
+  main .menu .line1::after {
+    transform: rotate(135deg);
+  }
+  main .menu .line1::before {
+    top: 7px;
+    transform: rotate(-135deg);
+  }
+  main .menu-mobile {
+    width: 0px;
+    height: 100vw;
+    background-color: white;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transition: all 500ms ease;
+  }
+  main .header {
+    height: 140vw;
+    padding-top: 30vw;
+    z-index: 1;
+  }
+  main .header .lang-buttons {
+    display: none;
+  }
+  main .header .buttons {
+    display: none;
+  }
+  main .header .title {
+    width: 81.55vw;
+    height: 40vw;
+    margin-top: 0px;
+    margin-left: 10%;
+    font-weight: lighter;
+    background-image: url(./images/firstdraft.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: static;
+    z-index: 0;
+  }
+  main .main {
+    height: 430vw;
+    padding-top: 11.11vw;
+  }
+  main .main .main-top {
+    width: 80.5vw;
+  }
+  main .main .main-top .about {
+    width: 100%;
+    height: 100.13vw;
+  }
+  main .main .main-top .about .title {
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 8vw;
+  }
+  main .main .main-top .about p {
+    padding-left: 5vw;
+    margin-bottom: 8vw;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  main .main .main-top .about p::after {
+    width: 2vw;
+    height: 0.6vw;
+    background-color: black;
+    left: -1.04vw;
+    top: 3.84vw;
+  }
+  main .main .main-top .img {
+    display: none;
+  }
+  main .main .main-midle {
+    padding-top: 30px;
+    width: 70.55vw;
+    height: 300.51vw;
+    margin: 5.58vw auto 0px;
+  }
+  main .main .main-midle .top,
+  main .main .main-midle .bottom {
+    display: block;
+  }
+  main .main .main-midle span {
+    font-size: 10vw;
+    display: block;
+  }
+  main .main .main-midle .EN {
+    display: none;
+  }
+  main .main .main-midle .editing {
+    width: 18.9vw;
+    height: 20.75vw;
+    width: 60vw;
+    height: 65.87vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/editing.png);
+    margin-left: 2vw;
+    padding-top: 27vw;
+  }
+  main .main .main-midle .editing span {
+    margin-left: -7.84vw;
+  }
+  main .main .main-midle .gdesign {
+    height: 51.69vw;
+    width: 57vw;
+    margin-left: 10.2vw;
+    margin-top: 5vw;
+    margin-bottom: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/graphicdesign\ \(2\).png);
+    padding-top: 5vw;
+  }
+  main .main .main-midle .gdesign span {
+    margin-top: 0.6vw;
+    margin-left: -16.94vw;
+    line-height: 10vw;
+  }
+  main .main .main-midle .animation {
+    height: 56vw;
+    width: 69vw;
+    margin-left: 4vw;
+    margin-top: 3.08vw;
+    margin-bottom: 5vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/animation.png);
+    padding-top: 25vw;
+  }
+  main .main .main-midle .animation span {
+    margin-top: 12.37vw;
+    margin-left: 14vw;
+  }
+  main .main .main-midle .illustration {
+    height: 62.95vw;
+    width: 80vw;
+    margin-left: -15vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/illustration.png);
+    padding-top: 16vw;
+  }
+  main .main .main-midle .illustration span {
+    margin-top: 7.18vw;
+    margin-left: 3.22vw;
+  }
+  main .main .main-bottom {
+    width: 49.3vw;
+    height: 26.38vw;
+    background-image: url(./images/freelesson.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20.83vw;
+    margin-left: 33vw;
+  }
+  main .main .main-bottom span {
+    display: block;
+    position: absolute;
+    margin-top: 11.31vw;
+    margin-left: -3.47vw;
+    font-size: 3.1vw;
+  }
+  main .main .main-bottom .EN {
+    display: none;
+  }
+  main .footer {
+    width: 100%;
+    height: 54.86vw;
+    padding: 9.93vw 0px 0px 10.76vw;
+  }
+  main .footer .main-block {
+    display: flex;
+    height: 37.4vw;
+  }
+  main .footer .main-block .left-block .contacts {
+    width: 21.52vw;
+    height: 4.51vw;
+    background-image: url(./images/contacts.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 1.45vw;
+    padding-left: 2.77vw;
+    margin-bottom: 3.81vw;
+  }
+  main .footer .main-block .left-block .contacts span {
+    font-size: 2.5vw;
+  }
+  main .footer .main-block .left-block p {
+    margin-bottom: 2.43vw;
+    margin-left: 2.77vw;
+    font-size: 1.11vw;
+  }
+  main .footer .main-block .left-block .social {
+    width: 13.88vw;
+    margin-top: 5.2vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.77vw;
+  }
+  main .footer .main-block .left-block .social .instagram {
+    width: 3.47vw;
+    height: 3.47vw;
+    background-image: url(./images/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  main .footer .main-block .left-block .social .facebook {
+    width: 3.47vw;
+    height: 3.47vw;
+    background-image: url(./images/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  main .footer .main-block .left-block .social .tik-tok {
+    width: 3.47vw;
+    height: 3.47vw;
+    background-image: url(./images/tiktok.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  main .footer .main-block .center-block {
+    width: 31.25vw;
+    margin-left: 2.43vw;
+  }
+  main .footer .main-block .center-block .reg {
+    margin-top: 3.12vw;
+    margin-left: 12.5vw;
+    width: 18.4vw;
+  }
+  main .footer .main-block .center-block .reg input {
+    width: 18.4vw;
+    height: 2.77vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1.25vw;
+    font-family: "KTS-black";
+  }
+  main .footer .main-block .center-block .reg input::-moz-placeholder {
+    color: rgb(107, 107, 107);
+    font-family: "KTS-black";
+    font-size: 0.97vw;
+  }
+  main .footer .main-block .center-block .reg input::placeholder {
+    color: rgb(107, 107, 107);
+    font-family: "KTS-black";
+    font-size: 0.97vw;
+  }
+  main .footer .main-block .center-block .send {
+    width: 30.9vw;
+    height: 19.09vw;
+    background-image: url(./images/send.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  main .footer .main-block .center-block .send span {
+    position: absolute;
+    font-size: 1.5vw;
+    margin-top: 12.5vw;
+    margin-left: 20.13vw;
+  }
+  main .footer .main-block .center-block .send .EN {
+    display: none;
+  }
+  main .footer .main-block .right-block {
+    width: 16.31vw;
+    height: 25.69vw;
+    background-image: url(./images/form.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  main .footer .main-block .right-block span {
+    display: block;
+    font-size: 3.2vw;
+    margin-top: 2.43vw;
+    margin-left: 4.86vw;
+  }
+  main .footer .main-block .right-block .EN {
+    display: none;
+  }
+  main .footer .bottom-block {
+    width: 35.83vw;
+    height: 6.94vw;
+    margin-left: 50.29vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vw;
+  }
+  main .footer .bottom-block span {
+    color: rgb(223, 223, 223);
+    font-size: 1.6vw;
+  }
+  main .footer .bottom-block a {
+    text-decoration: none;
+  }
+  main .EN {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

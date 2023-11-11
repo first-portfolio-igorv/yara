@@ -23,7 +23,7 @@ function toggle(){
     if(check){
         line[0].classList.add("line1");
         line[0].classList.remove("line");
-        menu[0].style.width="60vw";
+        menu[0].style.width="100vw";
     }
     else{
         line[0].classList.remove("line1");
@@ -31,6 +31,12 @@ function toggle(){
         menu[0].style.width="0vw";
 
     }
+}
+function off(){
+        line[0].classList.remove("line1");
+        line[0].classList.add("line");
+        menu[0].style.width="0vw";
+        check=!check;
 }
 // $(document).ready(function() {
 

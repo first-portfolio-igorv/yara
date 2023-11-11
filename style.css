@@ -2727,34 +2727,83 @@ main .EN {
   }
   main .menu-mobile {
     width: 0px;
-    height: 100vw;
-    background-color: white;
+    height: 100%;
+    background-image: url("./images/middle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: fixed;
     right: 0px;
     top: 0px;
-    transition: all 500ms ease;
+    transition: width 500ms ease;
     border-radius: 0px 0px 0px 10px;
+    z-index: 2;
   }
   main .menu-mobile hr {
     height: 3px;
     background-color: black;
   }
   main .menu-mobile .button-list {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    padding: 5vw 2vw 0vw;
+    padding: 10vw 2vw 0vw;
   }
   main .menu-mobile .button-list .EN {
     display: none;
   }
   main .menu-mobile .button-list span {
+    text-align: center;
     display: block;
-    font-size: 4.2vw;
-    margin-bottom: 5vw;
+    font-size: 7.5vw;
+    margin-bottom: 10.5vw;
     color: black;
   }
   main .menu-mobile .button-list a {
     text-decoration: none;
+  }
+  main .menu-mobile p {
+    text-align: center;
+    display: block;
+    font-size: 7vw;
+    margin: 8vw 0px;
+    color: black;
+  }
+  main .menu-mobile .reg {
+    margin-top: 3.12vw;
+    margin: auto;
+    width: 60vw;
+    display: block;
+  }
+  main .menu-mobile .reg input {
+    width: 60vw;
+    height: 12.77vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 4vw;
+    font-family: "KTS-black";
+  }
+  main .menu-mobile .reg input::-moz-placeholder {
+    color: rgb(107, 107, 107);
+    font-family: "KTS-black";
+    font-size: 4vw;
+  }
+  main .menu-mobile .reg input::placeholder {
+    color: rgb(107, 107, 107);
+    font-family: "KTS-black";
+    font-size: 4vw;
+  }
+  main .menu-mobile .reg .button {
+    width: 40vw;
+    height: 8vw;
+    font-size: 4vw;
+    color: black;
+    background-color: transparent;
+    border-radius: 1vw;
+    border: 1.5px solid black;
+    margin-top: 12vw;
+    margin-left: 10vw;
+    cursor: pointer;
   }
   main .header {
     background-image: url("./images/top.jpg");
@@ -2913,7 +2962,7 @@ main .EN {
   }
   main .footer {
     width: 100%;
-    height: 160.86vw;
+    height: 100.86vw;
     padding: 30vw 0px 0px;
     background-image: url(./images/bottomjpg.jpg);
     background-size: cover;
@@ -2921,9 +2970,12 @@ main .EN {
   }
   main .footer .main-block {
     display: flex;
-    height: 100.4vw;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
   }
   main .footer .main-block .left-block {
+    height: 40vw;
     margin: 0px auto;
   }
   main .footer .main-block .left-block .contacts {
@@ -2935,21 +2987,25 @@ main .EN {
     padding-top: 1.45vw;
     padding-left: 7.77vw;
     margin-bottom: 6.81vw;
+    margin-left: 9vw;
   }
   main .footer .main-block .left-block .contacts span {
     font-size: 6vw;
   }
   main .footer .main-block .left-block p {
+    text-align: center;
     margin-bottom: 7.43vw;
     margin-left: 2.77vw;
-    font-size: 3vw;
+    font-size: 4vw;
   }
   main .footer .main-block .left-block .social {
-    width: 70%;
+    width: 40vw;
     margin-top: 5.2vw;
+    margin-left: 12vw;
     display: flex;
     justify-content: space-between;
-    margin-left: 6vw;
+    position: absolute;
+    bottom: 5vw;
   }
   main .footer .main-block .left-block .social .instagram {
     width: 8.47vw;
@@ -2973,8 +3029,8 @@ main .EN {
     background-repeat: no-repeat;
   }
   main .footer .main-block .center-block {
-    width: 31.25vw;
-    margin-left: 2.43vw;
+    width: 80.25vw;
+    margin: 0px auto;
     display: none;
   }
   main .footer .main-block .center-block .reg {
@@ -2983,31 +3039,32 @@ main .EN {
     width: 18.4vw;
   }
   main .footer .main-block .center-block .reg input {
-    width: 18.4vw;
-    height: 2.77vw;
+    width: 60vw;
+    height: 6.77vw;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    font-size: 1.25vw;
+    font-size: 3.25vw;
     font-family: "KTS-black";
   }
   main .footer .main-block .center-block .reg input::-moz-placeholder {
     color: rgb(107, 107, 107);
     font-family: "KTS-black";
-    font-size: 0.97vw;
+    font-size: 3vw;
   }
   main .footer .main-block .center-block .reg input::placeholder {
     color: rgb(107, 107, 107);
     font-family: "KTS-black";
-    font-size: 0.97vw;
+    font-size: 3vw;
   }
   main .footer .main-block .center-block .send {
     width: 30.9vw;
     height: 19.09vw;
-    background-image: url(./images/send.png);
+    background-image: n;
     background-size: contain;
     background-repeat: no-repeat;
+    display: none;
   }
   main .footer .main-block .center-block .send span {
     position: absolute;
@@ -3021,7 +3078,7 @@ main .EN {
   main .footer .main-block .right-block {
     width: 16.31vw;
     height: 25.69vw;
-    background-image: url(./images/form.png);
+    background-image: none;
     background-size: contain;
     background-repeat: no-repeat;
     display: none;
@@ -3036,16 +3093,17 @@ main .EN {
     display: none;
   }
   main .footer .bottom-block {
+    display: none;
     width: 35.83vw;
-    height: 6.94vw;
+    height: 0vw;
     margin-left: 50.29vw;
-    display: flex;
     justify-content: space-between;
     padding-top: 3vw;
   }
   main .footer .bottom-block span {
     color: rgb(223, 223, 223);
     font-size: 1.6vw;
+    display: none;
   }
   main .footer .bottom-block a {
     text-decoration: none;

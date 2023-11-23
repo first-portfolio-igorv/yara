@@ -13,6 +13,8 @@ let circle=document.getElementsByClassName("progress-line");
 let video=document.getElementsByClassName("vid");
 let videoNum=0;
 let commentNum=0;
+let line=document.getElementsByClassName("toggle");
+let menu=document.getElementsByClassName("menu-mobile")
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+8)
 }
@@ -179,4 +181,24 @@ function leftV(){
           video[i].style.display="none";
       }
   }
+}
+function toggle(){
+  check=!check;
+  if(check){
+      line[0].classList.add("line1");
+      line[0].classList.remove("line");
+      menu[0].style.width="100vw";
+  }
+  else{
+      line[0].classList.remove("line1");
+      line[0].classList.add("line");
+      menu[0].style.width="0vw";
+
+  }
+}
+function off(){
+      line[0].classList.remove("line1");
+      line[0].classList.add("line");
+      menu[0].style.width="0vw";
+      check=!check;
 }

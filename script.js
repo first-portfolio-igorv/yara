@@ -5,37 +5,44 @@ let UA=document.getElementsByClassName("UA");
 let EN=document.getElementsByClassName("EN");
 let check=false;
 let line=document.getElementsByClassName("toggle");
-let menu=document.getElementsByClassName("menu-mobile")
-en[0].addEventListener("click", function(){
+let menu=document.getElementsByClassName("menu-mobile");
+let body=document.getElementsByTagName("body");
+for(let i=0; i<en.length;i++){
+    en[i].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="none";
         EN[i].style.display="block";
     }
 })
-ua[0].addEventListener("click", function(){
+ua[i].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="block";
         EN[i].style.display="none";
     }
 })
+}
+
 function toggle(){
     check=!check;
     if(check){
         line[0].classList.add("line1");
         line[0].classList.remove("line");
-        menu[0].style.width="100vw";
+        menu[0].style.right="0px";
+        body[0].style.position="fixed";
     }
     else{
         line[0].classList.remove("line1");
         line[0].classList.add("line");
-        menu[0].style.width="0vw";
+        menu[0].style.right="-100%";
+        body[0].style.position="static";
 
     }
 }
 function off(){
         line[0].classList.remove("line1");
         line[0].classList.add("line");
-        menu[0].style.width="0vw";
+        body[0].style.position="static";
+        menu[0].style.right="-100%";
         check=!check;
 }
 // $(document).ready(function() {

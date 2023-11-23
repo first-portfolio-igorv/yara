@@ -4,6 +4,7 @@ html {
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
 }
 html::-webkit-scrollbar {
   width: 0px;
@@ -17,6 +18,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "KTS-black";
+}
+main .menu-mobile {
+  display: none;
 }
 main .imgg {
   background-image: url(./images/logo.png);
@@ -363,6 +367,17 @@ main .EN {
 .editing .EN {
   display: none;
 }
+.editing .logo {
+  width: 9.02vw;
+  height: 8.68vw;
+  background-image: url(./images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 2;
+  top: 2.56vw;
+  left: 2.56vw;
+}
 .editing .top-block {
   width: 100vw;
   height: 221.5vw;
@@ -393,16 +408,6 @@ main .EN {
   position: absolute;
   right: 1.38vw;
 }
-.editing .top-block .logo {
-  width: 9.02vw;
-  height: 8.68vw;
-  background-image: url(./images/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 2.56vw;
-  left: 2.56vw;
-}
 .editing .top-block .menu {
   width: 64.58vw;
   height: 6.04vw;
@@ -417,7 +422,7 @@ main .EN {
   color: rgb(130, 68, 181);
   transition-duration: 0.2s;
 }
-.editing .top-block .title {
+.editing .top-block .mtitle {
   display: block;
   text-align: center;
   margin-top: 10.76vw;
@@ -563,8 +568,7 @@ main .EN {
 .editing .top-block .block .info .last::before {
   background-image: url(./images/editing/icon3.png);
 }
-
-.middle-block {
+.editing .middle-block {
   width: 100vww;
   max-height: 220vw;
   background-image: url(./images/editing/middle.jpg);
@@ -572,12 +576,12 @@ main .EN {
   background-repeat: no-repeat;
   padding-top: 4.86vw;
 }
-.middle-block .course-progress-block {
+.editing .middle-block .course-progress-block {
   width: 59.93vw;
   max-height: 220vw;
   margin: auto;
 }
-.middle-block .course-progress-block .block {
+.editing .middle-block .course-progress-block .block {
   padding-left: 1.11vw;
   display: flex;
   position: relative;
@@ -587,7 +591,7 @@ main .EN {
   transition: 0.3s;
   transition-timing-function: ease-in, ease, linear;
 }
-.middle-block .course-progress-block .block .line {
+.editing .middle-block .course-progress-block .block .line {
   width: 2.43vw;
   height: 2.43vw;
   border: 0.277vw solid black;
@@ -600,7 +604,7 @@ main .EN {
   text-align: center;
   font-size: 1.52vw;
 }
-.middle-block .course-progress-block .block .line::after {
+.editing .middle-block .course-progress-block .block .line::after {
   content: "";
   width: 2.08vw;
   height: 0.34vw;
@@ -609,8 +613,8 @@ main .EN {
   top: 0.9vw;
   left: -2.08vw;
 }
-.middle-block .course-progress-block .block .progress-line,
-.middle-block .course-progress-block .block .green {
+.editing .middle-block .course-progress-block .block .progress-line,
+.editing .middle-block .course-progress-block .block .green {
   width: 0.34vw;
   height: 100%;
   background-color: black;
@@ -618,8 +622,8 @@ main .EN {
   margin-top: 2.43vw;
   display: block;
 }
-.middle-block .course-progress-block .block .progress-line::after,
-.middle-block .course-progress-block .block .green::after {
+.editing .middle-block .course-progress-block .block .progress-line::after,
+.editing .middle-block .course-progress-block .block .green::after {
   content: "1";
   font-size: 1.52vw;
   text-align: center;
@@ -634,16 +638,16 @@ main .EN {
   top: -2.43vw;
   left: -1.11vw;
 }
-.middle-block .course-progress-block .block .info {
+.editing .middle-block .course-progress-block .block .info {
   width: 50vw;
   margin-top: 0.34vw;
 }
-.middle-block .course-progress-block .block .info .title {
+.editing .middle-block .course-progress-block .block .info .title {
   font-size: 1.38vw;
   margin-bottom: 1.38vw;
   cursor: pointer;
 }
-.middle-block .course-progress-block .block .info .text {
+.editing .middle-block .course-progress-block .block .info .text {
   width: 36.24vw;
   margin-left: 4.16vw;
   max-height: 0px;
@@ -653,7 +657,7 @@ main .EN {
   transition-property: max-height;
   transition-timing-function: ease-in, ease, linear;
 }
-.middle-block .course-progress-block .block .info .text .add-info {
+.editing .middle-block .course-progress-block .block .info .text .add-info {
   position: absolute;
   width: 63.8vw;
   height: 6.52vw;
@@ -664,72 +668,72 @@ main .EN {
   padding-right: 4vw;
   font-size: 1.11vw;
 }
-.middle-block .course-progress-block .block .info .text span {
+.editing .middle-block .course-progress-block .block .info .text span {
   font-size: 1.111vw;
 }
-.middle-block .course-progress-block .block .info .text .text-line {
+.editing .middle-block .course-progress-block .block .info .text .text-line {
   display: flex;
   justify-content: space-between;
 }
-.middle-block .course-progress-block .block .info .text .text-line span {
+.editing .middle-block .course-progress-block .block .info .text .text-line span {
   display: block;
   margin-bottom: 1.38vw;
 }
-.middle-block .course-progress-block .block .info .text .text-line .description {
+.editing .middle-block .course-progress-block .block .info .text .text-line .description {
   width: 34.72vw;
 }
-.middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
   content: "2";
 }
-.middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
   content: "3";
 }
-.middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
   content: "4";
 }
-.middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
   content: "5";
 }
-.middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
   content: "7";
 }
-.middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
   content: "8";
 }
-.middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
   content: "9";
 }
-.middle-block .course-progress-block .block:nth-child(9) {
+.editing .middle-block .course-progress-block .block:nth-child(9) {
   width: 76.3vw;
 }
-.middle-block .course-progress-block .block:nth-child(9) .info {
+.editing .middle-block .course-progress-block .block:nth-child(9) .info {
   width: 66.58vw;
 }
-.middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
   content: "10";
 }
-.middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
   content: "12";
 }
-.middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
   content: "13";
 }
-.middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
   content: "14";
 }
-.middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
   content: "15";
 }
-.middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
   content: "16";
 }
-.middle-block .course-progress-block .block:nth-child(15) .progress-line {
+.editing .middle-block .course-progress-block .block:nth-child(15) .progress-line {
   background-color: transparent;
 }
-.middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
+.editing .middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
   content: "17";
 }
-.middle-block .sertificate-text {
+.editing .middle-block .sertificate-text {
   width: 65.97vw;
   height: 5.2vw;
   background-image: url(./images/editing/certificate\ \(1\).png);
@@ -741,7 +745,7 @@ main .EN {
   margin: auto;
   padding-top: 1.38vw;
 }
-.middle-block .sertificate {
+.editing .middle-block .sertificate {
   width: 52.77vw;
   height: 31.25vw;
   margin: auto;
@@ -750,11 +754,10 @@ main .EN {
   background-repeat: no-repeat;
   margin-top: 6.25vw;
 }
-.middle-block .EN {
+.editing .middle-block .EN {
   display: none;
 }
-
-.bottom-block1 {
+.editing .bottom-block1 {
   width: 100vw;
   height: 270.5vw;
   background-image: url(./images/editing/bottom.jpg);
@@ -763,16 +766,16 @@ main .EN {
   padding-top: 39.58vw;
   position: relative;
 }
-.bottom-block1 .EN {
+.editing .bottom-block1 .EN {
   display: none;
 }
-.bottom-block1 .yara-block {
+.editing .bottom-block1 .yara-block {
   width: 59vw;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
-.bottom-block1 .yara-block .info {
+.editing .bottom-block1 .yara-block .info {
   width: 24.09vw;
   height: 10.41vw;
   margin-top: auto;
@@ -782,10 +785,10 @@ main .EN {
   line-height: 1.52vw;
   margin-bottom: 1.38vw;
 }
-.bottom-block1 .yara-block .info span {
+.editing .bottom-block1 .yara-block .info span {
   font-size: 2.08vw;
 }
-.bottom-block1 .yara-block .img {
+.editing .bottom-block1 .yara-block .img {
   width: 26.04vw;
   height: 25vw;
   background-image: url(./images/editing/square.png);
@@ -794,7 +797,7 @@ main .EN {
   position: relative;
   margin-top: 1.38vw;
 }
-.bottom-block1 .yara-block .img::after {
+.editing .bottom-block1 .yara-block .img::after {
   content: "";
   width: 34vw;
   height: 29.16vw;
@@ -806,7 +809,7 @@ main .EN {
   background-repeat: no-repeat;
   z-index: 2;
 }
-.bottom-block1 .yara-block .img::before {
+.editing .bottom-block1 .yara-block .img::before {
   content: "";
   width: 27.08vw;
   height: 25vw;
@@ -818,7 +821,7 @@ main .EN {
   left: -1.38vw;
   background-repeat: no-repeat;
 }
-.bottom-block1 .experiense {
+.editing .bottom-block1 .experiense {
   width: 69.4vw;
   height: 18.05vw;
   display: flex;
@@ -826,30 +829,30 @@ main .EN {
   margin-left: 16vw;
   margin-top: 5.9vw;
 }
-.bottom-block1 .experiense .block {
+.editing .bottom-block1 .experiense .block {
   width: 32.08vw;
 }
-.bottom-block1 .experiense .block .title {
+.editing .bottom-block1 .experiense .block .title {
   margin-bottom: 2.43vw;
   font-size: 1.73vw;
 }
-.bottom-block1 .experiense .block span {
+.editing .bottom-block1 .experiense .block span {
   display: block;
   margin-bottom: 1.38vw;
   font-family: "KTS";
   font-size: 1.25vw;
   line-height: 1.52vw;
 }
-.bottom-block1 .experiense .block .mini-title {
+.editing .bottom-block1 .experiense .block .mini-title {
   font-family: "KTS-black";
 }
-.bottom-block1 .experiense .block:nth-child(1) {
+.editing .bottom-block1 .experiense .block:nth-child(1) {
   width: 25vw;
 }
-.bottom-block1 .experiense .block:nth-child(1) span {
+.editing .bottom-block1 .experiense .block:nth-child(1) span {
   position: relative;
 }
-.bottom-block1 .experiense .block:nth-child(1) span::after {
+.editing .bottom-block1 .experiense .block:nth-child(1) span::after {
   content: "";
   width: 1.04vw;
   height: 0.277vw;
@@ -858,37 +861,37 @@ main .EN {
   top: 50%;
   left: -2.77vw;
 }
-.bottom-block1 .experiense .block:nth-child(2) {
+.editing .bottom-block1 .experiense .block:nth-child(2) {
   width: 32.08vw;
 }
-.bottom-block1 .works {
+.editing .bottom-block1 .works {
   text-align: center;
   margin-top: 12.5vw;
 }
-.bottom-block1 .works .title {
+.editing .bottom-block1 .works .title {
   font-size: 2.22vw;
   margin-bottom: 2.77vw;
 }
-.bottom-block1 .works .info {
+.editing .bottom-block1 .works .info {
   width: 52.08vw;
   font-family: "KTS";
   font-size: 1.31vw;
   margin: auto;
   line-height: 1.52vw;
 }
-.bottom-block1 .comments {
+.editing .bottom-block1 .comments {
   width: 50vw;
   height: 14vw;
   position: relative;
   margin: 8.33vw auto 0px;
 }
-.bottom-block1 .comments .comments-block {
+.editing .bottom-block1 .comments .comments-block {
   width: 50vw;
   height: 14vw;
   overflow: hidden;
   position: relative;
 }
-.bottom-block1 .comments .comments-block .comment {
+.editing .bottom-block1 .comments .comments-block .comment {
   background-image: url(./images/editing/bubblereview.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -902,12 +905,12 @@ main .EN {
   position: relative;
   float: left;
 }
-.bottom-block1 .comments .comments-block .comment .comment-text {
+.editing .bottom-block1 .comments .comments-block .comment .comment-text {
   transition-property: opacity;
   transition: 0.2s;
 }
-.bottom-block1 .comments .left,
-.bottom-block1 .comments .right {
+.editing .bottom-block1 .comments .left,
+.editing .bottom-block1 .comments .right {
   width: 1.875vw;
   height: 4.444vw;
   position: absolute;
@@ -917,19 +920,19 @@ main .EN {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.bottom-block1 .comments .left {
+.editing .bottom-block1 .comments .left {
   left: -5.55vw;
 }
-.bottom-block1 .comments .right {
+.editing .bottom-block1 .comments .right {
   right: -5.55vw;
   background-image: url(./images/editing/right.png);
 }
-.bottom-block1 .wtitle {
+.editing .bottom-block1 .wtitle {
   font-size: 2.22vw;
   text-align: center;
   margin-top: 7.5vw;
 }
-.bottom-block1 .videos {
+.editing .bottom-block1 .videos {
   width: 45.48vw;
   height: 30.83vw;
   background-image: url(./images/editing/element9\ \(1\).png);
@@ -939,8 +942,8 @@ main .EN {
   padding-top: 4.86vw;
   position: relative;
 }
-.bottom-block1 .videos .left,
-.bottom-block1 .videos .right {
+.editing .bottom-block1 .videos .left,
+.editing .bottom-block1 .videos .right {
   width: 1.87vw;
   height: 4.44vw;
   position: absolute;
@@ -949,14 +952,14 @@ main .EN {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.bottom-block1 .videos .left {
+.editing .bottom-block1 .videos .left {
   left: -9.72vw;
 }
-.bottom-block1 .videos .right {
+.editing .bottom-block1 .videos .right {
   right: -9.72vw;
   background-image: url(./images/editing/right.png);
 }
-.bottom-block1 .videos .vid {
+.editing .bottom-block1 .videos .vid {
   width: 40.27vw;
   height: 22.22vw;
   background-size: contain;
@@ -964,28 +967,28 @@ main .EN {
   margin: auto;
   position: relative;
 }
-.bottom-block1 .videos .vid iframe {
+.editing .bottom-block1 .videos .vid iframe {
   width: 40.27vw;
   height: 22.22vw;
 }
-.bottom-block1 .videos .vid iframe p {
+.editing .bottom-block1 .videos .vid iframe p {
   font-size: 1vw;
 }
-.bottom-block1 .price {
+.editing .bottom-block1 .price {
   margin-top: 14.93vw;
 }
-.bottom-block1 .price .title {
+.editing .bottom-block1 .price .title {
   font-size: 2.77vw;
   text-align: center;
 }
-.bottom-block1 .price .price-blocks {
+.editing .bottom-block1 .price .price-blocks {
   width: 76.38vw;
   height: 34.72vw;
   display: flex;
   justify-content: space-between;
   margin: 9.02vw auto 0px;
 }
-.bottom-block1 .price .price-blocks .price-block {
+.editing .bottom-block1 .price .price-blocks .price-block {
   width: 32.63vw;
   height: 100%;
   background-image: url(./images/editing/cost1.png);
@@ -993,30 +996,30 @@ main .EN {
   background-repeat: no-repeat;
   padding-top: 3.12vw;
 }
-.bottom-block1 .price .price-blocks .price-block .EN {
+.editing .bottom-block1 .price .price-blocks .price-block .EN {
   display: none;
 }
-.bottom-block1 .price .price-blocks .price-block .title {
+.editing .bottom-block1 .price .price-blocks .price-block .title {
   font-size: 3.12vw;
 }
-.bottom-block1 .price .price-blocks .price-block .info {
+.editing .bottom-block1 .price .price-blocks .price-block .info {
   width: 19.09vw;
   height: 19.09vw;
   margin-top: 4.86vw;
   margin-left: 9.37vw;
 }
-.bottom-block1 .price .price-blocks .price-block .info h1 {
+.editing .bottom-block1 .price .price-blocks .price-block .info h1 {
   font-family: "KTS";
   margin: -1.04vw 0px 1.73vw 0px;
   font-size: 1.11vw;
 }
-.bottom-block1 .price .price-blocks .price-block .info span {
+.editing .bottom-block1 .price .price-blocks .price-block .info span {
   display: block;
   margin-bottom: 1.73vw;
   font-size: 1.11vw;
   position: relative;
 }
-.bottom-block1 .price .price-blocks .price-block .info span::after {
+.editing .bottom-block1 .price .price-blocks .price-block .info span::after {
   content: "";
   width: 0.8vw;
   height: 0.15vw;
@@ -1025,7 +1028,7 @@ main .EN {
   top: 50%;
   left: -2vw;
 }
-.bottom-block1 .price .price-blocks .price-block .price {
+.editing .bottom-block1 .price .price-blocks .price-block .price {
   width: 25.69vw;
   height: 2.43vw;
   margin: 2.08vw 0px 0px 4.51vw;
@@ -1033,16 +1036,16 @@ main .EN {
   padding-top: 0.55vw;
   font-size: 1.38vw;
 }
-.bottom-block1 .price .price-blocks .price-block:nth-child(2) {
+.editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) {
   background-image: url(./images/editing/cost2.png);
 }
-.bottom-block1 .price .price-blocks .price-block:nth-child(2) .info {
+.editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) .info {
   margin-left: 6.94vw;
 }
-.bottom-block1 .price .price-blocks .price-block:nth-child(2) .price {
+.editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) .price {
   margin-left: 2.77vw;
 }
-.bottom-block1 .bottom-menu {
+.editing .bottom-block1 .bottom-menu {
   width: 69.44vw;
   height: 6.94vw;
   display: flex;
@@ -1053,7 +1056,7 @@ main .EN {
   right: 7.63vw;
   font-size: 1.52vw;
 }
-.bottom-block1 .bottom-menu span {
+.editing .bottom-block1 .bottom-menu span {
   color: white;
 }
 
@@ -2305,369 +2308,6 @@ main .EN {
 }
 
 @media screen and (max-width: 500px) {
-  .editing .top-block {
-    height: 326.5vw;
-    padding-top: 1.73vw;
-    background-image: url(./images/editing/top1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .editing .top-block .lang-buttons {
-    width: 8.16vw;
-    font-size: 2.11vw;
-    top: 0.19vw;
-    right: 2.38vw;
-  }
-  .editing .top-block .lang-buttons .en-button::after {
-    font-size: 2.11vw;
-    right: 2.88vw;
-  }
-  .editing .top-block .menu {
-    width: 75.58vw;
-    height: 6.04vw;
-    font-size: 1.7vw;
-    margin-right: 2vw;
-    padding-top: 3.6vw;
-  }
-  .editing .top-block .title {
-    margin-top: 21vw;
-    font-size: 5vw;
-    line-height: 6vw;
-  }
-  .editing .top-block .EN {
-    display: none;
-  }
-  .editing .top-block .description {
-    font-size: 4.5vw;
-    margin-top: 7.55vw;
-    line-height: 5.2vw;
-  }
-  .editing .top-block .question-block {
-    width: 52.86vw;
-    height: 67.98vw;
-    margin: 23.61vw 0px 0px 27.8vw;
-    padding-top: 5vw;
-  }
-  .editing .top-block .question-block .title {
-    text-align: left;
-    font-size: 4vw;
-    margin: 0px 0px 6.16vw;
-  }
-  .editing .top-block .question-block span {
-    display: block;
-    font-family: "KTS";
-    margin-bottom: 8.55vw;
-    font-size: 3.2vw;
-    line-height: 4.2vw;
-    position: relative;
-  }
-  .editing .top-block .question-block span::after {
-    content: "";
-    width: 1.041vw;
-    height: 0.277vw;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: -2.77vw;
-  }
-  .editing .top-block .foryou-block {
-    width: 95vw;
-    height: 45.75vw;
-    margin: 23.04vw 0px 0px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .editing .top-block .foryou-block .img {
-    width: 30vw;
-    height: 46.6vw;
-    background-image: url(./images/editing/illustration3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 10vw;
-  }
-  .editing .top-block .foryou-block .text {
-    width: 45.34vw;
-    height: 30.06vw;
-  }
-  .editing .top-block .foryou-block .text .title {
-    text-align: left;
-    font-size: 4vw;
-    line-height: 4.5vw;
-    margin: 0px 0px 4.16vw;
-  }
-  .editing .top-block .foryou-block .text span {
-    display: block;
-    font-family: "KTS";
-    margin-bottom: 3.8vw;
-    font-size: 3.2vw;
-    line-height: 4vw;
-    position: relative;
-  }
-  .editing .top-block .foryou-block .text span::after {
-    content: "";
-    width: 1.04vw;
-    height: 0.277vw;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: -2.77vw;
-  }
-  .editing .top-block .block {
-    width: 50.29vw;
-    height: 37.77vw;
-    margin: 40.27vw 30.23vw 0px;
-    padding-top: 10vw;
-  }
-  .editing .top-block .block .title {
-    text-align: center;
-    font-size: 4vw;
-    margin-bottom: 10.63vw;
-    margin-top: 0px;
-  }
-  .editing .top-block .block .info {
-    width: 100%;
-  }
-  .editing .top-block .block .info span {
-    display: block;
-    margin-bottom: 4.47vw;
-    font-size: 2.6vw;
-    margin-left: 1.73vw;
-    position: relative;
-    line-height: 2.8vw;
-  }
-  .editing .top-block .block .info span::after {
-    content: "";
-    width: 3.98vw;
-    height: 3.98vw;
-    border-radius: 100%;
-    background: rgb(47, 255, 172);
-    position: absolute;
-    top: 5%;
-    left: -6.16vw;
-  }
-  .editing .top-block .block .info span::before {
-    content: "";
-    width: 2.87vw;
-    height: 2.87vw;
-    border-radius: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 25%;
-    left: -5.61vw;
-    z-index: 2;
-  }
-  .editing .top-block .block .info .first::after {
-    top: -0.69vw;
-  }
-  .editing .top-block .block .info .first::before {
-    top: 0px;
-    background-image: url(./images/editing/icon.png);
-  }
-  .editing .top-block .block .info .second::before {
-    height: 1.7vw;
-    top: 30%;
-    left: -5.81vw;
-    width: 3.5vw;
-    background-image: url(./images/editing/icon2.png);
-  }
-  .editing .top-block .block .info .last::before {
-    top: 20%;
-    background-image: url(./images/editing/icon3.png);
-  }
-  .editing .middle-block {
-    width: 100vww;
-    max-height: 300vw;
-    background-image: url(./images/editing/middle.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 4.86vw;
-  }
-  .editing .middle-block .course-progress-block {
-    width: 70.93vw;
-    max-height: 300vw;
-    margin: auto;
-  }
-  .editing .middle-block .course-progress-block .block {
-    padding-left: 1.11vw;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    overflow: hidden;
-    height: 10vw;
-    transition: 0.3s;
-    transition-timing-function: ease-in, ease, linear;
-  }
-  .editing .middle-block .course-progress-block .block .line {
-    width: 3.73vw;
-    height: 3.73vw;
-    border: 0.377vw solid black;
-    border-radius: 100%;
-    margin-right: 0.69;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    font-size: 2vw;
-    margin-left: 1vw;
-  }
-  .editing .middle-block .course-progress-block .block .line::after {
-    content: "";
-    width: 1.08vw;
-    height: 0.34vw;
-    background-color: black;
-    position: absolute;
-    top: 1.3vw;
-    left: -1.08vw;
-  }
-  .editing .middle-block .course-progress-block .block .progress-line,
-  .editing .middle-block .course-progress-block .block .green {
-    width: 0.5vw;
-    height: 100%;
-    background-color: black;
-    position: relative;
-    margin-top: 3.5vw;
-    display: block;
-    margin-left: 1.1vw;
-  }
-  .editing .middle-block .course-progress-block .block .progress-line::after,
-  .editing .middle-block .course-progress-block .block .green::after {
-    content: "1";
-    font-size: 2vw;
-    text-align: center;
-    width: 3.08vw;
-    height: 3.08vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 0.377vw solid black;
-    border-radius: 100%;
-    position: absolute;
-    top: -3.5vw;
-    left: -1.5vw;
-  }
-  .editing .middle-block .course-progress-block .block .info {
-    width: 61vw;
-    margin-top: 0.34vw;
-  }
-  .editing .middle-block .course-progress-block .block .info .title {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-    margin-bottom: 1.38vw;
-    cursor: pointer;
-  }
-  .editing .middle-block .course-progress-block .block .info .text {
-    width: 50.24vw;
-    margin-left: 4.16vw;
-    max-height: 0px;
-    overflow: hidden;
-    transition: 0.2s;
-    font-family: "KTS";
-    transition-property: max-height;
-    transition-timing-function: ease-in, ease, linear;
-  }
-  .editing .middle-block .course-progress-block .block .info .text .add-info {
-    position: absolute;
-    width: 68.49vw;
-    height: 7vw;
-    background-image: url(./images/editing/dodatkovo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 1.5vw 4vw 0vw 2vw;
-    padding-right: 4vw;
-    font-size: 1.5vw;
-  }
-  .editing .middle-block .course-progress-block .block .info .text span {
-    font-size: 2vw;
-  }
-  .editing .middle-block .course-progress-block .block .info .text .text-line {
-    display: flex;
-    justify-content: space-between;
-  }
-  .editing .middle-block .course-progress-block .block .info .text .text-line span {
-    display: block;
-    margin-bottom: 1.38vw;
-  }
-  .editing .middle-block .course-progress-block .block .info .text .text-line .description {
-    width: 48.72vw;
-    line-height: 2.2vw;
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
-    content: "2";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
-    content: "3";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
-    content: "4";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
-    content: "5";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
-    content: "7";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
-    content: "8";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
-    content: "9";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(9) {
-    width: 80.3vw;
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(9) .info {
-    width: 70.58vw;
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
-    content: "10";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
-    content: "12";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
-    content: "13";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
-    content: "14";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
-    content: "15";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
-    content: "16";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(15) .progress-line {
-    background-color: transparent;
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
-    content: "17";
-  }
-  .editing .middle-block .sertificate-text {
-    width: 76.1vw;
-    height: 6vw;
-    background-image: url(./images/editing/certificate\ \(1\).png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: block;
-    text-align: center;
-    font-size: 1.7vw;
-    margin: auto;
-    padding-top: 1.58vw;
-  }
-  .editing .middle-block .sertificate {
-    width: 52.77vw;
-    height: 31.25vw;
-    margin: auto;
-    background-image: url(./images/editing/Group\ 203.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 6.25vw;
-  }
-  .editing .middle-block .EN {
-    display: none;
-  }
   main {
     width: 100%;
     height: 700vw;
@@ -2684,6 +2324,7 @@ main .EN {
     left: 1vw;
   }
   main .menu {
+    display: block;
     position: fixed;
     right: 1vw;
     top: 1vw;
@@ -2726,15 +2367,16 @@ main .EN {
     transform: rotate(-135deg);
   }
   main .menu-mobile {
-    width: 0px;
+    display: block;
+    width: 100vw;
     height: 100%;
     background-image: url("./images/middle.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
-    right: 0px;
+    right: -100%;
     top: 0px;
-    transition: width 500ms ease;
+    transition: right 500ms ease;
     border-radius: 0px 0px 0px 10px;
     z-index: 2;
   }
@@ -2753,12 +2395,32 @@ main .EN {
   main .menu-mobile .button-list span {
     text-align: center;
     display: block;
-    font-size: 7.5vw;
-    margin-bottom: 10.5vw;
+    font-size: 7vw;
+    margin-bottom: 8.5vw;
     color: black;
   }
   main .menu-mobile .button-list a {
     text-decoration: none;
+  }
+  main .menu-mobile .button-list .lang-buttons {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+  }
+  main .menu-mobile .button-list .lang-buttons .en-button:hover {
+    color: rgb(130, 68, 181);
+  }
+  main .menu-mobile .button-list .lang-buttons .ukr-button:hover {
+    color: rgb(130, 68, 181);
+  }
+  main .menu-mobile .button-list .lang-buttons .en-button::after {
+    content: "/";
+    font-size: 7vw;
+    position: absolute;
+    right: 11.38vw;
   }
   main .menu-mobile p {
     text-align: center;
@@ -3110,5 +2772,806 @@ main .EN {
   }
   main .EN {
     display: none;
+  }
+  .editing {
+    width: 100vw;
+    max-height: 711.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: "KTS-black";
+  }
+  .editing .logo {
+    width: 16.24vw;
+    height: 15vw;
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+  }
+  .editing .menu {
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+    z-index: 3;
+  }
+  .editing .menu .line, .editing .menu .line1 {
+    margin: 12px auto;
+    border-radius: 5px;
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+  }
+  .editing .menu .line::before, .editing .menu .line::after, .editing .menu .line1::before, .editing .menu .line1::after {
+    content: "";
+    width: 22px;
+    height: 3.5px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    transition: all 500ms ease;
+  }
+  .editing .menu .line::after, .editing .menu .line1::after {
+    top: 7px;
+    left: 0px;
+  }
+  .editing .menu .line::before, .editing .menu .line1::before {
+    top: 15px;
+    left: 0px;
+  }
+  .editing .menu .line1 {
+    background-color: transparent;
+  }
+  .editing .menu .line1::after {
+    transform: rotate(135deg);
+  }
+  .editing .menu .line1::before {
+    top: 7px;
+    transform: rotate(-135deg);
+  }
+  .editing .menu-mobile {
+    width: 0px;
+    height: 100%;
+    background-image: url("./images/middle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transition: width 500ms ease;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 2;
+  }
+  .editing .menu-mobile hr {
+    height: 3px;
+    background-color: black;
+  }
+  .editing .menu-mobile .button-list {
+    width: 100%;
+    height: 100%;
+    padding: 10vw 2vw 0vw;
+  }
+  .editing .menu-mobile .button-list .EN {
+    display: none;
+  }
+  .editing .menu-mobile .button-list span {
+    text-align: center;
+    display: block;
+    font-size: 7.5vw;
+    margin-bottom: 10.5vw;
+    color: black;
+  }
+  .editing .menu-mobile .button-list a {
+    text-decoration: none;
+  }
+  .editing .menu-mobile p {
+    text-align: center;
+    display: block;
+    font-size: 7vw;
+    margin: 8vw 0px;
+    color: black;
+  }
+  .editing .menu-mobile .reg {
+    margin-top: 3.12vw;
+    margin: auto;
+    width: 60vw;
+    display: block;
+  }
+  .editing .menu-mobile .reg input {
+    width: 60vw;
+    height: 12.77vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 4vw;
+    font-family: "KTS-black";
+  }
+  .editing .menu-mobile .reg input::-moz-placeholder {
+    color: rgb(107, 107, 107);
+    font-family: "KTS-black";
+    font-size: 4vw;
+  }
+  .editing .menu-mobile .reg input::placeholder {
+    color: rgb(107, 107, 107);
+    font-family: "KTS-black";
+    font-size: 4vw;
+  }
+  .editing .menu-mobile .reg .button {
+    width: 40vw;
+    height: 8vw;
+    font-size: 4vw;
+    color: black;
+    background-color: transparent;
+    border-radius: 1vw;
+    border: 1.5px solid black;
+    margin-top: 12vw;
+    margin-left: 10vw;
+    cursor: pointer;
+  }
+  .editing a {
+    text-decoration: none;
+    color: black;
+  }
+  .editing .EN {
+    display: none;
+  }
+  .editing .top-block {
+    width: 100vw;
+    height: 221.5vw;
+    padding-top: 6.73vw;
+    background-image: url(./images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .editing .top-block .lang-buttons {
+    display: none;
+  }
+  .editing .top-block .menu {
+    display: none;
+  }
+  .editing .top-block .mtitle {
+    display: block;
+    width: 90vw;
+    height: 25vw;
+    text-align: center;
+    margin: 10.76vw auto 6vw;
+    font-size: 6vw;
+    line-height: 7.16vw;
+    background-image: url("./images/editing/title (1).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 5vw;
+  }
+  .editing .top-block .EN {
+    display: none;
+  }
+  .editing .top-block .description {
+    text-align: center;
+    font-size: 4vw;
+    font-family: "KTS";
+    margin-top: 5.55vw;
+  }
+  .editing .top-block .question-block {
+    width: 70.86vw;
+    height: 100.98vw;
+    margin: 10vw auto;
+    padding-top: 7vw;
+  }
+  .editing .top-block .question-block .title {
+    text-align: center;
+    font-size: 4.6vw;
+    margin: 0px 0px 6.16vw;
+  }
+  .editing .top-block .question-block span {
+    display: block;
+    font-family: "KTS";
+    margin-bottom: 8.55vw;
+    font-size: 4vw;
+    line-height: 5vw;
+    position: relative;
+    text-align: center;
+  }
+  .editing .top-block .question-block span::after {
+    content: "";
+    width: 2.041vw;
+    height: 0.677vw;
+    background-color: black;
+    position: absolute;
+    top: 40%;
+    left: -4.77vw;
+  }
+  .editing .top-block .foryou-block {
+    width: 68.4vw;
+    height: 33.75vw;
+    margin: 26.04vw 18.19vw 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .editing .top-block .foryou-block .img {
+    width: 21.66vw;
+    height: 33.42vw;
+    background-image: url(./images/editing/illustration3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .editing .top-block .foryou-block .text {
+    width: 35.34vw;
+    height: 30.06vw;
+  }
+  .editing .top-block .foryou-block .text .title {
+    text-align: left;
+    font-size: 2.29vw;
+    line-height: 2.43vw;
+    margin: 0px 0px 4.16vw;
+  }
+  .editing .top-block .foryou-block .text span {
+    display: block;
+    font-family: "KTS";
+    margin-bottom: 3.12vw;
+    font-size: 1.59vw;
+    line-height: 2.08vw;
+    position: relative;
+  }
+  .editing .top-block .foryou-block .text span::after {
+    content: "";
+    width: 1.04vw;
+    height: 0.277vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -2.77vw;
+  }
+  .editing .top-block .block {
+    width: 32.29vw;
+    height: 37.77vw;
+    margin: 20.27vw 34.23vw 0px;
+    padding-top: 10vw;
+  }
+  .editing .top-block .block .title {
+    text-align: center;
+    font-size: 2.56vw;
+    margin-bottom: 7.63vw;
+    margin-top: 0px;
+  }
+  .editing .top-block .block .info {
+    width: 100%;
+  }
+  .editing .top-block .block .info span {
+    display: block;
+    margin-bottom: 3.47vw;
+    font-size: 1.38vw;
+    margin-left: 1.73vw;
+    position: relative;
+  }
+  .editing .top-block .block .info span::after {
+    content: "";
+    width: 2.98vw;
+    height: 2.98vw;
+    border-radius: 100%;
+    background: rgb(47, 255, 172);
+    position: absolute;
+    top: 5%;
+    left: -4.16vw;
+  }
+  .editing .top-block .block .info span::before {
+    content: "";
+    width: 1.87vw;
+    height: 1.87vw;
+    border-radius: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    left: -3.61vw;
+    z-index: 2;
+  }
+  .editing .top-block .block .info .first::after {
+    top: -0.69vw;
+  }
+  .editing .top-block .block .info .first::before {
+    top: 0px;
+    background-image: url(./images/editing/icon.png);
+  }
+  .editing .top-block .block .info .second::before {
+    height: 1.18vw;
+    top: 37%;
+    left: -3.81vw;
+    width: 2.43vw;
+    background-image: url(./images/editing/icon2.png);
+  }
+  .editing .top-block .block .info .last::before {
+    background-image: url(./images/editing/icon3.png);
+  }
+  .editing .middle-block {
+    width: 100vww;
+    max-height: 220vw;
+    background-image: url(./images/editing/middle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4.86vw;
+  }
+  .editing .middle-block .course-progress-block {
+    width: 59.93vw;
+    max-height: 220vw;
+    margin: auto;
+  }
+  .editing .middle-block .course-progress-block .block {
+    padding-left: 1.11vw;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 7.29vw;
+    transition: 0.3s;
+    transition-timing-function: ease-in, ease, linear;
+  }
+  .editing .middle-block .course-progress-block .block .line {
+    width: 2.43vw;
+    height: 2.43vw;
+    border: 0.277vw solid black;
+    border-radius: 100%;
+    margin-right: 0.69;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    font-size: 1.52vw;
+  }
+  .editing .middle-block .course-progress-block .block .line::after {
+    content: "";
+    width: 2.08vw;
+    height: 0.34vw;
+    background-color: black;
+    position: absolute;
+    top: 0.9vw;
+    left: -2.08vw;
+  }
+  .editing .middle-block .course-progress-block .block .progress-line,
+  .editing .middle-block .course-progress-block .block .green {
+    width: 0.34vw;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    margin-top: 2.43vw;
+    display: block;
+  }
+  .editing .middle-block .course-progress-block .block .progress-line::after,
+  .editing .middle-block .course-progress-block .block .green::after {
+    content: "1";
+    font-size: 1.52vw;
+    text-align: center;
+    width: 2.08vw;
+    height: 2.08vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.277vw solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: -2.43vw;
+    left: -1.11vw;
+  }
+  .editing .middle-block .course-progress-block .block .info {
+    width: 50vw;
+    margin-top: 0.34vw;
+  }
+  .editing .middle-block .course-progress-block .block .info .title {
+    font-size: 1.38vw;
+    margin-bottom: 1.38vw;
+    cursor: pointer;
+  }
+  .editing .middle-block .course-progress-block .block .info .text {
+    width: 36.24vw;
+    margin-left: 4.16vw;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: "KTS";
+    transition-property: max-height;
+    transition-timing-function: ease-in, ease, linear;
+  }
+  .editing .middle-block .course-progress-block .block .info .text .add-info {
+    position: absolute;
+    width: 63.8vw;
+    height: 6.52vw;
+    background-image: url(./images/editing/dodatkovo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2.08vw;
+    padding-right: 4vw;
+    font-size: 1.11vw;
+  }
+  .editing .middle-block .course-progress-block .block .info .text span {
+    font-size: 1.111vw;
+  }
+  .editing .middle-block .course-progress-block .block .info .text .text-line {
+    display: flex;
+    justify-content: space-between;
+  }
+  .editing .middle-block .course-progress-block .block .info .text .text-line span {
+    display: block;
+    margin-bottom: 1.38vw;
+  }
+  .editing .middle-block .course-progress-block .block .info .text .text-line .description {
+    width: 34.72vw;
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
+    content: "2";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
+    content: "3";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
+    content: "4";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
+    content: "5";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
+    content: "7";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
+    content: "8";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
+    content: "9";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(9) {
+    width: 76.3vw;
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(9) .info {
+    width: 66.58vw;
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
+    content: "10";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
+    content: "12";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
+    content: "13";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
+    content: "14";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
+    content: "15";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
+    content: "16";
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(15) .progress-line {
+    background-color: transparent;
+  }
+  .editing .middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
+    content: "17";
+  }
+  .editing .middle-block .sertificate-text {
+    width: 65.97vw;
+    height: 5.2vw;
+    background-image: url(./images/editing/certificate\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    font-size: 1.45vw;
+    margin: auto;
+    padding-top: 1.38vw;
+  }
+  .editing .middle-block .sertificate {
+    width: 52.77vw;
+    height: 31.25vw;
+    margin: auto;
+    background-image: url(./images/editing/Group\ 203.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 6.25vw;
+  }
+  .editing .middle-block .EN {
+    display: none;
+  }
+  .editing .bottom-block1 {
+    width: 100vw;
+    height: 270.5vw;
+    background-image: url(./images/editing/bottom.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 39.58vw;
+    position: relative;
+  }
+  .editing .bottom-block1 .EN {
+    display: none;
+  }
+  .editing .bottom-block1 .yara-block {
+    width: 59vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .editing .bottom-block1 .yara-block .info {
+    width: 24.09vw;
+    height: 10.41vw;
+    margin-top: auto;
+    font-family: "KTS";
+    margin-left: 1.38vw;
+    font-size: 1.31vw;
+    line-height: 1.52vw;
+    margin-bottom: 1.38vw;
+  }
+  .editing .bottom-block1 .yara-block .info span {
+    font-size: 2.08vw;
+  }
+  .editing .bottom-block1 .yara-block .img {
+    width: 26.04vw;
+    height: 25vw;
+    background-image: url(./images/editing/square.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 1.38vw;
+  }
+  .editing .bottom-block1 .yara-block .img::after {
+    content: "";
+    width: 34vw;
+    height: 29.16vw;
+    position: absolute;
+    background-image: url(./images/editing/circle\ \(1\).png);
+    background-size: contain;
+    top: -4.16vw;
+    left: -5.2vw;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .editing .bottom-block1 .yara-block .img::before {
+    content: "";
+    width: 27.08vw;
+    height: 25vw;
+    position: absolute;
+    background-image: url(./images/editing/yara.jpeg);
+    background-size: contain;
+    z-index: 1;
+    top: -1.38vw;
+    left: -1.38vw;
+    background-repeat: no-repeat;
+  }
+  .editing .bottom-block1 .experiense {
+    width: 69.4vw;
+    height: 18.05vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16vw;
+    margin-top: 5.9vw;
+  }
+  .editing .bottom-block1 .experiense .block {
+    width: 32.08vw;
+  }
+  .editing .bottom-block1 .experiense .block .title {
+    margin-bottom: 2.43vw;
+    font-size: 1.73vw;
+  }
+  .editing .bottom-block1 .experiense .block span {
+    display: block;
+    margin-bottom: 1.38vw;
+    font-family: "KTS";
+    font-size: 1.25vw;
+    line-height: 1.52vw;
+  }
+  .editing .bottom-block1 .experiense .block .mini-title {
+    font-family: "KTS-black";
+  }
+  .editing .bottom-block1 .experiense .block:nth-child(1) {
+    width: 25vw;
+  }
+  .editing .bottom-block1 .experiense .block:nth-child(1) span {
+    position: relative;
+  }
+  .editing .bottom-block1 .experiense .block:nth-child(1) span::after {
+    content: "";
+    width: 1.04vw;
+    height: 0.277vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -2.77vw;
+  }
+  .editing .bottom-block1 .experiense .block:nth-child(2) {
+    width: 32.08vw;
+  }
+  .editing .bottom-block1 .works {
+    text-align: center;
+    margin-top: 12.5vw;
+  }
+  .editing .bottom-block1 .works .title {
+    font-size: 2.22vw;
+    margin-bottom: 2.77vw;
+  }
+  .editing .bottom-block1 .works .info {
+    width: 52.08vw;
+    font-family: "KTS";
+    font-size: 1.31vw;
+    margin: auto;
+    line-height: 1.52vw;
+  }
+  .editing .bottom-block1 .comments {
+    width: 50vw;
+    height: 14vw;
+    position: relative;
+    margin: 8.33vw auto 0px;
+  }
+  .editing .bottom-block1 .comments .comments-block {
+    width: 50vw;
+    height: 14vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .editing .bottom-block1 .comments .comments-block .comment {
+    background-image: url(./images/editing/bubblereview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 13.19vw;
+    font-family: "KTS";
+    font-size: 1.25vw;
+    text-align: center;
+    line-height: 1.52vw;
+    padding: 2.08vw 5.2vw;
+    position: relative;
+    float: left;
+  }
+  .editing .bottom-block1 .comments .comments-block .comment .comment-text {
+    transition-property: opacity;
+    transition: 0.2s;
+  }
+  .editing .bottom-block1 .comments .left,
+  .editing .bottom-block1 .comments .right {
+    width: 1.875vw;
+    height: 4.444vw;
+    position: absolute;
+    top: 4.16vw;
+    cursor: pointer;
+    background-image: url(./images/editing/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .editing .bottom-block1 .comments .left {
+    left: -5.55vw;
+  }
+  .editing .bottom-block1 .comments .right {
+    right: -5.55vw;
+    background-image: url(./images/editing/right.png);
+  }
+  .editing .bottom-block1 .wtitle {
+    font-size: 2.22vw;
+    text-align: center;
+    margin-top: 7.5vw;
+  }
+  .editing .bottom-block1 .videos {
+    width: 45.48vw;
+    height: 30.83vw;
+    background-image: url(./images/editing/element9\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 3vw auto 0px;
+    padding-top: 4.86vw;
+    position: relative;
+  }
+  .editing .bottom-block1 .videos .left,
+  .editing .bottom-block1 .videos .right {
+    width: 1.87vw;
+    height: 4.44vw;
+    position: absolute;
+    top: 12.33vw;
+    background-image: url(./images/editing/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .editing .bottom-block1 .videos .left {
+    left: -9.72vw;
+  }
+  .editing .bottom-block1 .videos .right {
+    right: -9.72vw;
+    background-image: url(./images/editing/right.png);
+  }
+  .editing .bottom-block1 .videos .vid {
+    width: 40.27vw;
+    height: 22.22vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+  }
+  .editing .bottom-block1 .videos .vid iframe {
+    width: 40.27vw;
+    height: 22.22vw;
+  }
+  .editing .bottom-block1 .videos .vid iframe p {
+    font-size: 1vw;
+  }
+  .editing .bottom-block1 .price {
+    margin-top: 14.93vw;
+  }
+  .editing .bottom-block1 .price .title {
+    font-size: 2.77vw;
+    text-align: center;
+  }
+  .editing .bottom-block1 .price .price-blocks {
+    width: 76.38vw;
+    height: 34.72vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 9.02vw auto 0px;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block {
+    width: 32.63vw;
+    height: 100%;
+    background-image: url(./images/editing/cost1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3.12vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .EN {
+    display: none;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .title {
+    font-size: 3.12vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .info {
+    width: 19.09vw;
+    height: 19.09vw;
+    margin-top: 4.86vw;
+    margin-left: 9.37vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .info h1 {
+    font-family: "KTS";
+    margin: -1.04vw 0px 1.73vw 0px;
+    font-size: 1.11vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .info span {
+    display: block;
+    margin-bottom: 1.73vw;
+    font-size: 1.11vw;
+    position: relative;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .info span::after {
+    content: "";
+    width: 0.8vw;
+    height: 0.15vw;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -2vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block .price {
+    width: 25.69vw;
+    height: 2.43vw;
+    margin: 2.08vw 0px 0px 4.51vw;
+    text-align: center;
+    padding-top: 0.55vw;
+    font-size: 1.38vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) {
+    background-image: url(./images/editing/cost2.png);
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) .info {
+    margin-left: 6.94vw;
+  }
+  .editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) .price {
+    margin-left: 2.77vw;
+  }
+  .editing .bottom-block1 .bottom-menu {
+    width: 69.44vw;
+    height: 6.94vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.43vw;
+    position: absolute;
+    bottom: 0px;
+    right: 7.63vw;
+    font-size: 1.52vw;
+  }
+  .editing .bottom-block1 .bottom-menu span {
+    color: white;
   }
 }/*# sourceMappingURL=style.css.map */

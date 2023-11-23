@@ -14,7 +14,8 @@ let video=document.getElementsByClassName("vid");
 let videoNum=0;
 let commentNum=0;
 let line=document.getElementsByClassName("toggle");
-let menu=document.getElementsByClassName("menu-mobile")
+let menu=document.getElementsByClassName("menu-mobile");
+let body=document.getElementsByTagName("body");
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+8)
 }
@@ -187,18 +188,21 @@ function toggle(){
   if(check){
       line[0].classList.add("line1");
       line[0].classList.remove("line");
-      menu[0].style.width="100vw";
+      menu[0].style.right="0px";
+      body[0].style.position="fixed";
   }
   else{
       line[0].classList.remove("line1");
       line[0].classList.add("line");
-      menu[0].style.width="0vw";
+      menu[0].style.right="-100%";
+      body[0].style.position="static";
 
   }
 }
 function off(){
       line[0].classList.remove("line1");
       line[0].classList.add("line");
-      menu[0].style.width="0vw";
+      body[0].style.position="static";
+      menu[0].style.right="-100%";
       check=!check;
 }

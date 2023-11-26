@@ -16,6 +16,7 @@ let commentNum=0;
 let line=document.getElementsByClassName("toggle");
 let menu=document.getElementsByClassName("menu-mobile");
 let body=document.getElementsByTagName("body");
+let check1=false;
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+8)
 }
@@ -184,8 +185,8 @@ function leftV(){
   }
 }
 function toggle(){
-  check=!check;
-  if(check){
+  check1=!check1;
+  if(check1){
       line[0].classList.add("line1");
       line[0].classList.remove("line");
       menu[0].style.right="0px";
@@ -204,5 +205,5 @@ function off(){
       line[0].classList.add("line");
       body[0].style.position="static";
       menu[0].style.right="-100%";
-      check=!check;
+      check1=!check1;
 }

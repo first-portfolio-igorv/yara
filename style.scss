@@ -424,7 +424,9 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     font-family: "KTS-black";
-
+    .menu-mobile{
+        display: none;
+    }
     a {
         text-decoration: none;
         color: black;
@@ -2963,9 +2965,6 @@ main {
     .editing {
         width: 100vw;
         max-height: 711.3vw;
-        background-size: contain;
-        background-repeat: no-repeat;
-        font-family: "KTS-black";
         .logo{
             width: 16.24vw;
             height:15vw;
@@ -3021,6 +3020,7 @@ main {
             }
         }
         .menu-mobile{
+            display: block;
             width: 100vw;
             height: 100%;
             background-image: url("./images/middle.jpg");
@@ -3128,7 +3128,7 @@ main {
         
         .top-block {
             width: 100vw;
-            height: 320.5vw;
+            height: 390.5vw;
             padding-top: 6.73vw;
             background-image: url(./images/main.jpg);
             background-size: cover;
@@ -3164,9 +3164,7 @@ main {
             }
     
             .description {
-                text-align: center;
                 font-size: 4vw;
-                font-family: "KTS";
                 margin-top: 5.55vw;
             }
     
@@ -3221,7 +3219,6 @@ main {
                 width: 75vw;
                 height: 100.75vw;
                 margin: 10.04vw auto 0px;
-                display: flex;
                 justify-content: center;
                 position: relative;
                 .img{
@@ -3263,15 +3260,11 @@ main {
     
                     span {
                         padding-left: 3.5vw;
-                        display: block;
-                        font-family: "KTS";
                         margin-bottom: 8vw;
                         font-size: 4vw;
                         line-height: 5vw;
-                        position: relative;
     
                         &::after {
-                            content: "";
                             width: 2.041vw;
                             height: 0.677vw;
                             top: 40%;
@@ -3280,17 +3273,25 @@ main {
                     }
                 }
             }
-    
-            .block {
-                width: 32.29vw;
-                height: 37.77vw;
-                margin: 20.27vw 34.23vw 0px;
+            .prog{
+                margin-top: 17vw;
+                box-sizing: border-box;
+                width: 100%;
+                height: 400px;
+                background-image: url(./images/editing/block.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding-top: 17vw;
+                .block {
+                width: 70.29vw;
+                height: 50.77vw;
+                margin: 0vw auto 0px;
                 padding-top: 10vw;
     
                 .title {
                     text-align: center;
-                    font-size: 2.56vw;
-                    margin-bottom: 7.63vw;
+                    font-size: 4.6vw;
+                    margin-bottom: 9.63vw;
                     margin-top: 0px;
                 }
     
@@ -3299,32 +3300,32 @@ main {
     
                     span {
                         display: block;
-                        margin-bottom: 3.47vw;
-                        font-size: 1.38vw;
-                        margin-left: 1.73vw;
+                        margin-bottom: 6.47vw;
+                        font-size: 3.5vw;
+                        margin-left: 5.73vw;
                         position: relative;
     
                         &::after {
                             content: "";
-                            width: 2.98vw;
-                            height: 2.98vw;
+                            width: 4.98vw;
+                            height: 4.98vw;
                             border-radius: 100%;
                             background: rgb(47, 255, 172);
                             position: absolute;
                             top: 5%;
-                            left: -4.16vw;
+                            left: -7.16vw;
                         }
     
                         &::before {
                             content: "";
-                            width: 1.87vw;
-                            height: 1.87vw;
+                            width: 3.87vw;
+                            height: 3.87vw;
                             border-radius: 100%;
                             background-size: contain;
                             background-repeat: no-repeat;
                             position: absolute;
-                            top: 25%;
-                            left: -3.61vw;
+                            top: 20%;
+                            left: -6.61vw;
                             z-index: 2;
                         }
                     }
@@ -3342,10 +3343,10 @@ main {
     
                     .second {
                         &::before {
-                            height: 1.18vw;
-                            top: 37%;
-                            left: -3.81vw;
-                            width: 2.43vw;
+                            height: 2vw;
+                            top: 27%;
+                            left: -6.81vw;
+                            width: 3.83vw;
     
                             background-image: url(./images/editing/icon2.png);
                         }
@@ -3358,6 +3359,8 @@ main {
                     }
                 }
             }
+            }
+            
         }
         .middle-block {
             width: 100vww;

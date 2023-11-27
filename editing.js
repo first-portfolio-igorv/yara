@@ -18,7 +18,7 @@ let menu=document.getElementsByClassName("menu-mobile");
 let body=document.getElementsByTagName("body");
 let check1=false;
 for(let i=0;i<height.length;i++){
-  maxHeight.push(height[i]+8)
+  maxHeight.push(height[i]+20)
 }
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
@@ -35,6 +35,8 @@ ua[0].addEventListener("click", function(){
 function open(i){
   if (check[i]) {
     check[i] = false;
+    console.log(event.target.id)
+
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
         if(window.innerWidth<500){
@@ -56,7 +58,7 @@ function open(i){
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
         if(window.innerWidth<500){
-        block[i].style.height = "10vw";
+        block[i].style.height = "14.29vw";
         }
         else{
           block[i].style.height = "7.29vw";

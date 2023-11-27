@@ -766,8 +766,13 @@ main .EN {
   background-image: url(./images/editing/bottom.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 39.58vw;
+  padding-top: 30.58vw;
   position: relative;
+}
+.editing .bottom-block1 .title {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 6vw;
 }
 .editing .bottom-block1 .EN {
   display: none;
@@ -836,6 +841,7 @@ main .EN {
   width: 32.08vw;
 }
 .editing .bottom-block1 .experiense .block .title {
+  text-align: left;
   margin-bottom: 2.43vw;
   font-size: 1.73vw;
 }
@@ -1034,7 +1040,7 @@ main .EN {
 .editing .bottom-block1 .price .price-blocks .price-block .price {
   width: 25.69vw;
   height: 2.43vw;
-  margin: 2.08vw 0px 0px 4.51vw;
+  margin: 1.08vw 0px 0px 4.51vw;
   text-align: center;
   padding-top: 0.55vw;
   font-size: 1.38vw;
@@ -3010,228 +3016,116 @@ main .EN {
     position: relative;
   }
   .editing .top-block .prog .block .info span::after {
-    content: "";
     width: 4.98vw;
     height: 4.98vw;
-    border-radius: 100%;
-    background: rgb(47, 255, 172);
-    position: absolute;
     top: 5%;
     left: -7.16vw;
   }
   .editing .top-block .prog .block .info span::before {
-    content: "";
     width: 3.87vw;
     height: 3.87vw;
-    border-radius: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
     top: 20%;
     left: -6.61vw;
-    z-index: 2;
   }
   .editing .top-block .prog .block .info .first::after {
     top: -0.69vw;
-  }
-  .editing .top-block .prog .block .info .first::before {
-    top: 0px;
-    background-image: url(./images/editing/icon.png);
   }
   .editing .top-block .prog .block .info .second::before {
     height: 2vw;
     top: 27%;
     left: -6.81vw;
     width: 3.83vw;
-    background-image: url(./images/editing/icon2.png);
-  }
-  .editing .top-block .prog .block .info .last::before {
-    background-image: url(./images/editing/icon3.png);
   }
   .editing .middle-block {
-    width: 100vww;
-    max-height: 220vw;
+    width: 100vw;
+    max-height: 700vw;
     background-image: url(./images/editing/middle.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 4.86vw;
+    padding: 15.86vw 0px;
   }
   .editing .middle-block .course-progress-block {
-    width: 59.93vw;
-    max-height: 220vw;
-    margin: auto;
+    width: 85.93vw;
+    max-height: 700vw;
   }
   .editing .middle-block .course-progress-block .block {
-    padding-left: 1.11vw;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    overflow: hidden;
-    height: 7.29vw;
-    transition: 0.3s;
-    transition-timing-function: ease-in, ease, linear;
+    height: 14.29vw;
   }
   .editing .middle-block .course-progress-block .block .line {
-    width: 2.43vw;
-    height: 2.43vw;
-    border: 0.277vw solid black;
-    border-radius: 100%;
+    width: 5.43vw;
+    height: 5.43vw;
+    border: 0.477vw solid black;
     margin-right: 0.69;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    font-size: 1.52vw;
+    font-size: 3.52vw;
   }
   .editing .middle-block .course-progress-block .block .line::after {
-    content: "";
-    width: 2.08vw;
-    height: 0.34vw;
-    background-color: black;
-    position: absolute;
-    top: 0.9vw;
-    left: -2.08vw;
+    width: 1.18vw;
+    height: 0.54vw;
+    top: 1.8vw;
+    left: -1.18vw;
   }
   .editing .middle-block .course-progress-block .block .progress-line,
   .editing .middle-block .course-progress-block .block .green {
-    width: 0.34vw;
-    height: 100%;
-    background-color: black;
-    position: relative;
-    margin-top: 2.43vw;
-    display: block;
+    width: 0.54vw;
+    margin-top: 5.73vw;
+    margin-left: 2vw;
   }
   .editing .middle-block .course-progress-block .block .progress-line::after,
   .editing .middle-block .course-progress-block .block .green::after {
-    content: "1";
-    font-size: 1.52vw;
-    text-align: center;
-    width: 2.08vw;
-    height: 2.08vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 0.277vw solid black;
-    border-radius: 100%;
-    position: absolute;
-    top: -2.43vw;
-    left: -1.11vw;
+    font-size: 3.52vw;
+    width: 5.08vw;
+    height: 5.08vw;
+    border: 0.477vw solid black;
+    top: -5.73vw;
+    left: -2.511vw;
   }
   .editing .middle-block .course-progress-block .block .info {
-    width: 50vw;
-    margin-top: 0.34vw;
+    width: 70vw;
+    margin-top: 1vw;
   }
   .editing .middle-block .course-progress-block .block .info .title {
-    font-size: 1.38vw;
-    margin-bottom: 1.38vw;
-    cursor: pointer;
+    font-size: 3vw;
+    margin-bottom: 2.38vw;
   }
   .editing .middle-block .course-progress-block .block .info .text {
-    width: 36.24vw;
-    margin-left: 4.16vw;
-    max-height: 0px;
-    overflow: hidden;
-    transition: 0.2s;
-    font-family: "KTS";
-    transition-property: max-height;
-    transition-timing-function: ease-in, ease, linear;
+    width: 100%;
+    margin-left: 1vw;
   }
   .editing .middle-block .course-progress-block .block .info .text .add-info {
     position: absolute;
-    width: 63.8vw;
-    height: 6.52vw;
+    width: 75.8vw;
+    height: 8.52vw;
     background-image: url(./images/editing/dodatkovo.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 2.08vw;
     padding-right: 4vw;
-    font-size: 1.11vw;
+    font-size: 2.5vw;
   }
   .editing .middle-block .course-progress-block .block .info .text span {
-    font-size: 1.111vw;
-  }
-  .editing .middle-block .course-progress-block .block .info .text .text-line {
-    display: flex;
-    justify-content: space-between;
+    font-size: 3.111vw;
   }
   .editing .middle-block .course-progress-block .block .info .text .text-line span {
     display: block;
-    margin-bottom: 1.38vw;
+    margin-bottom: 2.38vw;
   }
   .editing .middle-block .course-progress-block .block .info .text .text-line .description {
-    width: 34.72vw;
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(2) .progress-line::after {
-    content: "2";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(3) .progress-line::after {
-    content: "3";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(4) .progress-line::after {
-    content: "4";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(5) .progress-line::after {
-    content: "5";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(6) .progress-line::after {
-    content: "7";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(7) .progress-line::after {
-    content: "8";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(8) .progress-line::after {
-    content: "9";
+    width: 65.72vw;
   }
   .editing .middle-block .course-progress-block .block:nth-child(9) {
-    width: 76.3vw;
+    width: 82.8vw;
   }
   .editing .middle-block .course-progress-block .block:nth-child(9) .info {
     width: 66.58vw;
   }
-  .editing .middle-block .course-progress-block .block:nth-child(9) .progress-line::after {
-    content: "10";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(10) .progress-line::after {
-    content: "12";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(11) .progress-line::after {
-    content: "13";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(12) .progress-line::after {
-    content: "14";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(13) .progress-line::after {
-    content: "15";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(14) .progress-line::after {
-    content: "16";
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(15) .progress-line {
-    background-color: transparent;
-  }
-  .editing .middle-block .course-progress-block .block:nth-child(15) .progress-line::after {
-    content: "17";
-  }
   .editing .middle-block .sertificate-text {
-    width: 65.97vw;
-    height: 5.2vw;
-    background-image: url(./images/editing/certificate\ \(1\).png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: block;
-    text-align: center;
-    font-size: 1.45vw;
-    margin: auto;
-    padding-top: 1.38vw;
+    width: 93.97vw;
+    height: 10.2vw;
+    font-size: 2.3vw;
+    padding-top: 1.5vw;
   }
   .editing .middle-block .sertificate {
-    width: 52.77vw;
-    height: 31.25vw;
+    width: 76vw;
+    height: 45vw;
     margin: auto;
-    background-image: url(./images/editing/Group\ 203.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-top: 6.25vw;
   }
   .editing .middle-block .EN {
@@ -3239,95 +3133,81 @@ main .EN {
   }
   .editing .bottom-block1 {
     width: 100vw;
-    height: 270.5vw;
-    background-image: url(./images/editing/bottom.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-top: 39.58vw;
-    position: relative;
+    height: 600.5vw;
+    background-image: url(./images/main.jpg);
+    background-size: cover;
+    padding-top: 10.58vw;
   }
-  .editing .bottom-block1 .EN {
-    display: none;
+  .editing .bottom-block1 .title {
+    text-align: center;
+    font-size: 5vw;
   }
   .editing .bottom-block1 .yara-block {
-    width: 59vw;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+    width: 80vw;
+    height: 100vw;
+    display: block;
+    margin: 10vw auto;
+    position: relative;
   }
   .editing .bottom-block1 .yara-block .info {
-    width: 24.09vw;
-    height: 10.41vw;
-    margin-top: auto;
-    font-family: "KTS";
-    margin-left: 1.38vw;
-    font-size: 1.31vw;
-    line-height: 1.52vw;
-    margin-bottom: 1.38vw;
+    background-image: url(./images/editing/element4\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40.41vw;
+    margin-top: 5vw;
+    font-size: 3.7vw;
+    line-height: 4.2vw;
+    bottom: 0px;
+    position: absolute;
+    padding: 2vw 2.5vw 0px 5vw;
   }
   .editing .bottom-block1 .yara-block .info span {
-    font-size: 2.08vw;
+    font-size: 4.08vw;
+  }
+  .editing .bottom-block1 .yara-block .EN {
+    display: none;
   }
   .editing .bottom-block1 .yara-block .img {
-    width: 26.04vw;
-    height: 25vw;
-    background-image: url(./images/editing/square.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-top: 1.38vw;
+    width: 52vw;
+    height: 50vw;
+    margin: auto;
   }
   .editing .bottom-block1 .yara-block .img::after {
     content: "";
-    width: 34vw;
-    height: 29.16vw;
-    position: absolute;
-    background-image: url(./images/editing/circle\ \(1\).png);
-    background-size: contain;
-    top: -4.16vw;
-    left: -5.2vw;
-    background-repeat: no-repeat;
-    z-index: 2;
+    width: 67.91vw;
+    height: 58.25vw;
   }
   .editing .bottom-block1 .yara-block .img::before {
-    content: "";
-    width: 27.08vw;
-    height: 25vw;
-    position: absolute;
-    background-image: url(./images/editing/yara.jpeg);
-    background-size: contain;
-    z-index: 1;
-    top: -1.38vw;
-    left: -1.38vw;
-    background-repeat: no-repeat;
+    width: 54vw;
+    height: 50vw;
   }
   .editing .bottom-block1 .experiense {
-    width: 69.4vw;
-    height: 18.05vw;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 16vw;
+    width: 80vw;
+    height: 150.05vw;
+    display: block;
     margin-top: 5.9vw;
+    margin: 0px auto;
   }
   .editing .bottom-block1 .experiense .block {
-    width: 32.08vw;
+    width: 100%;
   }
   .editing .bottom-block1 .experiense .block .title {
-    margin-bottom: 2.43vw;
-    font-size: 1.73vw;
+    text-align: center;
+    margin: 15vw 0px 5vw;
+    font-size: 4.5vw;
   }
   .editing .bottom-block1 .experiense .block span {
     display: block;
-    margin-bottom: 1.38vw;
-    font-family: "KTS";
-    font-size: 1.25vw;
-    line-height: 1.52vw;
+    margin-bottom: 4vw;
+    font-size: 4vw;
+    line-height: 4.7vw;
   }
   .editing .bottom-block1 .experiense .block .mini-title {
     font-family: "KTS-black";
   }
   .editing .bottom-block1 .experiense .block:nth-child(1) {
-    width: 25vw;
+    width: 100%;
   }
   .editing .bottom-block1 .experiense .block:nth-child(1) span {
     position: relative;

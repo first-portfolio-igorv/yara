@@ -3233,7 +3233,7 @@ main {
                     background-image: url(./images/editing/element1\ \(1\).png);
                     background-size: contain;
                     background-repeat: no-repeat;
-                    left: -20vw;
+                    left: -35vw;
                     top: -35vw;
                 }
                 .img2{
@@ -3442,10 +3442,12 @@ main {
             }
         
             .sertificate-text {
+                background-image: url(./images/editing/dodatkovo.png);
                 width: 93.97vw;
                 height: 10.2vw;
-                font-size: 2.3vw;
-                padding-top: 1.5vw;
+                font-size: 3vw;
+                line-height: 4vw;
+                padding: 1.5vw 5vw 0vw;
             }
         
             .sertificate {
@@ -3461,7 +3463,7 @@ main {
         }
         .bottom-block1 {
             width: 100vw;
-            height: 600.5vw;
+            height: 800.5vw;
             background-image: url(./images/main.jpg);
             background-size: cover;
             padding-top: 10.58vw;
@@ -3474,7 +3476,7 @@ main {
                 width: 80vw;
                 height: 100vw;
                 display: block;
-                margin:10vw auto;
+                margin:10vw auto 0vw;
                 position: relative;
                 
                 .info {
@@ -3519,14 +3521,13 @@ main {
                 width: 80vw;
                 height: 150.05vw;
                 display: block;
-                margin-top: 5.90vw;
                 margin:0px auto;
                 .block {
                     width: 100%;
-        
+                    margin-bottom: 15vw;
                     .title {
                         text-align: center;
-                        margin: 15vw 0px 5vw;
+                        margin: 2vw 0px 5vw;
                         font-size: 4.5vw;
                     }
         
@@ -3552,12 +3553,12 @@ main {
         
                         &::after {
                             content: "";
-                            width: 1.04vw;
-                            height: 0.277vw;
+                            width: 2vw;
+                            height: 0.577vw;
                             background-color: black;
                             position: absolute;
                             top: 50%;
-                            left: -2.77vw;
+                            left: -4.3vw;
                         }
                     }
                 }
@@ -3569,44 +3570,44 @@ main {
         
             .works {
                 text-align: center;
-                margin-top: 12.5vw;
+                margin-top: 0vw;
         
                 .title {
-                    font-size: 2.22vw;
-                    margin-bottom: 2.77vw;
+                    font-size:4.7vw;
+                    margin-bottom: 9vw;
                 }
         
                 .info {
-                    width: 52.08vw;
+                    width: 80.08vw;
                     font-family: "KTS";
-                    font-size: 1.31vw;
+                    font-size: 4vw;
                     margin: auto;
-                    line-height: 1.52vw;
+                    line-height: 4.5vw;
                 }
             }
         
             .comments {
-                width: 50vw;
-                height: 14vw;
+                width: 90vw;
+                height: 30vw;
                 position: relative;
                 margin: 8.33vw auto 0px;
         
                 .comments-block{
-                    width: 50vw;
-                    height: 14vw;
+                    width: 90vw;
+                    height: 30vw;
                     overflow: hidden;
                     position: relative;
                     .comment {
                         background-image: url(./images/editing/bubblereview.png);
                         background-size: contain;
                         background-repeat: no-repeat;
-                        width: 50vw;
-                        height: 13.19vw;
+                        width: 90vw;
+                        height: 30vw;
                         font-family: "KTS";
-                        font-size: 1.25vw;
+                        font-size: 3vw;
                         text-align: center;
-                        line-height: 1.52vw;
-                        padding: 2.08vw 5.2vw;
+                        line-height: 3.5vw;
+                        padding: 5.08vw 6.2vw 0vw;
                         position: relative;
                         float: left;
                         .comment-text{
@@ -3620,76 +3621,76 @@ main {
         
                 .left,
                 .right {
-                    width: 1.875vw;
-                    height: 4.444vw;
+                    width: 2.7vw;
+                    height: 8.444vw;
                     position: absolute;
-                    top: 4.16vw;
+                    top:27vw;
                     cursor: pointer;
                     background-image: url(./images/editing/left.png);
                     background-size: contain;
                     background-repeat: no-repeat;
+                    z-index: 2;
                 }
         
                 .left {
-                    left: -5.55vw;
+                    left: 35vw;
                 }
         
                 .right {
-                    right: -5.55vw;
+                    right: 35vw;
                     background-image: url(./images/editing/right.png);
         
                 }
             }
         
             .wtitle {
-                font-size: 2.22vw;
+                font-size: 4.7vw;
                 text-align: center;
-                margin-top: 7.5vw;
+                margin-top: 17vw;
             }
         
             .videos {
-                width: 45.48vw;
-                height: 30.83vw;
+                width: 94.9vw;
+                height: 65vw;
                 background-image: url(./images/editing/element9\ \(1\).png);
                 background-size: contain;
                 background-repeat: no-repeat;
-                margin: 3vw auto 0px;
-                padding-top: 4.86vw;
+                margin: 4vw auto 0px;
+                padding-top: 8.86vw;
                 position: relative;
                 
                 .left,
                 .right {
-                    width: 1.87vw;
-                    height: 4.44vw;
+                    width: 2.7vw;
+                    height: 8.444vw;
                     position: absolute;
-                    top: 12.33vw;
+                    top: 65vw;
                     background-image: url(./images/editing/left.png);
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
         
                 .left {
-                    left: -9.72vw;
+                    left: 37vw;
                 }
         
                 .right {
-                    right: -9.72vw;
+                    right: 37vw;
                     background-image: url(./images/editing/right.png);
         
                 }
                 .vid {
-                    width: 40.27vw;
-                    height: 22.22vw;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    margin: auto;
-                    position: relative;
+                    width: 85.8vw;
+                    height: 46.55vw;
                     
                     iframe{
-                        width: 40.27vw;
-                        height: 22.22vw;
+                        width: 85.8vw;
+                        height: 46.55vw;
                         p{
                             font-size: 1vw;
+                        }
+                        span{
+                            font-size: 0px;
                         }
                     }
                     
@@ -3697,85 +3698,89 @@ main {
             }
         
             .price {
-                margin-top: 14.93vw;
+                margin-top: 22.93vw;
         
                 .title {
-                    font-size: 2.77vw;
+                    font-size: 5vw;
                     text-align: center;
                 }
         
                 .price-blocks {
-                    width: 76.38vw;
-                    height: 34.72vw;
-                    display: flex;
-                    justify-content: space-between;
+                    width: 100vw;
+                    height: 200.72vw;
+                    display: block;
                     margin: 9.02vw auto 0px;
         
                     .price-block {
-                        width: 32.63vw;
-                        height: 100%;
-                        background-image: url(./images/editing/cost1.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        padding-top: 3.12vw;
-        
+                        width: 90vw;
+                        height: 100vw;
+                        padding-top: 10.12vw;
+                        margin-left: 2vw;
+                        margin-bottom: 10vw;
                         .EN {
                             display: none;
                         }
         
                         .title {
-                            font-size: 3.12vw;
+                            margin-left: 4vw;
+                            font-size: 7vw;
                         }
         
                         .info {
-                            width: 19.09vw;
-                            height: 19.09vw;
-                            margin-top: 4.86vw;
-                            margin-left: 9.37vw;
+                            width: 60.09vw;
+                            height: 53.09vw;
+                            margin-top: 20.86vw;
+                            margin-left: 20.37vw;
         
                             h1 {
                                 font-family: "KTS";
                                 margin: -1.04vw 0px 1.73vw 0px;
-                                font-size: 1.11vw;
+                                font-size: 4vw;
                             }
         
                             span {
                                 display: block;
-                                margin-bottom: 1.73vw;
-                                font-size: 1.11vw;
+                                margin-bottom: 3vw;
+                                font-size: 3.5vw;
+                                line-height: 4vw;
                                 position: relative;
         
                                 &::after {
                                     content: "";
-                                    width: 0.8vw;
-                                    height: 0.15vw;
+                                    width: 2vw;
+                                    height: 0.5vw;
                                     background-color: black;
                                     position: absolute;
                                     top: 50%;
-                                    left: -2vw;
+                                    left: -3vw;
                                 }
                             }
                         }
         
                         .price {
-                            width: 25.69vw;
-                            height: 2.43vw;
-                            margin: 2.08vw 0px 0px 4.51vw;
+                            width: 70vw;
+                            height: 5.43vw;
+                            margin: 2.08vw 0vw 0px 14.51vw;
+                            margin-right: 0px;
                             text-align: center;
-                            padding-top: 0.55vw;
-                            font-size: 1.38vw;
+                            padding-top: 0vw;
+                            font-size: 4vw;
                         }
                     }
         
                     .price-block:nth-child(2) {
                         background-image: url(./images/editing/cost2.png);
-        
+                        margin-left: 6vw;
                         .info {
-                            margin-left: 6.94vw;
+                            margin-left: 14.94vw;
+                            margin-top: 16vw;
                         }
-        
+                        .title{
+                            margin-left: 0px;
+                        }
                         .price {
-                            margin-left: 2.77vw;
+                            margin-left: 9.77vw;
+                            margin-top: 9vw;
                         }
                     }
         

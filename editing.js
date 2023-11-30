@@ -90,6 +90,7 @@ for(let i=0;i<comment.length;i++){
 }
 function right(){
   commentNum++;
+  console.log("sdf")
   if(commentNum==2){
     commentNum=0;
   }

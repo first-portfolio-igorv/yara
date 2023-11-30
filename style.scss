@@ -3463,7 +3463,7 @@ main {
         }
         .bottom-block1 {
             width: 100vw;
-            height: 800.5vw;
+            height: 740.5vw;
             background-image: url(./images/main.jpg);
             background-size: cover;
             padding-top: 10.58vw;
@@ -3760,7 +3760,7 @@ main {
                         .price {
                             width: 70vw;
                             height: 5.43vw;
-                            margin: 2.08vw 0vw 0px 14.51vw;
+                            margin: 1.08vw 0vw 0px 14.51vw;
                             margin-right: 0px;
                             text-align: center;
                             padding-top: 0vw;
@@ -3780,7 +3780,7 @@ main {
                         }
                         .price {
                             margin-left: 9.77vw;
-                            margin-top: 9vw;
+                            margin-top: 8.3vw;
                         }
                     }
         
@@ -3788,19 +3788,7 @@ main {
             }
         
             .bottom-menu {
-                width: 69.44vw;
-                height: 6.94vw;
-                display: flex;
-                justify-content: space-between;
-                padding-top: 2.43vw;
-                position: absolute;
-                bottom: 0px;
-                right: 7.63vw;
-                font-size: 1.52vw;
-        
-                span {
-                    color: white;
-                }
+                display: none;
             }
         }
     }

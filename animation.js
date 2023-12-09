@@ -1,7 +1,7 @@
 let block = document.getElementsByClassName("block");
 let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
-let height = [14.58,14.58,14.58,12,11,13.54,10.41];
+let height = [14.58,14.58,14.58,12,11,13.54,10.41,10,10,10];
 let check = [];
 let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");
@@ -12,6 +12,14 @@ let circle=document.getElementsByClassName("progress-line");
 let video=document.getElementsByClassName("vid");
 let videoNum=0;
 let position=0;
+let line1=document.getElementsByClassName("toggle");
+let menu=document.getElementsByClassName("menu-mobile");
+let body=document.getElementsByTagName("body");
+let check1=false;
+let maxHeight=[];
+for(let i=0;i<height.length;i++){
+  maxHeight.push(height[i]+20)
+}
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="none";
@@ -27,12 +35,19 @@ ua[0].addEventListener("click", function(){
 function open(i){
   if (check[i]) {
     check[i] = false;
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
+        if(window.innerWidth<500){
+          block[i].style.height = maxHeight[event.target.id] + "vw";
+        }
+        else{
         block[i].style.height = height[event.target.id] + "vw";
+
+        }
       }
     }
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < text.length; i++) {
+      
       if (text[i].id == event.target.id) {
         text[i].style.maxHeight = "500px";
       }
@@ -41,7 +56,12 @@ function open(i){
     check[i] = true;
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
-        block[i].style.height = "7.29vw";
+        if(window.innerWidth<500){
+          block[i].style.height = "14.29vw";
+          }
+          else{
+            block[i].style.height = "7.29vw";
+          }
       }
     }
     for (let i = 0; i < text.length; i++) {
@@ -113,4 +133,27 @@ function leftV(){
         },1000)
       }
   }
+}
+function toggle(){
+  check1=!check1;
+  if(check1){
+      line1[0].classList.add("line1");
+      line1[0].classList.remove("line");
+      menu[0].style.right="0px";
+      body[0].style.position="fixed";
+  }
+  else{
+      line1[0].classList.remove("line1");
+      line1[0].classList.add("line");
+      menu[0].style.right="-100%";
+      body[0].style.position="static";
+
+  }
+}
+function off(){
+      line1[0].classList.remove("line1");
+      line1[0].classList.add("line");
+      body[0].style.position="static";
+      menu[0].style.right="-100%";
+      check1=!check1;
 }

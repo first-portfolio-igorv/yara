@@ -2,7 +2,6 @@ let block = document.getElementsByClassName("block");
 let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
 let height = [14.72,11.66,14.51,15.76,16.11,13.95,15.69,12.84,19.09,15.97,12.56,11.11,10.41,11.66,10.41];
-let maxHeight=[];
 let check = [];
 let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");
@@ -17,6 +16,7 @@ let line=document.getElementsByClassName("toggle");
 let menu=document.getElementsByClassName("menu-mobile");
 let body=document.getElementsByTagName("body");
 let check1=false;
+let maxHeight=[];
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+20)
 }
@@ -35,7 +35,6 @@ ua[0].addEventListener("click", function(){
 function open(i){
   if (check[i]) {
     check[i] = false;
-    console.log(event.target.id)
 
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {

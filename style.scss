@@ -1301,7 +1301,9 @@ main {
 .graphic {
     width: 100vw;
     font-family: "KTS-black";
-
+    .menu,.menu-mobile{
+        display: none;
+    }
     a {
         text-decoration: none;
         color: black;
@@ -1310,7 +1312,16 @@ main {
     .EN {
         display: none;
     }
-
+    .logo {
+        width: 9.02vw;
+        height: 8.68vw;
+        background-image: url(./images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 2.56vw;
+        left: 2.56vw;
+    }
     .top-block {
         width: 100%;
         height: 383.68vw;
@@ -1345,16 +1356,7 @@ main {
             }
         }
 
-        .logo {
-            width: 9.02vw;
-            height: 8.68vw;
-            background-image: url(./images/logo.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 2.56vw;
-            left: 2.56vw;
-        }
+        
 
         .menu {
             background-image: url(./images/illustration/menu.png);
@@ -1875,7 +1877,6 @@ main {
 
             .block:nth-child(1) {
                 width: 27.08vw;
-                ;
 
                 span {
                     position: relative;
@@ -2065,7 +2066,7 @@ main {
 }
 
 .animation {
-
+    
     .top-block {
         height: 223.61vw;
         background-image: url(./images/animation/top.jpg);
@@ -2254,6 +2255,28 @@ main {
 }
 
 .graphic {
+    .menu-mobile{
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .EN {
+        display: none;
+    }
+    .logo {
+        width: 9.02vw;
+        height: 8.68vw;
+        background-image: url(./images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: fixed;
+        z-index: 2;
+        top: 2.56vw;
+        left: 2.56vw;
+    }
     .top-block {
         background-image: url(./images/graphicdesign/top.jpg);
         height: 164.4vw;
@@ -2429,7 +2452,7 @@ main {
                 }
             }
             .block{
-                .info:nth-child(2){
+                .b2{
                     width: 25.70vw;
                 }
                 span {
@@ -2967,17 +2990,20 @@ main {
         }
     
     }
-    .editing {
+    .editing, .illustration, .graphic, .animation {
         width: 100vw;
         max-height: 711.3vw;
         .logo{
             width: 16.24vw;
             height:15vw;
             position: fixed;
+            background-image: url(./images/logo.png);
             top: 1vw;
             left: 1vw;
+            z-index: 2;
         }
         .menu{
+            display: block;
             position: fixed;
             right: 1vw;
             top: 1vw;
@@ -3149,7 +3175,24 @@ main {
             .menu {
                 display: none;
             }
-    
+            .main-title{
+                .title{
+                    background-image: url("./images/editing/title (1).png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 90vw;
+                    height: 25vw;
+                    font-size: 6vw;
+                    line-height: 7.16vw;
+                    padding-top: 5vw;
+                }
+                .description{
+                    font-size: 4vw;
+                    line-height: 4.5vw;
+                    margin-top: 5.55vw;
+                    width: 85vw;
+                }
+            }
             .mtitle {
                 display: block;
                 width: 90vw;
@@ -3461,18 +3504,44 @@ main {
                 display: none;
             }
         }
-        .bottom-block1 {
+        .bottom-block1, .bottom-block {
             width: 100vw;
             height: 740.5vw;
             background-image: url(./images/main.jpg);
             background-size: cover;
             padding-top: 10.58vw;
-            .title {
+            .sertificate-text {
+                background-image: url(./images/editing/dodatkovo.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 93.97vw;
+                height: 10.2vw;
+                font-size: 3vw;
+                line-height: 4vw;
+                padding: 1.5vw 5vw 0vw;
                 text-align: center;
-                font-size: 5vw;
             }
         
-            .yara-block {
+            .sertificate {
+                width: 76vw;
+                height: 45vw;
+                margin: auto;
+                margin-top: 6.25vw;
+            }
+            .title, .maint {
+                text-align: center;
+                font-size: 5vw;
+                margin-top: 10vw;
+            }
+            .extra{
+                width: 100%;
+                height: 80vw;
+                background-image: url(./images/graphicdesign/bottom1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+            .yara-block,.anika-block {
                 width: 80vw;
                 height: 100vw;
                 display: block;
@@ -3516,15 +3585,29 @@ main {
                     }
                 }
             }
-        
+            .anika-block{
+                height: 105vw;
+                .info{
+                    margin-bottom: 0px;
+                }
+                .img{
+                    width: 40vw;
+                    height: 55vw;
+                    margin-bottom: 10vw;
+                }
+            }
             .experiense {
                 width: 80vw;
                 height: 150.05vw;
                 display: block;
                 margin:0px auto;
+                .info:nth-child(2){
+                    width: 100%;
+                }
                 .block {
                     width: 100%;
                     margin-bottom: 15vw;
+                    
                     .title {
                         text-align: center;
                         margin: 2vw 0px 5vw;
@@ -3562,10 +3645,6 @@ main {
                         }
                     }
                 }
-        
-                .block:nth-child(2) {
-                    width: 32.08vw;
-                }
             }
         
             .works {
@@ -3591,13 +3670,16 @@ main {
                 height: 30vw;
                 position: relative;
                 margin: 8.33vw auto 0px;
-        
                 .comments-block{
                     width: 90vw;
                     height: 30vw;
                     overflow: hidden;
                     position: relative;
-                    .comment {
+                    .comments-line{
+                        width: 90vw;
+                        height: 30vw;
+                    }
+                    .comment,.comments-line .comment {
                         background-image: url(./images/editing/bubblereview.png);
                         background-size: contain;
                         background-repeat: no-repeat;
@@ -3652,22 +3734,14 @@ main {
             .videos {
                 width: 94.9vw;
                 height: 65vw;
-                background-image: url(./images/editing/element9\ \(1\).png);
-                background-size: contain;
-                background-repeat: no-repeat;
                 margin: 4vw auto 0px;
                 padding-top: 8.86vw;
-                position: relative;
                 
                 .left,
                 .right {
                     width: 2.7vw;
                     height: 8.444vw;
-                    position: absolute;
                     top: 65vw;
-                    background-image: url(./images/editing/left.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
                 }
         
                 .left {
@@ -3676,7 +3750,6 @@ main {
         
                 .right {
                     right: 37vw;
-                    background-image: url(./images/editing/right.png);
         
                 }
                 .vid {
@@ -3705,12 +3778,60 @@ main {
                     text-align: center;
                 }
         
+                .price-block {
+                    width: 90vw;
+                    height: 100vw;
+                    padding-top: 10.12vw;
+                    margin-left: 2vw;
+                    margin-bottom: 10vw;
+                    .EN {
+                        display: none;
+                    }
+    
+                    .title {
+                        margin-left: 4vw;
+                        font-size: 7vw;
+                        margin-top: 0px;
+                    }
+    
+                    .info {
+                        width: 60.09vw;
+                        height: 53.09vw;
+                        margin-top: 20.86vw;
+                        margin-left: 20.37vw;
+    
+                        h1 {
+                            margin: -1.04vw 0px 1.73vw 0px;
+                            font-size: 4vw;
+                        }
+    
+                        span {
+                            margin-bottom: 3vw;
+                            font-size: 3.5vw;
+                            line-height: 4vw;
+    
+                            &::after {
+                                width: 2vw;
+                                height: 0.5vw;
+                                left: -3vw;
+                            }
+                        }
+                    }
+    
+                    .price {
+                        width: 70vw;
+                        height: 5.43vw;
+                        margin: 1.08vw 0vw 0px 14.51vw;
+                        margin-right: 0px;
+                        padding-top: 0vw;
+                        font-size: 4vw;
+                    }
+                }
                 .price-blocks {
                     width: 100vw;
                     height: 200.72vw;
                     display: block;
                     margin: 9.02vw auto 0px;
-        
                     .price-block {
                         width: 90vw;
                         height: 100vw;
@@ -3724,6 +3845,7 @@ main {
                         .title {
                             margin-left: 4vw;
                             font-size: 7vw;
+                            margin-top: 0px;
                         }
         
                         .info {
@@ -3733,25 +3855,18 @@ main {
                             margin-left: 20.37vw;
         
                             h1 {
-                                font-family: "KTS";
                                 margin: -1.04vw 0px 1.73vw 0px;
                                 font-size: 4vw;
                             }
         
                             span {
-                                display: block;
                                 margin-bottom: 3vw;
                                 font-size: 3.5vw;
                                 line-height: 4vw;
-                                position: relative;
         
                                 &::after {
-                                    content: "";
                                     width: 2vw;
                                     height: 0.5vw;
-                                    background-color: black;
-                                    position: absolute;
-                                    top: 50%;
                                     left: -3vw;
                                 }
                             }
@@ -3762,14 +3877,11 @@ main {
                             height: 5.43vw;
                             margin: 1.08vw 0vw 0px 14.51vw;
                             margin-right: 0px;
-                            text-align: center;
                             padding-top: 0vw;
                             font-size: 4vw;
                         }
                     }
-        
                     .price-block:nth-child(2) {
-                        background-image: url(./images/editing/cost2.png);
                         margin-left: 6vw;
                         .info {
                             margin-left: 14.94vw;
@@ -3790,6 +3902,179 @@ main {
             .bottom-menu {
                 display: none;
             }
+            .bottom{
+                display: none;
+            }
         }
+        .bottom-block{
+            padding-top: 0px;
+        }
+    }
+    .graphic,.animation{
+        .top-block{
+            height: 300vw;
+        }
+        .middle-block{
+            padding:10vw 0px;
+            span{
+                font-size: 5vw;
+            }
+        }
+        .bottom-block{
+            height: 890vw;
+            .comments{
+            height: 45vw;
+            .left, .right{
+                top: 40vw;
+            }
+            .title{
+                margin-bottom: 8vw;
+            }
+            }
+            .works{
+                width: 100vw;
+                height: 100vw;
+                .videos {
+                    width: 60.8vw;
+                    height:70vw;
+                    .left,
+                    .right {
+                        top: 40vw;
+                    }
+            
+                    .left {
+                        left: -8vw;
+                    }
+            
+                    .right {
+                        right: -8vw;
+                    }
+                    .vid {
+                        width: 60.8vw;
+                        height:70vw;
+                    }
+                }
+            }
+            .price{
+                .price-block{
+                    margin:10vw auto 0px;
+                    padding-top: 16vw;
+                    .title span{
+                        font-size: 5vw;
+                    }
+                    .info{
+                        width: 80vw;
+                        margin: 5vw 7vw 0vw;
+                        span{
+                            margin-bottom: 2vw;
+                        }
+                    }
+                    .price{
+                        width: 61vw;
+                        margin-top: 0.3vw;
+                    }
+                }
+
+            }
+        }
+        
+    }
+    .animation{
+        .top-block{
+            height: 400vw;
+            position: relative;
+            .main-title .title{
+                padding-top: 9vw;
+            }
+        }
+        .bottom-block{
+            height: 640vw;
+            .extra{
+                height: 120vw;
+                .advice{
+                    width: 104vw;
+                    height: 31vw;
+                    background-image: url(./images/animation/element3\ \(1\).png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-left: -4vw;
+                    font-size: 3vw;
+                    line-height: 3.2vw;
+                    padding: 4vw 2vw 0px 4vw;
+                }
+                .sertificate-text{
+                    margin-top: 5vw;
+                }
+            }
+            .experiense{
+                height: 110vw;
+            }
+            .works{
+                .videos {
+                    width: 94.9vw;
+                    height: 65vw;
+                    margin: 4vw auto 0px;
+                    padding-top: 8.86vw;
+                    
+                    .left,
+                    .right {
+                        width: 2.7vw;
+                        height: 8.444vw;
+                        top: 65vw;
+                    }
+            
+                    .left {
+                        left: 37vw;
+                    }
+            
+                    .right {
+                        right: 37vw;
+            
+                    }
+                    .vid {
+                        width: 85.8vw;
+                        height: 46.55vw;
+                        
+                        iframe{
+                            width: 85.8vw;
+                            height: 46.55vw;
+                            p{
+                                font-size: 1vw;
+                            }
+                            span{
+                                font-size: 0px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .price{
+                overflow: hidden;
+                margin-top: 0vw;
+                .price-block{
+                    width: 125vw;
+                    height: 129vw;
+                    margin-left: -10vw;
+                    padding-top: 12vw;
+                    .title{
+                        margin-left: -2vw;
+                    }
+                    .info{
+                        width: 70vw;
+                        margin-left: 30vw;
+                        margin-top: 14vw;
+                        span{
+                            margin-bottom: 3vw;
+                        }
+                    }
+                    .price{
+                        margin-top: 14.5vw;
+                        margin-left: 28vw;
+                    }
+                }
+            }
+        }
+        
     }
 }

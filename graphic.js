@@ -3,6 +3,7 @@ let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
 let height = [10,10,10,10,10,10,12,10,12,12,10,10,10,10,10,10,12,12,11,12,11,10.1,10,11,10,10,10,10,10,10,12,12,10,9,10,11,9,10,10,9,9,9];
 let check = [false,false,false];
+let maxHeight=[];
 let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");
 let UA=document.getElementsByClassName("UA");
@@ -16,7 +17,10 @@ let comment=document.getElementsByClassName("comment-text");
 let video=document.getElementsByClassName("vid");
 let videoNum=0;
 let commentNum=0;
-
+let line1=document.getElementsByClassName("toggle");
+let menu=document.getElementsByClassName("menu-mobile");
+let body=document.getElementsByTagName("body");
+let check1=false;
 let checkCount=[false,false,false]
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
@@ -30,12 +34,27 @@ ua[0].addEventListener("click", function(){
         EN[i].style.display="none";
     }
 })
+for(let i=0;i<height.length;i++){
+  maxHeight.push(height[i]+20)
+}
 function open(i){
   if (check[i]) {
     check[i] = false;
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
+        if(window.innerWidth<500){
+          if(window.innerWidth<500){
+            block[i].style.height = maxHeight[event.target.id] + "vw";
+          }
+          else{
+          block[i].style.height = height[event.target.id] + "vw";
+  
+          }
+        }
+        else{
         block[i].style.height = height[event.target.id] + "vw";
+
+        }
       }
     }
     for (let i = 0; i < text.length; i++) {
@@ -47,7 +66,12 @@ function open(i){
     check[i] = true;
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
-        block[i].style.height = "7.29vw";
+        if(window.innerWidth<500){
+          block[i].style.height = "14.29vw";
+          }
+          else{
+            block[i].style.height = "7.29vw";
+          }
       }
     }
     for (let i = 0; i < text.length; i++) {
@@ -67,6 +91,7 @@ for (let i = 0; i < block.length; i++) {
   });
 }
 for(let i=0; i<programCount.length;i++){
+    program[i].style.maxHeight="0px";
     programCount[i].addEventListener("click", function(j){
         if(checkCount[i]==false){
           if(i==0){
@@ -215,4 +240,27 @@ function leftV(){
         },1000)
       }
   }
+}
+function toggle(){
+  check1=!check1;
+  if(check1){
+      line1[0].classList.add("line1");
+      line1[0].classList.remove("line");
+      menu[0].style.right="0px";
+      body[0].style.position="fixed";
+  }
+  else{
+      line1[0].classList.remove("line1");
+      line1[0].classList.add("line");
+      menu[0].style.right="-100%";
+      body[0].style.position="static";
+
+  }
+}
+function off(){
+      line1[0].classList.remove("line1");
+      line1[0].classList.add("line");
+      body[0].style.position="static";
+      menu[0].style.right="-100%";
+      check1=!check1;
 }

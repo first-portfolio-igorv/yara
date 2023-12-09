@@ -8,8 +8,38 @@
 </head>
 <body>
     <div class="animation">
+        <div class="logo" onclick="location.href='index.html'"></div>
+        <div class="menu" onclick="toggle()">
+            <div class="line toggle"></div>
+        </div>
+        <div class="menu-mobile">
+            <div class="button-list">
+            <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="UA free" onclick="off()">Безкоштовний урок</span></a>
+            <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="EN" onclick="off()">Free lesson</span></a>
+            <a href="#program"><span class="UA" onclick="off()">Програма курсу</span></a>
+            <a href="#program"><span class="EN" onclick="off()">Course program</span></a>
+            <a href="#teacher"><span class="UA" onclick="off()">Про викладача</span></a>
+            <a href="#teacher"><span class="EN" onclick="off()">About teacher</span></a>
+            <a href="#price"><span class="UA" onclick="off()">Вартість</span></a>
+            <a href="#price"><span class="EN" onclick="off()">Price</span></a>
+                <div class="lang-buttons">
+                    <span class="ukr-button">Ukr</span>
+                    <span class="en-button">En</span>
+                </div>
+            <hr>
+            <p>Зв'язатись</p>
+            <div class="reg">
+                <input type="text" placeholder="Ім'я та прізвище" class="UA">
+                <input type="text" placeholder="First name and surname" class="EN">
+                <input type="text" placeholder="Email*">
+                <input type="text" placeholder="Повідомлення*" class="UA">
+                <input type="text" placeholder="Message*" class="EN">
+                <input type="button" value="НАДІСЛАТИ" class="button">
+            </div>
+            </div>
+            
+        </div>
         <div class="top-block">
-            <div class="logo" onclick="location.href='index.html'"></div>
             <div class="menu">
     
                 <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="UA">Безкоштовний урок</span></a>
@@ -81,7 +111,7 @@
                     </span>
                 </div>
             </div>
-            <div class="blocks" id="program">
+            <div class="blocks prog" id="program">
                 <div class="block UA" >
                     <div class="title">ПРОГРАМА КУРСУ</div>
                     <div class="info">
@@ -256,11 +286,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="progress-line"></div>
+                <div class="block" id="7">
+                    <div class="progress-line" id="7"></div>
                     <div class="info UA">
-                        <div class="title clickTitle">8 УРОК - РОБОТА НАД ПРОЄКТОМ СТУДЕНТА</div>
-                        <div class="text">
+                        <div class="title clickTitle" id="7">8 УРОК - РОБОТА НАД ПРОЄКТОМ СТУДЕНТА</div>
+                        <div class="text" id="7">
                             <div class="text-line"><span>1. </span><span class="description"> Візуальне та психологічне
                                     пропрацювання і стилізація персонажів
                                 </span></div>
@@ -277,8 +307,8 @@
                         </div>
                     </div>
                     <div class="info EN">
-                        <div class="title clickTitle" >lESSON 8 - WORK ON A STUDENT PROJECT</div>
-                        <div class="text">
+                        <div class="title clickTitle" id="7">lESSON 8 - WORK ON A STUDENT PROJECT</div>
+                        <div class="text" id="7">
                             <div class="text-line"><span>1. </span><span class="description"> Visual and psychological
                                     development, stylization of characters
                                 </span></div>
@@ -297,11 +327,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="progress-line" ></div>
+                <div class="block" id="8">
+                    <div class="progress-line" id="8"></div>
                     <div class="info UA">
-                        <div class="title clickTitle" >9 УРОК - РОБОТА НАД ПРОЄКТОМ СТУДЕНТА</div>
-                        <div class="text">
+                        <div class="title clickTitle" id="8">9 УРОК - РОБОТА НАД ПРОЄКТОМ СТУДЕНТА</div>
+                        <div class="text" id="8">
                             <div class="text-line"><span>1. </span><span class="description"> Яка будова книги є
                                     класичною, як ми можемо підлаштувати власну історію під
                                     потрібний формат?</span></div>
@@ -317,8 +347,8 @@
                         </div>
                     </div>
                     <div class="info EN">
-                        <div class="title clickTitle">lESSON 9 - WORK ON A STUDENT PROJECT</div>
-                        <div class="text">
+                        <div class="title clickTitle" id="8">lESSON 9 - WORK ON A STUDENT PROJECT</div>
+                        <div class="text" id="8">
                             <div class="text-line"><span>1. </span><span class="description">What is the classic
                                     structure of a book, how can we adapt our story to the right format?
                                 </span></div>
@@ -336,11 +366,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="progress-line"></div>
+                <div class="block" id="9">
+                    <div class="progress-line" id="9"></div>
                     <div class="info UA">
-                        <div class="title clickTitle">10 УРОК - РОБОТА НАД ПРОЄКТОМ СТУДЕНТА</div>
-                        <div class="text">
+                        <div class="title clickTitle" id="9">10 УРОК - РОБОТА НАД ПРОЄКТОМ СТУДЕНТА</div>
+                        <div class="text" id="9">
                             <div class="text-line"><span>1. </span><span class="description"> Переглядаємо готову
                                     роботу</span></div>
                             <div class="text-line"><span>2. </span><span class="description"> Підсумовуємо здобуті
@@ -350,8 +380,8 @@
                         </div>
                     </div>
                     <div class="info EN">
-                        <div class="title clickTitle">lESSON 10 - WORK ON A STUDENT PROJECT</div>
-                        <div class="text">
+                        <div class="title clickTitle" id="9">lESSON 10 - WORK ON A STUDENT PROJECT</div>
+                        <div class="text" id="9">
                             <div class="text-line"><span>1. </span><span class="description"> Reviewing the finished
                                     work</span></div>
                             <div class="text-line"><span>2. </span><span class="description"> Summarize the knowledge
@@ -364,21 +394,24 @@
             </div>
         </div>
         <div class="bottom-block">
-            <div class="advice UA">Для того аби реалізувати усі твої ідеї та попрактикувати здобуті
-                знання радимо за можливості мати графічний планшет/пристрій зі стилусом. Тож з тебе
-                – технічний аспект та бажання пізнати світ анімації, з нас – якісні та практичні знання,
-                а ще класна атмосфера на заняттях. 
+            <div class="extra">
+                <div class="advice UA">Для того аби реалізувати усі твої ідеї та попрактикувати здобуті
+                    знання радимо за можливості мати графічний планшет/пристрій зі стилусом. Тож з тебе
+                    – технічний аспект та бажання пізнати світ анімації, з нас – якісні та практичні знання,
+                    а ще класна атмосфера на заняттях. 
+                </div>
+                <div class="advice EN">In order to realize all your ideas and practice the knowledge you
+                     have gained we recommend that you have a graphic tablet/device with a stylus if possible.
+                      So, you bring the technical aspect and the desire to learn about the world of animation,
+                       we bring quality and practical knowledge, and a cool atmosphere at the class.
+                </div>
+                    <div class="sertificate-text UA">Отримаєш сертифікат-підтвердження твого успішного проходження курсу.</div>
+                    <div class="sertificate-text EN">You will receive a certificate confirming your successful completion of the
+                    course</div>
+                
+                <div class="sertificate"></div>
             </div>
-            <div class="advice EN">In order to realize all your ideas and practice the knowledge you
-                 have gained we recommend that you have a graphic tablet/device with a stylus if possible.
-                  So, you bring the technical aspect and the desire to learn about the world of animation,
-                   we bring quality and practical knowledge, and a cool atmosphere at the class.
-            </div>
-                <div class="sertificate-text UA">Отримаєш сертифікат-підтвердження твого успішного проходження курсу.</div>
-                <div class="sertificate-text EN">You will receive a certificate confirming your successful completion of the
-                course</div>
             
-            <div class="sertificate"></div>
 
             <div class="title UA mainT">ПРО ВИКЛАДАЧА</div>
             <div class="title EN mainT">ABOUT THE TEACHER

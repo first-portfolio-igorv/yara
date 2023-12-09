@@ -10,6 +10,14 @@ let EN=document.getElementsByClassName("EN");
 let line=document.getElementsByClassName("comments-line");
 let circle=document.getElementsByClassName("progress-line");
 let position=0;
+let line1=document.getElementsByClassName("toggle");
+let menu=document.getElementsByClassName("menu-mobile");
+let body=document.getElementsByTagName("body");
+let check1=false;
+let maxHeight=[];
+for(let i=0;i<height.length;i++){
+  maxHeight.push(height[i]+20)
+}
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="none";
@@ -39,7 +47,12 @@ function open(i){
     check[i] = true;
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
-        block[i].style.height = "7.29vw";
+        if(window.innerWidth<500){
+          block[i].style.height = "14.29vw";
+          }
+          else{
+            block[i].style.height = "7.29vw";
+          }
       }
     }
     for (let i = 0; i < text.length; i++) {
@@ -54,4 +67,27 @@ for (let i = 0; i < block.length; i++) {
   block[i].addEventListener("click", function () {
     open(i);
   });
+}
+function toggle(){
+  check1=!check1;
+  if(check1){
+      line1[0].classList.add("line1");
+      line1[0].classList.remove("line");
+      menu[0].style.right="0px";
+      body[0].style.position="fixed";
+  }
+  else{
+      line1[0].classList.remove("line1");
+      line1[0].classList.add("line");
+      menu[0].style.right="-100%";
+      body[0].style.position="static";
+
+  }
+}
+function off(){
+      line1[0].classList.remove("line1");
+      line1[0].classList.add("line");
+      body[0].style.position="static";
+      menu[0].style.right="-100%";
+      check1=!check1;
 }

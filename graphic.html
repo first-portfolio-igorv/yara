@@ -8,8 +8,38 @@
 </head>
 <body>
     <div class="graphic">
+        <div class="logo" onclick="location.href='index.html'"></div>
+        <div class="menu" onclick="toggle()">
+            <div class="line toggle"></div>
+        </div>
+        <div class="menu-mobile">
+            <div class="button-list">
+            <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="UA free" onclick="off()">Безкоштовний урок</span></a>
+            <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="EN" onclick="off()">Free lesson</span></a>
+            <a href="#program"><span class="UA" onclick="off()">Програма курсу</span></a>
+            <a href="#program"><span class="EN" onclick="off()">Course program</span></a>
+            <a href="#teacher"><span class="UA" onclick="off()">Про викладача</span></a>
+            <a href="#teacher"><span class="EN" onclick="off()">About teacher</span></a>
+            <a href="#price"><span class="UA" onclick="off()">Вартість</span></a>
+            <a href="#price"><span class="EN" onclick="off()">Price</span></a>
+                <div class="lang-buttons">
+                    <span class="ukr-button">Ukr</span>
+                    <span class="en-button">En</span>
+                </div>
+            <hr>
+            <p>Зв'язатись</p>
+            <div class="reg">
+                <input type="text" placeholder="Ім'я та прізвище" class="UA">
+                <input type="text" placeholder="First name and surname" class="EN">
+                <input type="text" placeholder="Email*">
+                <input type="text" placeholder="Повідомлення*" class="UA">
+                <input type="text" placeholder="Message*" class="EN">
+                <input type="button" value="НАДІСЛАТИ" class="button">
+            </div>
+            </div>
+            
+        </div>
         <div class="top-block">
-            <div class="logo" onclick="location.href='index.html'"></div>
             <div class="menu">
 
                 <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="UA">Безкоштовний урок</span></a>
@@ -40,8 +70,11 @@
             </div>
             <div class="blocks" id="about">
                 <div class="question-block UA">
+                    <div class="arrow"></div>
                     <div class="title">
                         ЦІЛІ КУРСУ
+                    <div class="img"></div>                    
+
                     </div>
                     <span>Підготувати твоє професійне портфоліо</span>
                     <span>Розібратися у всіх незрозумілих повзунках Photoshop та Illustrator</span>
@@ -59,7 +92,7 @@
                     </span>
                 </div>
             </div>
-            <div class="blocks" id="program">
+            <div class="blocks prog" id="program">
                 <div class="block UA" >
                     <div class="title">ПРОГРАМА КУРСУ</div>
                     <div class="info">
@@ -1002,9 +1035,12 @@
             </div>
         </div>
         <div class="bottom-block">
-            <div class="sertificate-text UA">Отримаєш сертифікат-підтвердження твого успішного проходження курсу.</div>
-            <div class="sertificate-text EN">You will receive a certificate confirming your successful completion of the course</div>
-            <div class="sertificate"></div>
+            <div class="extra">
+                <div class="sertificate-text UA">Отримаєш сертифікат-підтвердження твого успішного проходження курсу.</div>
+                <div class="sertificate-text EN">You will receive a certificate confirming your successful completion of the course</div>
+                <div class="sertificate"></div>
+            </div>
+            
             
             <div class="title UA maint">ПРО ВИКЛАДАЧА</div>
             <div class="title EN maint">ABOUT THE TEACHER
@@ -1045,7 +1081,7 @@
                 </div>
                 <div class="block UA">
                     <div class="title">ОСВІТА</div>
-                    <div class="info">
+                    <div class="info b2">
                         <span>Краматорський коледж технологій та дизайну, графічний дизайнер</span>
                         <span>Харківська академія дизайну і мистецтв, графічний дизайнер </span>
                         <span>Школа UX/UI дизайну uprock, UX/UI дизайнер  </span>
@@ -1054,7 +1090,7 @@
                 </div>
                 <div class="block EN">
                     <div class="title">EDUCATION</div>
-                    <div class="info">
+                    <div class="info b2">
                         <span>Kramatorsk College of Technology and Design, graphic designer
 
                         </span>
@@ -1075,10 +1111,9 @@
                 <div class="left" onclick="left()"></div>
                 <div class="right" onclick="right()"></div>
                 <div class="comments-block">
-                    <div class="comments-line">
                         <div class="comment UA">
                             <span class="comment-text">
-                                Якщо чесно, не сприймала дизайн якось серйозно, але було цікаво спробувати. Виявилося, що це дуже цікаво і захоплююче. На уроках опанувала роботу з фотошопом і так само познайомилася з ілюстратором, багато дізналася про дизайн загалом, навчилася обробляти фотографії як для Instagram, так і просто у творчому форматі. Усі уроки були пояснені доступно, завжди було цікаво і часто весело. У будь-якому разі вважаю, що ті навички, які я здобула, можуть знадобитися і в житті, і в сучасних професіях. 
+                                Якщо чесно, не сприймала дизайн якось серйозно, але було цікаво спробувати. Виявилося, що це дуже цікаво і захоплююче.  
                             </span>
                             <span class="comment-text">
                                 До цього в мене був різний досвід з викладачами, але саме на твоїх уроках я розвинулася так сильно. Дізналася багато основ, встигла попрацювати з різними матеріалами і різними техніками, навчилася обирати ракурс, малювати портрети і підбирати кольори. Увесь матеріал був дуже доступно пояснений, на уроках завжди була гарна атмосфера, і кожна робота була різноманітною. Моє бажання покреативити завжди підтримувалося і завдяки цим урокам у майбутньому я змогла знайти свій стиль.
@@ -1089,7 +1124,6 @@
                             </span>
 
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="works">

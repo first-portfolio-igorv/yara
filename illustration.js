@@ -1,13 +1,14 @@
 let block = document.getElementsByClassName("block");
 let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
-let height = [26.6,21.86,27.29,22,23.6,23.12,22.91,24.65,25,14];
+let height = [26.6,21.86,27.29,22,23.6,23.12,22.91,24.65,25,10];
 let check = [];
 let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");
 let UA=document.getElementsByClassName("UA");
 let EN=document.getElementsByClassName("EN");
 let line=document.getElementsByClassName("comments-line");
+let comment=document.getElementsByClassName("comment-text");
 let circle=document.getElementsByClassName("progress-line");
 let position=0;
 let line1=document.getElementsByClassName("toggle");
@@ -15,8 +16,10 @@ let menu=document.getElementsByClassName("menu-mobile");
 let body=document.getElementsByTagName("body");
 let check1=false;
 let maxHeight=[];
+let commentNum=0;
 for(let i=0;i<height.length;i++){
-  maxHeight.push(height[i]+20)
+  maxHeight.push(height[i]+40)
+  console.log(maxHeight)
 }
 en[0].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
@@ -35,12 +38,18 @@ function open(i){
     check[i] = false;
     for (let i = 0; i < block.length; i++) {
       if (block[i].id == event.target.id) {
+        if(window.innerWidth<500){
+          block[i].style.height = maxHeight[event.target.id] + "vw";
+        }
+        else{
         block[i].style.height = height[event.target.id] + "vw";
+
+        }
       }
     }
     for (let i = 0; i < text.length; i++) {
       if (text[i].id == event.target.id) {
-        text[i].style.maxHeight = "500px";
+        text[i].style.maxHeight = "1000px";
       }
     }
   } else {
@@ -90,4 +99,66 @@ function off(){
       body[0].style.position="static";
       menu[0].style.right="-100%";
       check1=!check1;
+}
+for(let i=0;i<comment.length;i++){
+  if(commentNum==i){
+    comment[i].style.opacity="100%";
+    comment[i].style.display="block";
+  }
+  else{
+    comment[i].style.opacity="0%"
+    comment[i].style.display="none";
+  }
+}
+function right(){
+  commentNum++;
+  console.log("sdf")
+  if(commentNum==4){
+    commentNum=0;
+  }
+    for(let i=0;i<comment.length;i++){
+      if(commentNum==i){
+        
+        setTimeout(()=>{
+          comment[i].style.display="block";
+          setTimeout(()=>{
+            comment[i].style.opacity="100%";
+            
+          },100)
+        },200)
+        
+
+      }
+      else{
+        comment[i].style.opacity="0%"
+        setTimeout(()=>{
+          comment[i].style.display="none";
+        },200)
+        
+      }
+    }
+
+}
+function left(){
+  commentNum--;
+  if(commentNum==-1){
+    commentNum=3;
+  }
+    for(let i=0;i<comment.length;i++){
+      if(commentNum==i){
+        setTimeout(()=>{
+          comment[i].style.display="block";
+          setTimeout(()=>{
+            comment[i].style.opacity="100%";
+            
+          },100)
+        },200)
+      }
+      else{
+        comment[i].style.opacity="0%"
+        setTimeout(()=>{
+          comment[i].style.display="none";
+        },200)
+      }
+  }
 }

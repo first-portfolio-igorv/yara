@@ -2888,6 +2888,7 @@ main .EN {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    position: relative;
   }
   .editing .top-block .lang-buttons, .illustration .top-block .lang-buttons, .graphic .top-block .lang-buttons, .animation .top-block .lang-buttons {
     display: none;
@@ -3034,11 +3035,13 @@ main .EN {
     margin-top: 17vw;
     box-sizing: border-box;
     width: 100%;
-    height: 400px;
+    height: 82vw;
     background-image: url(./images/editing/block.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-top: 17vw;
+    position: absolute;
+    bottom: 0px;
   }
   .editing .top-block .prog .block, .illustration .top-block .prog .block, .graphic .top-block .prog .block, .animation .top-block .prog .block {
     width: 70.29vw;
@@ -3152,6 +3155,13 @@ main .EN {
     padding: 2.08vw;
     padding-right: 4vw;
     font-size: 2.5vw;
+  }
+  .editing .middle-block .course-progress-block .block .info .text .img, .illustration .middle-block .course-progress-block .block .info .text .img, .graphic .middle-block .course-progress-block .block .info .text .img, .animation .middle-block .course-progress-block .block .info .text .img {
+    height: 10vw;
+    width: 40vw;
+    font-size: 2.7vw;
+    padding-top: 3vw;
+    padding-left: 2vw;
   }
   .editing .middle-block .course-progress-block .block .info .text span, .illustration .middle-block .course-progress-block .block .info .text span, .graphic .middle-block .course-progress-block .block .info .text span, .animation .middle-block .course-progress-block .block .info .text span {
     font-size: 3.111vw;
@@ -3556,82 +3566,83 @@ main .EN {
   .editing .bottom-block, .illustration .bottom-block, .graphic .bottom-block, .animation .bottom-block {
     padding-top: 0px;
   }
-  .graphic .top-block, .animation .top-block {
+  .graphic .top-block, .animation .top-block, .illustration .top-block {
     height: 300vw;
   }
-  .graphic .middle-block, .animation .middle-block {
+  .graphic .middle-block, .animation .middle-block, .illustration .middle-block {
     padding: 10vw 0px;
   }
-  .graphic .middle-block span, .animation .middle-block span {
+  .graphic .middle-block span, .animation .middle-block span, .illustration .middle-block span {
     font-size: 5vw;
   }
-  .graphic .bottom-block, .animation .bottom-block {
+  .graphic .bottom-block, .animation .bottom-block, .illustration .bottom-block {
     height: 890vw;
   }
-  .graphic .bottom-block .comments, .animation .bottom-block .comments {
+  .graphic .bottom-block .comments, .animation .bottom-block .comments, .illustration .bottom-block .comments {
     height: 45vw;
   }
-  .graphic .bottom-block .comments .left, .graphic .bottom-block .comments .right, .animation .bottom-block .comments .left, .animation .bottom-block .comments .right {
+  .graphic .bottom-block .comments .left, .graphic .bottom-block .comments .right, .animation .bottom-block .comments .left, .animation .bottom-block .comments .right, .illustration .bottom-block .comments .left, .illustration .bottom-block .comments .right {
     top: 40vw;
   }
-  .graphic .bottom-block .comments .title, .animation .bottom-block .comments .title {
+  .graphic .bottom-block .comments .title, .animation .bottom-block .comments .title, .illustration .bottom-block .comments .title {
     margin-bottom: 8vw;
   }
-  .graphic .bottom-block .works, .animation .bottom-block .works {
+  .graphic .bottom-block .works, .animation .bottom-block .works, .illustration .bottom-block .works {
     width: 100vw;
     height: 100vw;
   }
-  .graphic .bottom-block .works .videos, .animation .bottom-block .works .videos {
+  .graphic .bottom-block .works .videos, .animation .bottom-block .works .videos, .illustration .bottom-block .works .videos {
     width: 60.8vw;
     height: 70vw;
   }
   .graphic .bottom-block .works .videos .left,
   .graphic .bottom-block .works .videos .right, .animation .bottom-block .works .videos .left,
-  .animation .bottom-block .works .videos .right {
+  .animation .bottom-block .works .videos .right, .illustration .bottom-block .works .videos .left,
+  .illustration .bottom-block .works .videos .right {
     top: 40vw;
   }
-  .graphic .bottom-block .works .videos .left, .animation .bottom-block .works .videos .left {
+  .graphic .bottom-block .works .videos .left, .animation .bottom-block .works .videos .left, .illustration .bottom-block .works .videos .left {
     left: -8vw;
   }
-  .graphic .bottom-block .works .videos .right, .animation .bottom-block .works .videos .right {
+  .graphic .bottom-block .works .videos .right, .animation .bottom-block .works .videos .right, .illustration .bottom-block .works .videos .right {
     right: -8vw;
   }
-  .graphic .bottom-block .works .videos .vid, .animation .bottom-block .works .videos .vid {
+  .graphic .bottom-block .works .videos .vid, .animation .bottom-block .works .videos .vid, .illustration .bottom-block .works .videos .vid {
     width: 60.8vw;
     height: 70vw;
   }
-  .graphic .bottom-block .price .price-block, .animation .bottom-block .price .price-block {
+  .graphic .bottom-block .price .price-block, .animation .bottom-block .price .price-block, .illustration .bottom-block .price .price-block {
     margin: 10vw auto 0px;
     padding-top: 16vw;
   }
-  .graphic .bottom-block .price .price-block .title span, .animation .bottom-block .price .price-block .title span {
+  .graphic .bottom-block .price .price-block .title span, .animation .bottom-block .price .price-block .title span, .illustration .bottom-block .price .price-block .title span {
     font-size: 5vw;
   }
-  .graphic .bottom-block .price .price-block .info, .animation .bottom-block .price .price-block .info {
+  .graphic .bottom-block .price .price-block .info, .animation .bottom-block .price .price-block .info, .illustration .bottom-block .price .price-block .info {
     width: 80vw;
     margin: 5vw 7vw 0vw;
   }
-  .graphic .bottom-block .price .price-block .info span, .animation .bottom-block .price .price-block .info span {
+  .graphic .bottom-block .price .price-block .info span, .animation .bottom-block .price .price-block .info span, .illustration .bottom-block .price .price-block .info span {
     margin-bottom: 2vw;
   }
-  .graphic .bottom-block .price .price-block .price, .animation .bottom-block .price .price-block .price {
+  .graphic .bottom-block .price .price-block .price, .animation .bottom-block .price .price-block .price, .illustration .bottom-block .price .price-block .price {
     width: 61vw;
     margin-top: 0.3vw;
   }
-  .animation .top-block {
+  .animation .top-block, .illustration .top-block {
     height: 400vw;
     position: relative;
   }
-  .animation .top-block .main-title .title {
+  .animation .top-block .main-title .title, .illustration .top-block .main-title .title {
     padding-top: 9vw;
   }
-  .animation .bottom-block {
+  .animation .bottom-block, .illustration .bottom-block {
     height: 640vw;
   }
-  .animation .bottom-block .extra {
+  .animation .bottom-block .extra, .illustration .bottom-block .extra {
     height: 120vw;
   }
-  .animation .bottom-block .extra .advice {
+  .animation .bottom-block .extra .advice, .illustration .bottom-block .extra .advice {
     width: 104vw;
     height: 31vw;
     background-image: url(./images/animation/element3\ \(1\).png);
@@ -3642,67 +3653,117 @@ main .EN {
     line-height: 3.2vw;
     padding: 4vw 2vw 0px 4vw;
   }
-  .animation .bottom-block .extra .sertificate-text {
+  .animation .bottom-block .extra .sertificate-text, .illustration .bottom-block .extra .sertificate-text {
     margin-top: 5vw;
   }
-  .animation .bottom-block .experiense {
+  .animation .bottom-block .experiense, .illustration .bottom-block .experiense {
     height: 110vw;
   }
-  .animation .bottom-block .works .videos {
+  .animation .bottom-block .works .videos, .illustration .bottom-block .works .videos {
     width: 94.9vw;
     height: 65vw;
     margin: 4vw auto 0px;
     padding-top: 8.86vw;
   }
   .animation .bottom-block .works .videos .left,
-  .animation .bottom-block .works .videos .right {
+  .animation .bottom-block .works .videos .right, .illustration .bottom-block .works .videos .left,
+  .illustration .bottom-block .works .videos .right {
     width: 2.7vw;
     height: 8.444vw;
     top: 65vw;
   }
-  .animation .bottom-block .works .videos .left {
+  .animation .bottom-block .works .videos .left, .illustration .bottom-block .works .videos .left {
     left: 37vw;
   }
-  .animation .bottom-block .works .videos .right {
+  .animation .bottom-block .works .videos .right, .illustration .bottom-block .works .videos .right {
     right: 37vw;
   }
-  .animation .bottom-block .works .videos .vid {
+  .animation .bottom-block .works .videos .vid, .illustration .bottom-block .works .videos .vid {
     width: 85.8vw;
     height: 46.55vw;
   }
-  .animation .bottom-block .works .videos .vid iframe {
+  .animation .bottom-block .works .videos .vid iframe, .illustration .bottom-block .works .videos .vid iframe {
     width: 85.8vw;
     height: 46.55vw;
   }
-  .animation .bottom-block .works .videos .vid iframe p {
+  .animation .bottom-block .works .videos .vid iframe p, .illustration .bottom-block .works .videos .vid iframe p {
     font-size: 1vw;
   }
-  .animation .bottom-block .works .videos .vid iframe span {
+  .animation .bottom-block .works .videos .vid iframe span, .illustration .bottom-block .works .videos .vid iframe span {
     font-size: 0px;
   }
-  .animation .bottom-block .price {
+  .animation .bottom-block .price, .illustration .bottom-block .price {
     overflow: hidden;
     margin-top: 0vw;
   }
-  .animation .bottom-block .price .price-block {
+  .animation .bottom-block .price .price-block, .illustration .bottom-block .price .price-block {
     width: 125vw;
     height: 129vw;
     margin-left: -10vw;
     padding-top: 12vw;
   }
-  .animation .bottom-block .price .price-block .title {
+  .animation .bottom-block .price .price-block .title, .illustration .bottom-block .price .price-block .title {
     margin-left: -2vw;
   }
-  .animation .bottom-block .price .price-block .info {
+  .animation .bottom-block .price .price-block .info, .illustration .bottom-block .price .price-block .info {
     width: 70vw;
     margin-left: 30vw;
     margin-top: 14vw;
   }
-  .animation .bottom-block .price .price-block .info span {
+  .animation .bottom-block .price .price-block .info span, .illustration .bottom-block .price .price-block .info span {
     margin-bottom: 3vw;
   }
-  .animation .bottom-block .price .price-block .price {
+  .animation .bottom-block .price .price-block .price, .illustration .bottom-block .price .price-block .price {
     margin-top: 14.5vw;
     margin-left: 28vw;
+  }
+  .illustration .top-block {
+    height: 458vw;
+  }
+  .illustration .top-block .question-block {
+    height: 80vw;
+  }
+  .illustration .top-block .zin {
+    width: 90vw;
+    height: 80vw;
+    margin-top: 10vw;
+  }
+  .illustration .top-block .zin .title {
+    font-size: 4.6vw;
+  }
+  .illustration .top-block .zin .termin {
+    font-size: 3.8vw;
+  }
+  .illustration .top-block .zin .description {
+    font-size: 4vw;
+    line-height: 4.5vw;
+  }
+  .illustration .bottom-block {
+    height: 460vw;
+  }
+  .illustration .bottom-block .anika-block .info {
+    margin-left: 0px;
+    padding-right: 5px;
+  }
+  .illustration .bottom-block .comments {
+    margin-top: 15vw;
+  }
+  .illustration .bottom-block .comments .title {
+    margin-bottom: 0vw;
+  }
+  .illustration .bottom-block .price .price-block {
+    width: 130vw;
+    margin-left: -17vw;
+  }
+  .illustration .bottom-block .price .price-block .title {
+    margin-left: 5vw;
+  }
+  .illustration .bottom-block .price .price-block .info {
+    margin-left: 36vw;
+    width: 60vw;
+  }
+  .illustration .bottom-block .price .price-block .price {
+    margin-left: 36vw;
+    margin-top: 14vw;
   }
 }/*# sourceMappingURL=style.css.map */

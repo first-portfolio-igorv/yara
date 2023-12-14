@@ -3292,8 +3292,11 @@ main .EN {
   .editing .bottom-block1 .experiense .info:nth-child(2), .editing .bottom-block .experiense .info:nth-child(2), .illustration .bottom-block1 .experiense .info:nth-child(2), .illustration .bottom-block .experiense .info:nth-child(2), .graphic .bottom-block1 .experiense .info:nth-child(2), .graphic .bottom-block .experiense .info:nth-child(2), .animation .bottom-block1 .experiense .info:nth-child(2), .animation .bottom-block .experiense .info:nth-child(2) {
     width: 100%;
   }
-  .editing .bottom-block1 .experiense .block, .editing .bottom-block .experiense .block, .illustration .bottom-block1 .experiense .block, .illustration .bottom-block .experiense .block, .graphic .bottom-block1 .experiense .block, .graphic .bottom-block .experiense .block, .animation .bottom-block1 .experiense .block, .animation .bottom-block .experiense .block {
+  .editing .bottom-block1 .experiense .block:nth-child(2), .editing .bottom-block .experiense .block:nth-child(2), .illustration .bottom-block1 .experiense .block:nth-child(2), .illustration .bottom-block .experiense .block:nth-child(2), .graphic .bottom-block1 .experiense .block:nth-child(2), .graphic .bottom-block .experiense .block:nth-child(2), .animation .bottom-block1 .experiense .block:nth-child(2), .animation .bottom-block .experiense .block:nth-child(2) {
     width: 100%;
+  }
+  .editing .bottom-block1 .experiense .block, .editing .bottom-block .experiense .block, .illustration .bottom-block1 .experiense .block, .illustration .bottom-block .experiense .block, .graphic .bottom-block1 .experiense .block, .graphic .bottom-block .experiense .block, .animation .bottom-block1 .experiense .block, .animation .bottom-block .experiense .block {
+    width: 80vw;
     margin-bottom: 15vw;
   }
   .editing .bottom-block1 .experiense .block .title, .editing .bottom-block .experiense .block .title, .illustration .bottom-block1 .experiense .block .title, .illustration .bottom-block .experiense .block .title, .graphic .bottom-block1 .experiense .block .title, .graphic .bottom-block .experiense .block .title, .animation .bottom-block1 .experiense .block .title, .animation .bottom-block .experiense .block .title {
@@ -3366,7 +3369,7 @@ main .EN {
     font-size: 3vw;
     text-align: center;
     line-height: 3.5vw;
-    padding: 5.08vw 6.2vw 0vw;
+    padding: 4.08vw 6.2vw 0vw;
     position: relative;
     float: left;
   }
@@ -3599,13 +3602,15 @@ main .EN {
   .graphic .bottom-block .works .videos .right, .animation .bottom-block .works .videos .left,
   .animation .bottom-block .works .videos .right, .illustration .bottom-block .works .videos .left,
   .illustration .bottom-block .works .videos .right {
-    top: 40vw;
+    width: 4vw;
+    height: 7vw;
+    top: 85vw;
   }
   .graphic .bottom-block .works .videos .left, .animation .bottom-block .works .videos .left, .illustration .bottom-block .works .videos .left {
-    left: -8vw;
+    left: 20vw;
   }
   .graphic .bottom-block .works .videos .right, .animation .bottom-block .works .videos .right, .illustration .bottom-block .works .videos .right {
-    right: -8vw;
+    right: 20vw;
   }
   .graphic .bottom-block .works .videos .vid, .animation .bottom-block .works .videos .vid, .illustration .bottom-block .works .videos .vid {
     width: 60.8vw;
@@ -3643,14 +3648,11 @@ main .EN {
     height: 120vw;
   }
   .animation .bottom-block .extra .advice, .illustration .bottom-block .extra .advice {
-    width: 104vw;
+    width: 80vw;
     height: 31vw;
-    background-image: url(./images/animation/element3\ \(1\).png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: -4vw;
     font-size: 3vw;
-    line-height: 3.2vw;
+    line-height: 3.9vw;
+    margin: auto;
     padding: 4vw 2vw 0px 4vw;
   }
   .animation .bottom-block .extra .sertificate-text, .illustration .bottom-block .extra .sertificate-text {
@@ -3716,6 +3718,9 @@ main .EN {
   .animation .bottom-block .price .price-block .price, .illustration .bottom-block .price .price-block .price {
     margin-top: 14.5vw;
     margin-left: 28vw;
+  }
+  .animation .middle-block, .illustration .middle-block {
+    padding-bottom: 0px;
   }
   .illustration .top-block {
     height: 458vw;

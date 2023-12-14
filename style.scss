@@ -3612,8 +3612,11 @@ main {
                 .info:nth-child(2){
                     width: 100%;
                 }
-                .block {
+                .block:nth-child(2){
                     width: 100%;
+                }
+                .block {
+                    width: 80vw;
                     margin-bottom: 15vw;
                     
                     .title {
@@ -3697,7 +3700,7 @@ main {
                         font-size: 3vw;
                         text-align: center;
                         line-height: 3.5vw;
-                        padding: 5.08vw 6.2vw 0vw;
+                        padding: 4.08vw 6.2vw 0vw;
                         position: relative;
                         float: left;
                         .comment-text{
@@ -3918,7 +3921,7 @@ main {
             padding-top: 0px;
         }
     }
-    .graphic,.animation, .illustration{
+    .graphic, .animation, .illustration{
         .top-block{
             height: 300vw;
         }
@@ -3947,15 +3950,17 @@ main {
                     height:70vw;
                     .left,
                     .right {
-                        top: 40vw;
+                        width: 4vw;
+                        height: 7vw;
+                        top: 85vw;
                     }
             
                     .left {
-                        left: -8vw;
+                        left: 20vw;
                     }
             
                     .right {
-                        right: -8vw;
+                        right: 20vw;
                     }
                     .vid {
                         width: 60.8vw;
@@ -4000,14 +4005,11 @@ main {
             .extra{
                 height: 120vw;
                 .advice{
-                    width: 104vw;
+                    width: 80vw;
                     height: 31vw;
-                    background-image: url(./images/animation/element3\ \(1\).png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    margin-left: -4vw;
                     font-size: 3vw;
-                    line-height: 3.2vw;
+                    line-height: 3.9vw;
+                    margin: auto;
                     padding: 4vw 2vw 0px 4vw;
                 }
                 .sertificate-text{
@@ -4083,7 +4085,9 @@ main {
                 }
             }
         }
-        
+        .middle-block{
+            padding-bottom: 0px;
+        }
     }
     .illustration{
         .top-block{

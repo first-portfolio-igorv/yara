@@ -17,17 +17,22 @@ let body=document.getElementsByTagName("body");
 let check1=false;
 let maxHeight=[];
 let commentNum=0;
+let ENcheck=false;
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+40)
   console.log(maxHeight)
 }
 en[0].addEventListener("click", function(){
+  ENcheck=true;
+  comm()
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="none";
         EN[i].style.display="block";
     }
 })
 ua[0].addEventListener("click", function(){
+  ENcheck=false;
+  comm()
     for(let i=0;i<UA.length;i++){
         UA[i].style.display="block";
         EN[i].style.display="none";
@@ -100,22 +105,48 @@ function off(){
       menu[0].style.right="-100%";
       check1=!check1;
 }
-for(let i=0;i<comment.length;i++){
-  if(commentNum==i){
-    comment[i].style.opacity="100%";
-    comment[i].style.display="block";
-  }
-  else{
-    comment[i].style.opacity="0%"
-    comment[i].style.display="none";
+function comm(){
+  for(let i=0;i<comment.length;i++){
+    if(ENcheck){
+      commentNum=4;
+      if(commentNum==i){
+        comment[i].style.opacity="100%";
+        comment[i].style.display="block";
+      }
+      else{
+        comment[i].style.opacity="0%"
+        comment[i].style.display="none";
+      }
+    }
+    else{
+      commentNum=0;
+      if(commentNum==i){
+      comment[i].style.opacity="100%";
+      comment[i].style.display="block";
+    }
+    else{
+      comment[i].style.opacity="0%"
+      comment[i].style.display="none";
+    }
+    }
+    
   }
 }
+comm()
 function right(){
   commentNum++;
   console.log("sdf")
-  if(commentNum==4){
+  if(ENcheck){
+    if(commentNum==8){
+      commentNum=4;
+    }
+  }
+  else{
+    if(commentNum==4){
     commentNum=0;
   }
+  }
+  
     for(let i=0;i<comment.length;i++){
       if(commentNum==i){
         
@@ -141,9 +172,17 @@ function right(){
 }
 function left(){
   commentNum--;
-  if(commentNum==-1){
-    commentNum=3;
+  if(ENcheck){
+    if(commentNum==3){
+      commentNum=7;
+    }
   }
+  else{
+    if(commentNum==-1){
+      commentNum=3;
+    }
+  }
+  
     for(let i=0;i<comment.length;i++){
       if(commentNum==i){
         setTimeout(()=>{

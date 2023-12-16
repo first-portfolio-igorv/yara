@@ -1837,8 +1837,8 @@ main {
             .img {
                 width: 24.3vw;
                 height: 32.91vw;
-                background-image: url(./images/illustration/teacher.png);
-                background-size: contain;
+                background-image: url(./images/illustration/teacher.jpg);
+                background-size: cover;
                 background-repeat: no-repeat;
             }
         }
@@ -4020,6 +4020,7 @@ main {
                 height: 110vw;
             }
             .works{
+                height: 95vw;
                 .videos {
                     width: 94.9vw;
                     height: 65vw;
@@ -4100,7 +4101,14 @@ main {
                 height: 80vw;
                 margin-top: 10vw;
                 .title{
-                    font-size: 4.6vw;
+                        width: 30vw;
+                        height: 8vw;
+                        font-size: 4.6vw;
+                        margin: 0px auto 5vw;
+                        padding-top: 1vw;
+                        background-image: url(./images/editing/title3.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
                 }
                 .termin{
                     font-size: 3.8vw;
@@ -4111,11 +4119,19 @@ main {
                 }
             }
         }
+        .middle-block{
+            padding-bottom: 10vw;
+        }
         .bottom-block{
-            height: 460vw;
+            padding-top: 5vw;
+            
+            height: 500vw;
             .anika-block .info{
                 margin-left: 0px;
                 padding-right: 5px;
+            }
+            .experiense{
+                height: 130vw;
             }
             .comments{
                 margin-top: 15vw;
@@ -4124,6 +4140,7 @@ main {
                 }
             }
             .price{
+                margin-top: 5vw;
                 .price-block{
                     width: 130vw;
                     margin-left: -17vw;

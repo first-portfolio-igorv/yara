@@ -1665,8 +1665,8 @@ main .EN {
 .graphic .bottom-block .anika-block .img {
   width: 24.3vw;
   height: 32.91vw;
-  background-image: url(./images/illustration/teacher.png);
-  background-size: contain;
+  background-image: url(./images/illustration/teacher.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .illustration .bottom-block .experiense,
@@ -3661,6 +3661,9 @@ main .EN {
   .animation .bottom-block .experiense, .illustration .bottom-block .experiense {
     height: 110vw;
   }
+  .animation .bottom-block .works, .illustration .bottom-block .works {
+    height: 95vw;
+  }
   .animation .bottom-block .works .videos, .illustration .bottom-block .works .videos {
     width: 94.9vw;
     height: 65vw;
@@ -3734,7 +3737,14 @@ main .EN {
     margin-top: 10vw;
   }
   .illustration .top-block .zin .title {
+    width: 30vw;
+    height: 8vw;
     font-size: 4.6vw;
+    margin: 0px auto 5vw;
+    padding-top: 1vw;
+    background-image: url(./images/editing/title3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .illustration .top-block .zin .termin {
     font-size: 3.8vw;
@@ -3743,18 +3753,28 @@ main .EN {
     font-size: 4vw;
     line-height: 4.5vw;
   }
+  .illustration .middle-block {
+    padding-bottom: 10vw;
+  }
   .illustration .bottom-block {
-    height: 460vw;
+    padding-top: 5vw;
+    height: 500vw;
   }
   .illustration .bottom-block .anika-block .info {
     margin-left: 0px;
     padding-right: 5px;
+  }
+  .illustration .bottom-block .experiense {
+    height: 130vw;
   }
   .illustration .bottom-block .comments {
     margin-top: 15vw;
   }
   .illustration .bottom-block .comments .title {
     margin-bottom: 0vw;
+  }
+  .illustration .bottom-block .price {
+    margin-top: 5vw;
   }
   .illustration .bottom-block .price .price-block {
     width: 130vw;

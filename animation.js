@@ -1,7 +1,7 @@
 let block = document.getElementsByClassName("block");
 let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
-let height = [14.58,14.58,14.58,12,11,13.54,10.41,10,10,10];
+let height = [14.58,14.58,14.58,12,11,13.54,10.41,12,12,10];
 let check = [];
 let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");
@@ -97,7 +97,7 @@ function rightV(){
             video[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
         
 
       }
@@ -105,7 +105,7 @@ function rightV(){
         video[i].style.opacity="0%"
         setTimeout(()=>{
           video[i].style.display="none";
-        },1000)
+        },200)
         
       }
     }
@@ -124,7 +124,7 @@ function leftV(){
             video[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
       }
       else{
         video[i].style.opacity="0%"

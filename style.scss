@@ -1928,7 +1928,7 @@ main {
                 height: 16vw;
                 position: absolute;
                 left: 0px;
-                transition: 1s;
+                transition: 0.3s;
                 .comment {
                     background-image: url(./images/editing/bubblereview.png);
                     background-size: contain;
@@ -2221,7 +2221,7 @@ main {
                     margin: auto;
                     position: relative; 
                     transition-property: opacity;
-                    transition-duration: 1s;
+                    transition-duration: 0.3;
                     iframe{
                         width: 38.19vw;
                         height: 19.44vw;
@@ -2491,7 +2491,7 @@ main {
                         height: 17.36vw;
                         .comment-text{
                             transition-property: opacity;
-                            transition: 1s;
+                            transition: 0.3;
                         }
                     }
                 }
@@ -2539,7 +2539,7 @@ main {
                     position: relative;
                     background-image: url(./images/graphicdesign/work.png);
                     transition-property: opacity;
-                    transition: 1s;
+                    transition: 0.3;
                 }
             }
         }
@@ -3446,13 +3446,10 @@ main {
                             margin-left: 1vw;
                             .add-info {
                                 position: absolute;
-                                width: 75.8vw;
+                                width: 67vw;
                                 height: 8.52vw;
-                                background-image: url(./images/editing/dodatkovo.png);
-                                background-size: contain;
-                                background-repeat: no-repeat;
-                                padding: 2.08vw;
-                                padding-right: 4vw;
+                                background-image: none;
+                                padding: 0px;
                                 font-size: 2.5vw;
                             }
                             .img{
@@ -3483,10 +3480,10 @@ main {
         
         
                 .block:nth-child(9) {
-                    width: 82.8vw;
+                    width: 85.8vw;
         
                     .info {
-                        width: 66.58vw;
+                        width: 69.58vw;
                     }
         
                 }
@@ -3598,10 +3595,26 @@ main {
                 .info{
                     margin-bottom: 0px;
                 }
-                .img{
+                .img::before{
+                    content: '';
+                    background-image: url(./images/animation/IMG_20230918_134313_495.jpg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
                     width: 40vw;
                     height: 55vw;
                     margin-bottom: 10vw;
+                    position: absolute;
+                    top: -1vw;
+                    left: -2vw;
+
+                }
+                .img{
+                    background-color: rgb(220, 196, 79);
+                    background-image: none;
+                    width: 40vw;
+                    height: 55vw;
+                    position: relative;
+
                 }
             }
             .experiense {
@@ -4016,6 +4029,7 @@ main {
                     margin-top: 5vw;
                 }
             }
+            
             .experiense{
                 height: 110vw;
             }
@@ -4126,9 +4140,18 @@ main {
             padding-top: 5vw;
             
             height: 500vw;
-            .anika-block .info{
+            .anika-block {
+                .info{
                 margin-left: 0px;
                 padding-right: 5px;
+                
+                }
+                .img{
+                    height: 44vw;
+                }
+            .img::before{
+                background-image: url(./images/illustration/teacher.jpg)
+            }
             }
             .experiense{
                 height: 130vw;
@@ -4155,6 +4178,15 @@ main {
                         margin-left: 36vw;
                         margin-top: 14vw;
                     }
+                }
+            }
+        }
+    }
+    .graphic{
+        .bottom-block{
+            .anika-block{
+                .img::before{
+                    background-image: url(./images/graphicdesign/msg565874734-32392.jpg);
                 }
             }
         }

@@ -1771,7 +1771,7 @@ main .EN {
   height: 16vw;
   position: absolute;
   left: 0px;
-  transition: 1s;
+  transition: 0.3s;
 }
 .illustration .bottom-block .comments .comments-block .comments-line .comment,
 .animation .bottom-block .comments .comments-block .comments-line .comment,
@@ -2044,7 +2044,7 @@ main .EN {
   margin: auto;
   position: relative;
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.3;
 }
 .animation .bottom-block .works .vid iframe {
   width: 38.19vw;
@@ -2265,7 +2265,7 @@ main .EN {
 }
 .graphic .bottom-block .comments .comments-block .comments-line .comment .comment-text {
   transition-property: opacity;
-  transition: 1s;
+  transition: 0.3;
 }
 .graphic .bottom-block .works {
   margin-top: 10.41vw;
@@ -2307,7 +2307,7 @@ main .EN {
   position: relative;
   background-image: url(./images/graphicdesign/work.png);
   transition-property: opacity;
-  transition: 1s;
+  transition: 0.3;
 }
 .graphic .bottom-block .price {
   display: block;
@@ -3147,13 +3147,10 @@ main .EN {
   }
   .editing .middle-block .course-progress-block .block .info .text .add-info, .illustration .middle-block .course-progress-block .block .info .text .add-info, .graphic .middle-block .course-progress-block .block .info .text .add-info, .animation .middle-block .course-progress-block .block .info .text .add-info {
     position: absolute;
-    width: 75.8vw;
+    width: 67vw;
     height: 8.52vw;
-    background-image: url(./images/editing/dodatkovo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 2.08vw;
-    padding-right: 4vw;
+    background-image: none;
+    padding: 0px;
     font-size: 2.5vw;
   }
   .editing .middle-block .course-progress-block .block .info .text .img, .illustration .middle-block .course-progress-block .block .info .text .img, .graphic .middle-block .course-progress-block .block .info .text .img, .animation .middle-block .course-progress-block .block .info .text .img {
@@ -3174,10 +3171,10 @@ main .EN {
     width: 65.72vw;
   }
   .editing .middle-block .course-progress-block .block:nth-child(9), .illustration .middle-block .course-progress-block .block:nth-child(9), .graphic .middle-block .course-progress-block .block:nth-child(9), .animation .middle-block .course-progress-block .block:nth-child(9) {
-    width: 82.8vw;
+    width: 85.8vw;
   }
   .editing .middle-block .course-progress-block .block:nth-child(9) .info, .illustration .middle-block .course-progress-block .block:nth-child(9) .info, .graphic .middle-block .course-progress-block .block:nth-child(9) .info, .animation .middle-block .course-progress-block .block:nth-child(9) .info {
-    width: 66.58vw;
+    width: 69.58vw;
   }
   .editing .middle-block .sertificate-text, .illustration .middle-block .sertificate-text, .graphic .middle-block .sertificate-text, .animation .middle-block .sertificate-text {
     background-image: url(./images/editing/dodatkovo.png);
@@ -3278,10 +3275,24 @@ main .EN {
   .editing .bottom-block1 .anika-block .info, .editing .bottom-block .anika-block .info, .illustration .bottom-block1 .anika-block .info, .illustration .bottom-block .anika-block .info, .graphic .bottom-block1 .anika-block .info, .graphic .bottom-block .anika-block .info, .animation .bottom-block1 .anika-block .info, .animation .bottom-block .anika-block .info {
     margin-bottom: 0px;
   }
-  .editing .bottom-block1 .anika-block .img, .editing .bottom-block .anika-block .img, .illustration .bottom-block1 .anika-block .img, .illustration .bottom-block .anika-block .img, .graphic .bottom-block1 .anika-block .img, .graphic .bottom-block .anika-block .img, .animation .bottom-block1 .anika-block .img, .animation .bottom-block .anika-block .img {
+  .editing .bottom-block1 .anika-block .img::before, .editing .bottom-block .anika-block .img::before, .illustration .bottom-block1 .anika-block .img::before, .illustration .bottom-block .anika-block .img::before, .graphic .bottom-block1 .anika-block .img::before, .graphic .bottom-block .anika-block .img::before, .animation .bottom-block1 .anika-block .img::before, .animation .bottom-block .anika-block .img::before {
+    content: "";
+    background-image: url(./images/animation/IMG_20230918_134313_495.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 40vw;
     height: 55vw;
     margin-bottom: 10vw;
+    position: absolute;
+    top: -1vw;
+    left: -2vw;
+  }
+  .editing .bottom-block1 .anika-block .img, .editing .bottom-block .anika-block .img, .illustration .bottom-block1 .anika-block .img, .illustration .bottom-block .anika-block .img, .graphic .bottom-block1 .anika-block .img, .graphic .bottom-block .anika-block .img, .animation .bottom-block1 .anika-block .img, .animation .bottom-block .anika-block .img {
+    background-color: rgb(220, 196, 79);
+    background-image: none;
+    width: 40vw;
+    height: 55vw;
+    position: relative;
   }
   .editing .bottom-block1 .experiense, .editing .bottom-block .experiense, .illustration .bottom-block1 .experiense, .illustration .bottom-block .experiense, .graphic .bottom-block1 .experiense, .graphic .bottom-block .experiense, .animation .bottom-block1 .experiense, .animation .bottom-block .experiense {
     width: 80vw;
@@ -3764,6 +3775,12 @@ main .EN {
     margin-left: 0px;
     padding-right: 5px;
   }
+  .illustration .bottom-block .anika-block .img {
+    height: 44vw;
+  }
+  .illustration .bottom-block .anika-block .img::before {
+    background-image: url(./images/illustration/teacher.jpg);
+  }
   .illustration .bottom-block .experiense {
     height: 130vw;
   }
@@ -3790,5 +3807,8 @@ main .EN {
   .illustration .bottom-block .price .price-block .price {
     margin-left: 36vw;
     margin-top: 14vw;
+  }
+  .graphic .bottom-block .anika-block .img::before {
+    background-image: url(./images/graphicdesign/msg565874734-32392.jpg);
   }
 }/*# sourceMappingURL=style.css.map */

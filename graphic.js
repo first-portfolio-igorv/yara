@@ -1,7 +1,7 @@
 let block = document.getElementsByClassName("block");
 let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
-let height = [10,10,10,10,10,10,12,10,12,12,10,10,10,10,10,10,12,12,11,12,11,10.1,10,11,10,10,10,10,10,10,12,12,10,9,10,11,9,10,10,9,9,9];
+let height = [10,10,10,10,10,10,12,10,13,12,10,10,10,10,10,10,12,12,11,15,11,10.1,10,11,10,10,10,10,10,10,12,12,10,9,10,11,9,10,10,9,9,9];
 let check = [false,false,false];
 let maxHeight=[];
 let en=document.getElementsByClassName("en-button");
@@ -146,7 +146,7 @@ function right(){
             comment[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
         
 
       }
@@ -154,7 +154,7 @@ function right(){
         comment[i].style.opacity="0%"
         setTimeout(()=>{
           comment[i].style.display="none";
-        },1000)
+        },200)
         
       }
     }
@@ -173,13 +173,13 @@ function left(){
             comment[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
       }
       else{
         comment[i].style.opacity="0%"
         setTimeout(()=>{
           comment[i].style.display="none";
-        },1000)
+        },200)
       }
   }
 }
@@ -204,7 +204,7 @@ function rightV(){
             video[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
         
 
       }
@@ -212,7 +212,7 @@ function rightV(){
         video[i].style.opacity="0%"
         setTimeout(()=>{
           video[i].style.display="none";
-        },1000)
+        },200)
         
       }
     }
@@ -231,13 +231,13 @@ function leftV(){
             video[i].style.opacity="100%";
             
           },100)
-        },1000)
+        },200)
       }
       else{
         video[i].style.opacity="0%"
         setTimeout(()=>{
           video[i].style.display="none";
-        },1000)
+        },200)
       }
   }
 }

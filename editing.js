@@ -1,7 +1,7 @@
 let block = document.getElementsByClassName("block");
 let title = document.getElementsByClassName("clickTitle");
 let text = document.getElementsByClassName("text");
-let height = [14.72,11.66,14.51,15.76,16.11,13.95,15.69,12.84,19.09,15.97,12.56,11.11,10.41,11.66,10.41];
+let height = [14.72,11.66,14.51,15.76,16.11,13.95,15.69,12.84,22.09,15.97,12.56,11.11,10.41,11.66,10.41];
 let check = [];
 let en=document.getElementsByClassName("en-button");
 let ua=document.getElementsByClassName("ukr-button");

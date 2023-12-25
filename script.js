@@ -7,6 +7,10 @@ let check=false;
 let line=document.getElementsByClassName("toggle");
 let menu=document.getElementsByClassName("menu-mobile");
 let body=document.getElementsByTagName("body");
+let username=document.getElementById("username");
+let email=document.getElementById("email");
+let content=document.getElementById("content");
+let submit=document.getElementById("send")
 for(let i=0; i<en.length;i++){
     en[i].addEventListener("click", function(){
     for(let i=0;i<UA.length;i++){
@@ -45,23 +49,6 @@ function off(){
         menu[0].style.right="-100%";
         check=!check;
 }
-// $(document).ready(function() {
 
-// 	//E-mail Ajax Send
-// 	$("form").submit(function() { //Change
-// 		var th = $(this);
-// 		$.ajax({
-// 			type: "POST",
-// 			url: "send.php", //Change
-// 			data: th.serialize()
-// 		}).done(function() {
-// 			alert("Thank you!");
-// 			setTimeout(function() {
-// 				// Done Functions
-// 				th.trigger("reset");
-// 			}, 1000);
-// 		});
-// 		return false;
-// 	});
 
-// });
+

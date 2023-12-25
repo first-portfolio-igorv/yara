@@ -303,6 +303,7 @@ main .footer .main-block .center-block .reg input::placeholder {
   font-size: 0.97vw;
 }
 main .footer .main-block .center-block .send {
+  cursor: pointer;
   width: 30.9vw;
   height: 19.09vw;
   background-image: url(./images/send.png);
@@ -355,7 +356,7 @@ main .EN {
 
 .editing {
   width: 100vw;
-  max-height: 711.3vw;
+  max-height: 703.3vw;
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "KTS-black";
@@ -430,21 +431,39 @@ main .EN {
   text-align: center;
   margin-top: 10.76vw;
   font-size: 3.12vw;
-  line-height: 4.16vw;
+  line-height: 3.2vw;
 }
 .editing .top-block .EN {
   display: none;
 }
 .editing .top-block .description {
   text-align: center;
-  font-size: 1.52vw;
+  font-size: 1.4vw;
   font-family: "KTS";
-  margin-top: 5.55vw;
+  margin-top: 0vw;
+  line-height: 2vw;
+}
+.editing .top-block .description span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+.editing .top-block .description .button {
+  width: 30vw;
+  height: 4vw;
+  font-size: 2vw;
+  color: black;
+  padding-top: 1vw;
+  background-color: rgb(245, 219, 88);
+  border-radius: 1vw;
+  border: 1.5px solid black;
+  margin: 2vw auto;
+  cursor: pointer;
 }
 .editing .top-block .question-block {
   width: 29.86vw;
   height: 37.98vw;
-  margin: 18.61vw 0px 0px 36.8vw;
+  margin: 13.61vw 0px 0px 36.8vw;
   padding-top: 5vw;
 }
 .editing .top-block .question-block .title {
@@ -570,6 +589,9 @@ main .EN {
 }
 .editing .top-block .block .info .last::before {
   background-image: url(./images/editing/icon3.png);
+}
+.editing .top-block .block .info .last2 {
+  padding-top: 0.9vw;
 }
 .editing .middle-block {
   width: 100vww;
@@ -762,7 +784,7 @@ main .EN {
 }
 .editing .bottom-block1 {
   width: 100vw;
-  height: 270.5vw;
+  height: 262.5vw;
   background-image: url(./images/editing/bottom.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -913,10 +935,17 @@ main .EN {
   padding: 2.08vw 5.2vw;
   position: relative;
   float: left;
+  position: relative;
 }
 .editing .bottom-block1 .comments .comments-block .comment .comment-text {
   transition-property: opacity;
   transition: 0.2s;
+}
+.editing .bottom-block1 .comments .comments-block .comment .comment-text .name {
+  position: absolute;
+  bottom: 3.5vw;
+  right: 5vw;
+  font-weight: bold;
 }
 .editing .bottom-block1 .comments .left,
 .editing .bottom-block1 .comments .right {
@@ -1054,6 +1083,25 @@ main .EN {
 .editing .bottom-block1 .price .price-blocks .price-block:nth-child(2) .price {
   margin-left: 2.77vw;
 }
+.editing .bottom-block1 .description {
+  text-align: center;
+  font-size: 1.4vw;
+  font-family: "KTS";
+  margin-top: 5vw;
+  line-height: 2vw;
+}
+.editing .bottom-block1 .description .button {
+  width: 30vw;
+  height: 4vw;
+  font-size: 2vw;
+  color: black;
+  padding-top: 1vw;
+  background-color: rgb(245, 219, 88);
+  border-radius: 1vw;
+  border: 1.5px solid black;
+  margin: 2vw auto;
+  cursor: pointer;
+}
 .editing .bottom-block1 .bottom-menu {
   width: 69.44vw;
   height: 6.94vw;
@@ -1067,6 +1115,147 @@ main .EN {
 }
 .editing .bottom-block1 .bottom-menu span {
   color: white;
+}
+.editing .add-block {
+  width: 100vw;
+  height: 10vw;
+  background-image: url(./images/editing/addbottom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.editing .footer {
+  width: 100%;
+  height: 51.4vw;
+  padding: 6.93vw 0px 0px 10.76vw;
+  background-image: url(./images/bottomInfo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.editing .footer .main-block {
+  display: flex;
+  height: 37.4vw;
+}
+.editing .footer .main-block .left-block .contacts {
+  width: 21.52vw;
+  height: 4.51vw;
+  background-image: url(./images/contacts.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 1.45vw;
+  padding-left: 2.77vw;
+  margin-bottom: 3.81vw;
+}
+.editing .footer .main-block .left-block .contacts span {
+  font-size: 2.5vw;
+}
+.editing .footer .main-block .left-block p {
+  margin-bottom: 2.43vw;
+  margin-left: 2.77vw;
+  font-size: 1.11vw;
+}
+.editing .footer .main-block .left-block .social {
+  width: 13.88vw;
+  margin-top: 5.2vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.77vw;
+}
+.editing .footer .main-block .left-block .social .instagram {
+  width: 3.47vw;
+  height: 3.47vw;
+  background-image: url(./images/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .footer .main-block .left-block .social .facebook {
+  width: 3.47vw;
+  height: 3.47vw;
+  background-image: url(./images/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .footer .main-block .left-block .social .tik-tok {
+  width: 3.47vw;
+  height: 3.47vw;
+  background-image: url(./images/tiktok.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .footer .main-block .center-block {
+  width: 31.25vw;
+  margin-left: 2.43vw;
+}
+.editing .footer .main-block .center-block .reg {
+  margin-top: 3.12vw;
+  margin-left: 12.5vw;
+  width: 18.4vw;
+}
+.editing .footer .main-block .center-block .reg input {
+  width: 18.4vw;
+  height: 2.77vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1.25vw;
+  font-family: "KTS-black";
+}
+.editing .footer .main-block .center-block .reg input::-moz-placeholder {
+  color: rgb(107, 107, 107);
+  font-family: "KTS-black";
+  font-size: 0.97vw;
+}
+.editing .footer .main-block .center-block .reg input::placeholder {
+  color: rgb(107, 107, 107);
+  font-family: "KTS-black";
+  font-size: 0.97vw;
+}
+.editing .footer .main-block .center-block .send {
+  width: 30.9vw;
+  height: 19.09vw;
+  background-image: url(./images/send.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .footer .main-block .center-block .send span {
+  position: absolute;
+  font-size: 1.5vw;
+  margin-top: 12.5vw;
+  margin-left: 20.13vw;
+}
+.editing .footer .main-block .center-block .send .EN {
+  display: none;
+}
+.editing .footer .main-block .right-block {
+  width: 16.31vw;
+  height: 25.69vw;
+  background-image: url(./images/form.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.editing .footer .main-block .right-block span {
+  display: block;
+  font-size: 3.2vw;
+  margin-top: 2.43vw;
+  margin-left: 4.86vw;
+}
+.editing .footer .main-block .right-block .EN {
+  display: none;
+}
+.editing .footer .bottom-block {
+  width: 35.83vw;
+  height: 6.94vw;
+  margin-left: 50.29vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3vw;
+}
+.editing .footer .bottom-block span {
+  color: rgb(223, 223, 223);
+  font-size: 1.6vw;
+}
+.editing .footer .bottom-block a {
+  text-decoration: none;
 }
 
 .illustration,
@@ -2882,7 +3071,7 @@ main .EN {
   }
   .editing .top-block, .illustration .top-block, .graphic .top-block, .animation .top-block {
     width: 100vw;
-    height: 390.5vw;
+    height: 405.5vw;
     padding-top: 6.73vw;
     background-image: url(./images/main.jpg);
     background-size: cover;
@@ -2931,6 +3120,17 @@ main .EN {
   .editing .top-block .description, .illustration .top-block .description, .graphic .top-block .description, .animation .top-block .description {
     font-size: 4vw;
     margin-top: 5.55vw;
+    line-height: 6vw;
+  }
+  .editing .top-block .description span, .illustration .top-block .description span, .graphic .top-block .description span, .animation .top-block .description span {
+    display: contents;
+  }
+  .editing .top-block .description .button, .illustration .top-block .description .button, .graphic .top-block .description .button, .animation .top-block .description .button {
+    width: 55vw;
+    height: 8vw;
+    font-size: 3.3vw;
+    border-radius: 10px;
+    margin-top: 5vw;
   }
   .editing .top-block .question-block, .illustration .top-block .question-block, .graphic .top-block .question-block, .animation .top-block .question-block {
     position: relative;
@@ -3195,7 +3395,7 @@ main .EN {
   }
   .editing .bottom-block1, .editing .bottom-block, .illustration .bottom-block1, .illustration .bottom-block, .graphic .bottom-block1, .graphic .bottom-block, .animation .bottom-block1, .animation .bottom-block {
     width: 100vw;
-    height: 740.5vw;
+    height: 770.5vw;
     background-image: url(./images/main.jpg);
     background-size: cover;
     padding-top: 10.58vw;
@@ -3388,6 +3588,10 @@ main .EN {
     transition-property: opacity;
     transition: 0.2s;
   }
+  .editing .bottom-block1 .comments .comments-block .comment .comment-text .name, .editing .bottom-block1 .comments .comments-block .comments-line .comment .comment-text .name, .editing .bottom-block .comments .comments-block .comment .comment-text .name, .editing .bottom-block .comments .comments-block .comments-line .comment .comment-text .name, .illustration .bottom-block1 .comments .comments-block .comment .comment-text .name, .illustration .bottom-block1 .comments .comments-block .comments-line .comment .comment-text .name, .illustration .bottom-block .comments .comments-block .comment .comment-text .name, .illustration .bottom-block .comments .comments-block .comments-line .comment .comment-text .name, .graphic .bottom-block1 .comments .comments-block .comment .comment-text .name, .graphic .bottom-block1 .comments .comments-block .comments-line .comment .comment-text .name, .graphic .bottom-block .comments .comments-block .comment .comment-text .name, .graphic .bottom-block .comments .comments-block .comments-line .comment .comment-text .name, .animation .bottom-block1 .comments .comments-block .comment .comment-text .name, .animation .bottom-block1 .comments .comments-block .comments-line .comment .comment-text .name, .animation .bottom-block .comments .comments-block .comment .comment-text .name, .animation .bottom-block .comments .comments-block .comments-line .comment .comment-text .name {
+    bottom: 10vw;
+    font-size: 2.5vw;
+  }
   .editing .bottom-block1 .comments .left,
   .editing .bottom-block1 .comments .right, .editing .bottom-block .comments .left,
   .editing .bottom-block .comments .right, .illustration .bottom-block1 .comments .left,
@@ -3571,6 +3775,21 @@ main .EN {
     margin-left: 9.77vw;
     margin-top: 8.3vw;
   }
+  .editing .bottom-block1 .description, .editing .bottom-block .description, .illustration .bottom-block1 .description, .illustration .bottom-block .description, .graphic .bottom-block1 .description, .graphic .bottom-block .description, .animation .bottom-block1 .description, .animation .bottom-block .description {
+    font-size: 4vw;
+    margin-top: 20.55vw;
+    line-height: 6vw;
+  }
+  .editing .bottom-block1 .description span, .editing .bottom-block .description span, .illustration .bottom-block1 .description span, .illustration .bottom-block .description span, .graphic .bottom-block1 .description span, .graphic .bottom-block .description span, .animation .bottom-block1 .description span, .animation .bottom-block .description span {
+    display: contents;
+  }
+  .editing .bottom-block1 .description .button, .editing .bottom-block .description .button, .illustration .bottom-block1 .description .button, .illustration .bottom-block .description .button, .graphic .bottom-block1 .description .button, .graphic .bottom-block .description .button, .animation .bottom-block1 .description .button, .animation .bottom-block .description .button {
+    width: 55vw;
+    height: 8vw;
+    font-size: 3.3vw;
+    border-radius: 10px;
+    margin-top: 5vw;
+  }
   .editing .bottom-block1 .bottom-menu, .editing .bottom-block .bottom-menu, .illustration .bottom-block1 .bottom-menu, .illustration .bottom-block .bottom-menu, .graphic .bottom-block1 .bottom-menu, .graphic .bottom-block .bottom-menu, .animation .bottom-block1 .bottom-menu, .animation .bottom-block .bottom-menu {
     display: none;
   }
@@ -3579,6 +3798,9 @@ main .EN {
   }
   .editing .bottom-block, .illustration .bottom-block, .graphic .bottom-block, .animation .bottom-block {
     padding-top: 0px;
+  }
+  .editing .footer, .illustration .footer, .graphic .footer, .animation .footer {
+    display: none;
   }
   .graphic .top-block, .animation .top-block, .illustration .top-block {
     height: 300vw;

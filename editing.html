@@ -32,12 +32,12 @@
             <hr>
             <p>Зв'язатись</p>
             <div class="reg">
-                <input type="text" placeholder="Ім'я та прізвище" class="UA">
-                <input type="text" placeholder="First name and surname" class="EN">
-                <input type="text" placeholder="Email*">
-                <input type="text" placeholder="Повідомлення*" class="UA">
-                <input type="text" placeholder="Message*" class="EN">
-                <input type="button" value="НАДІСЛАТИ" class="button">
+                <input type="text" placeholder="Ім'я та прізвище" class="UA" id="username">>
+                <input type="text" placeholder="First name and surname" class="EN" id="username">>
+                <input type="text" placeholder="Email*" id="email">
+                <input type="text" placeholder="Повідомлення*" class="UA" id="content">
+                <input type="text" placeholder="Message*" class="EN" id="content">
+                <input type="button" value="НАДІСЛАТИ" class="button" id="send">
             </div>
             </div>
             
@@ -62,13 +62,23 @@
             </div>
             <div class="mtitle UA">КУРС ВІДЕОМОНТАЖУ <br> В PREMIERE PRO</div>
             <div class="mtitle EN">VIDEO EDITING <br> IN PREMIERE PRO</div>
-            <div class="description UA">Монтаж власного відео. Якщо для <br> тебе це звучить як мрія <br> і
-                страшний сон водночас - <br> час  записуватися на наш курс.
+            <div class="description UA"><span>Для дітей 7-18+ років</span> <br>
+                тривалість - 35 хвилин<br>
+                викладачка з 6-річним досвідом у відеомонтажі  <br>
+                знайомство з програмою  <br>
+                монтаж відео з 3-5 кліпів
+                
+                <div class="button UA">БЕЗКОШТОВНИЙ УРОК</div>
             </div>
-            <div class="description EN">Editing your own video. If it sounds like a dream <br>and a nightmare at the
-                same time, then <br>it's time to sign up
-                for our course.
+            <div class="description EN"><span>Для дітей 7-18+ років</span> <br>
+                тривалість - 35 хвилин<br>
+                викладачка з 6-річним досвідом у відеомонтажі  <br>
+                знайомство з програмою  <br>
+                монтаж відео з 3-5 кліпів
+                
+                <div class="button EN">FREE LESSON</div>
             </div>
+            
             <div class="question-block UA" id="about">
                 <div class="arrow"></div>
                 <div class="title">
@@ -115,6 +125,7 @@
                         <span class="first">Тривалість заняття - 60 хвилин </span>
                         <span class="second">Інтенсивність - 12 занять <br> з можливістю вибору розкладу</span>
                         <span class="last">Результат - портфоліо з власними роботами</span>
+                        <span class="last last2">Атестація та сертифікат</span>
                     </div>
                 </div>
                 <div class="block EN">
@@ -588,7 +599,7 @@
                     вона дає реальні результати</div>
             </div>
             <div class="works EN">
-                <div class="title">Yara's works <br> Reviews</div>
+                <div class="title"><br> Reviews</div>
                 <div class="info">Students and parents describe Yaroslava as a professional and positive teacher. They
                     always want to come
                     back to her lessons because she gives real results</div>
@@ -603,10 +614,13 @@
                         Добрий день. Ярослава, дякую за вашу роботу з Мішою. Ви нам як
                         викладач і особисто дуже симпатизували. Міші з вами було цікаво
                         працювати.
+                        <span class="name">Марія(мама Архипа)</span>
                         </span>
                         <span class="comment-text">
                             Добрий день, Ярославо! Вдячна вам за роботу. Ми залишилися  
                             задоволені співпрацею. Хотіли б позайматися з вами ще. Дякую!
+                        <span class="name">Євгенія(мама Меланії)</span>
+
                         </span>
                     </div>
                     <div class="comment EN">
@@ -615,13 +629,14 @@
                             personally, we really liked you. It was interesting for Misha to work with you.
                         </span>
                         <span class="comment-text">
-                            Добрий день, Ярославо! Вдячна вам за роботу. Ми залишилися  
-                            задоволені співпрацею. Хотіли б позайматися з вами ще. Дякую!
+                            Good afternoon, Yaroslava! Thank you for your work. We were very satisfied with our cooperation. We
+                            would like to work with you again. Thank you!
+
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="wtitle UA">РОБОТИ</div>
+            <div class="wtitle UA">РОБОТИ ВИКЛАДАЧА</div>
             <div class="wtitle EN">WORKS</div>
             <div class="videos">
                 <div class="left" onclick="leftV()"></div>
@@ -681,22 +696,103 @@
                         <div class="price EN" onclick="location.href='https://forms.gle/xSLP22wkYff7ZWuT7'"> CHOOSE</div>
                         <div class="price UA" onclick="location.href='https://forms.gle/xSLP22wkYff7ZWuT7'"> ОБРАТИ</div>
                     </div>
+                    
                 </div>
             </div>
-            <div class="bottom-menu">
-                <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="UA">Пробний урок</span></a>
+            <div class="description UA">
+                тривалість - 35 хвилин<br>
+                викладачка з 6-річним досвідом у відеомонтажі  <br>
+                знайомство з програмою  <br>
+                монтаж відео з 3-5 кліпів
+                
+                <div class="button">БЕЗКОШТОВНИЙ УРОК</div>
+            </div>
+        </div>
+        <div class="add-block"></div>
+        <div class="footer" id="contacts">
+            <div class="main-block">
+                <div class="left-block">
+                    <div class="contacts">
+                        <span class="UA">Контакти</span>
+                        <span class="EN">Contacts</span>
+                    </div>
+                    <p>+380508620563</p>
+                    <p>firstdraft.ukraine@gmail.com</p>
+                    <div class="social">
+                        <div class="instagram" onclick="location.href='https://www.instagram.com/firstdraft_ukraine?'"></div>
+                        <div class="facebook" onclick="location.href='https://www.facebook.com/profile.php?id=100095347263208'"></div>
+                        <div class="tik-tok" onclick="location.href='igshid=YzVkODRmOTdmMw=='"></div>
+                    </div>
+                </div>
+                <div class="center-block">
+                    <div class="reg">
+                        <input type="text" placeholder="Ім'я та прізвище" class="UA">
+                        <input type="text" placeholder="First name and surname" class="EN">
+                        <input type="text" placeholder="Email*">
+                        <input type="text" placeholder="Повідомлення*" class="UA">
+                        <input type="text" placeholder="Message*" class="EN">
+                    </div>
+                    <div class="send">
+                        <span class="UA">Надіслати</span>
+                        <span class="EN">Send</span>
+
+                    </div>
+                </div>
+                <div class="right-block">
+                    <span class="UA">ЗВ'ЯЗАТИСЬ</span>
+                    <span class="EN">Contact form</span>
+                </div>
+            </div>
+            <div class="bottom-block">
+                <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="UA">Безкоштовний урок</span></a>
                 <a href="https://forms.gle/YMonhQ68djzZySDh7"><span class="EN">Free lesson</span></a>
-                <a href="#about"><span class="UA">Про курс</span></a>
-                <a href="#about"><span class="EN">About course</span></a>
-                <a href="#program"><span class="UA">Програма курсу</span></a>
-                <a href="#program"><span class="EN">Course program</span></a>
-                <a href="#teacher"><span class="UA">Про викладача</span></a>
-                <a href="#teacher"><span class="EN">About teacher</span></a>
-                <a href="#price"><span class="UA">Вартість</span></a>
-                <a href="#price"><span class="EN">Price</span></a>
+                <a href="#course"><span class="UA">Курси</span></a>
+                <a href="#course"><span class="EN">Courses</span></a>
+                <a href="#about"><span class="UA">Про нас</span></a>
+                <a href="#about"><span class="EN">About us</span></a>
             </div>
         </div>
     </div>
+    <script type="module">
+        let username=document.getElementById("username");
+    let email=document.getElementById("email");
+    let content=document.getElementById("content");
+    let submit=document.getElementById("send")
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyAbos2c65af9rW2bYfHGhVwv9fY5mmUJnk",
+      authDomain: "first-draft-7dde7.firebaseapp.com",
+      projectId: "first-draft-7dde7",
+      storageBucket: "first-draft-7dde7.appspot.com",
+      messagingSenderId: "715806973282",
+      appId: "1:715806973282:web:39913670262d1d02dfe03b",
+      measurementId: "G-T64NYTWCMN"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db= getDatabase(app);
+    submit.addEventListener("click", function(){
+        console.log(username.value.length)
+        if(username.value.length>3 && email.value.length>4 && content.value.length>4){
+            set(ref(db,`${username.value}${Math.floor(Math.random()*10000)}`),
+        {
+            username:username.value,
+            email:email.value,
+            content:content.value
+        })
+        username.value="";
+        email.value="";
+        content.value="";
+        }
+        else{
+            console.log("Заповніть усі поля")
+        }
+    })
+    
+    </script>    
     <script src="editing.js"></script>
 </body>
 

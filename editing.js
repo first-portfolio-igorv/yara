@@ -21,44 +21,47 @@ let ENcheck=false;
 for(let i=0;i<height.length;i++){
   maxHeight.push(height[i]+20)
 }
-en[0].addEventListener("click", function(){
-  ENcheck=true;
-  commentNum=2;
-    for(let i=0;i<UA.length;i++){
-        UA[i].style.display="none";
-        EN[i].style.display="block";
-        for(let i=0;i<comment.length;i++){
-          console.log(i)
-          if(i==2){
-            comment[i].style.opacity="100%";
-            comment[i].style.display="block";
+for(let i=0;i<en.length;i++){
+  en[i].addEventListener("click", function(){
+    ENcheck=true;
+    commentNum=2;
+      for(let i=0;i<UA.length;i++){
+          UA[i].style.display="none";
+          EN[i].style.display="block";
+          for(let i=0;i<comment.length;i++){
+            console.log(i)
+            if(i==2){
+              comment[i].style.opacity="100%";
+              comment[i].style.display="block";
+            }
+            else{
+              comment[i].style.opacity="0%"
+              comment[i].style.display="none";
+            }
           }
-          else{
-            comment[i].style.opacity="0%"
-            comment[i].style.display="none";
-          }
+      }
+  })
+  ua[i].addEventListener("click", function(){
+    ENcheck=false;
+    commentNum=0;
+      for(let i=0;i<UA.length;i++){
+          UA[i].style.display="block";
+          EN[i].style.display="none";
+      }
+      for(let i=0;i<comment.length;i++){
+        console.log(i)
+        if(i==0){
+          comment[i].style.opacity="100%";
+          comment[i].style.display="block";
         }
-    }
-})
-ua[0].addEventListener("click", function(){
-  ENcheck=false;
-  commentNum=0;
-    for(let i=0;i<UA.length;i++){
-        UA[i].style.display="block";
-        EN[i].style.display="none";
-    }
-    for(let i=0;i<comment.length;i++){
-      console.log(i)
-      if(i==0){
-        comment[i].style.opacity="100%";
-        comment[i].style.display="block";
+        else{
+          comment[i].style.opacity="0%"
+          comment[i].style.display="none";
+        }
       }
-      else{
-        comment[i].style.opacity="0%"
-        comment[i].style.display="none";
-      }
-    }
-})
+  })
+}
+
 function open(i){
   if (check[i]) {
     check[i] = false;
